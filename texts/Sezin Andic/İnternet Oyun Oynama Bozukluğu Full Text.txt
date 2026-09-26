@@ -1,0 +1,1971 @@
+Title: İnternet Oyun Oynama Bozukluğu Full Text
+Author: Sezin Andic
+ISBN: 9786057228543
+Source: https://archive.org/details/internet-oyun-oynama-bozuklugu-full-text
+Licence: https://creativecommons.org/publicdomain/mark/1.0/
+
+İNTERNET OYUN
+OYNAMA BOZUKLUĞU
+
+Dünü, Bugünü, Yarını
+
+<p
+
+e.
+
+Sezin Andiç İĞ ARTSÜREM
+
+İNTERNET OYUN OYNAMA BOZUKLUĞU:
+
+DÜNÜ, BUGÜNÜ VE YARINI...
+
+Dr. Sezin ANDİÇ
+
+*d
+08:
+«
+
+#ARTSÜREM
+
+Yayıncı / Publisher:
+
+Artsürem Bilim Sanat Danışmanlık Bilişim AŞ.
+
+Genel Yayın Yönetmeni / Publishing Director /
+Editor in Chief: Fırat BAŞBUĞ
+
+T.C. Kültür ve Turizm Bakanlığı Yayıncı Sertifika Numarası /
+
+Publisher Certificate Number: 46183
+
+ISBN: 978-605-72285-4-3
+
+Açık Erişim Tarihi / Open Access Date: 29 Ekim 2023
+Dizgi / Design: Nurullah Güner
+
+Kapak Tasarımı / Cover Design: Fırat BAŞBUĞ
+
+© Andiç, Sezin. İnternet oyun oynama bozukluğu: Dünü, bugünü ve
+yarını... Ankara: Artsürem, 2023
+
+e ARTSUREM
+
+ÖNSÖZ
+
+"İnternet oyun oynama bozukluğu: Dünü, bugünü ve
+yarını..." başlıklı bu kitap ergenlik dönemindeki bireylerin
+internet oyun oynama ile ilişkili sorunlu davranışlarını etkileyen
+faktörlere odaklanmaktadır. Prof. Dr. Ayşegül Durak Batıgün
+danışmanlığında yürüttüğüm doktora tez çalışmamın literatür
+kısmının temelini oluşturduğu bu kitapta, öncelikle internet
+oyunlarının davranış problemleri açısından ne anlama geldiği,
+ergenlik döneminin taşıdığı riskler, ailenin rolü, gerçek akran
+ilişkilerinin durumu, kanıta dayalı görüş ve öneriler ile ilişkili
+başlıklara yer verilmiştir. Kitabın internet oyun oynama
+bozukluğunun önlenmesinde etkili olabilecek ailesel ve bireysel
+faktörlere değinmesi, ailelere ve eğitim alanında çalışanlara
+rehberlik edecek olması ve bu konuda yapılacak ileri çalışmalar
+açısından araştırmacılara ilham vermesi açısından önemli bir
+
+boşluğu doldurması beklenmektedir.
+
+Ekrandan uzak durmanın her birimiz için çok zor olduğu,
+ekran karşısındayken zamanın hızla akıp gittiğini unutan biz
+ebeveynler için çocuklarımızı da ekrandan uzaklaştırmak her
+geçen gün daha da zorlaşıyor. Anne ve babaların nerede ve nasıl
+davranacakları, ergenlik dönemindeki çocuklarına nasıl bir
+yaklaşım sergileyecekleri ve ekran karşısında saatlerce oyun
+oynamanın olası nedenleri ve sonuçlarına ilişkin farklı bakış
+açıları kazanmalarında bu kitabın iyi bir rehber olması
+
+dileğiyle...
+
+Sezin Andiç
+
+Bilgisayar ekranı karşısında bu kitabı tamamlarken,
+
+defalarca kucağımda uyuya kalan minik kuşuma...
+
+Toprak'a...
+
+İÇİNDEKİLER
+
+GİYİŞ asaresüsessuissseksstücersedessssesassnmessderiressisrnsusieseselusösenrdeğerdasisen 1
+İnternet Oyun Oynama Bozukluğuna Yakından Bakalım 5
+Risk Altındaki Grup: Ergenlik Dönemindeki Bireyler ....... 8
+Ailenin Rolünü Anlamak............s0cxs00s500500050000000000000s00en000000 12
+Anne Babaların Tutum ve Yaklaşımları........................... 16
+Psikoloji Koi tri seat eke sele ilya slam ii öle le Gl ağ 18
+Duygulardan Kaçmanın En Kolay Yolu:
+İnternette Oyun Oynamak..............0es000s5000000000000500002000000002 22
+En Önemli Kayıplardan Biri: Gerçek Akran İlişkileri ......24
+Kanıta Dayalı Bakış: İnternet Oyun Oynama
+Bozukluğunun Önlenmesi............c..e0ces00000000000000000000000000000e 26
+Peki Erkekler mi Kadınlar mı DahaBağımlı?.................. 28
+Anne Babaların Yüksek Eğitim Düzeyi Bir Kurtarıcı
+ka il e e e a la 29
+Anne Babaların Ne Söylediği Değil Ne Yaptığı mı
+GOMEZ ela dean ale la elm il 31
+İnternet Oyun Oynama Bozukluğuna Giden Yoldaki
+el a nara EM e ee eee eee 22
+Bu ModellerBizeNelermifısıldıyor?............................. 41
+İnternet Oyun Bozukluğu ile Nasıl Başa Çıkmalı?.......... 45
+Daha Çok XY aluimuz Var şalssakma in aağasaşa dari alasalan 51
+
+gd İPE Me AM 54
+
+Giriş
+
+Kim sevmez ki oyun oynamayı? En çok da çocuklar... Öyle
+değil mi? Öyle idi. Günümüzde ise okul öncesi çocuklardan genç
+yetişkinlere hatta orta yaştan ileri yaşlara varan oyun oynama
+kavramı farklı bir anlama sahip hale geldi. Oyunlar çocukların
+kendilerini ifade biçimleriydi bir zamanlar. Şimdi ise her yaş grubu
+için bir kaçma alanı halini aldı: Olumsuz duygulardan ya da belki de
+sorumluluklardan... Oyuncaklar kullanılırdı sözcükler yerine. Şimdi
+ise klavye, fare, tablet, akıllı telefon ekranı derken, sanal gerçeklikle
+
+bir de kafalara giyilen bildiğimiz gözlükten çok farklı cihazlar.
+
+1960'lı yıllarda askeri güvenlik ve araştırma amacıyla hayat
+
+bulan ve internet olarak kavramsallaştırılan sistemin temel amacı
+bilgilerin Otaşınması ve bilgiye ulaşılabilmesiydi. (e Farklı
+bilgisayarlardan yazışmalar şeklinde başlayan gelişmeler sonrasında
+internetin temellerinin atılması, ilk elektronik posta gönderiminin
+başarılı şekilde gerçekleştirilmesinden bu yana askeri alanlar dışında
+yeni ağlar oluşturulmuş ve temel felsefesi bilgi paylaşımı olan
+internet 1990'lı yıllarda ülkemizin de dahil olduğu onlarca ülkeye
+yayılan bir sistem halini almıştır (Akel, 2016). Ekran bağımlılığı mı?
+İnternet bağımlılığı mı? Online alışveriş bağımlılığı mı? derken
+dijital oyunlar kontrolü ele geçirmeye başlamış; yaklaşık 40 yıl önce
+di
+
+ticari oyun olarak sunulan Computer Space dijital oyun endüstrisinin
+başlangıcını (o (Entertainment o Software (o Association, 2013)
+oluşturmuştur. İnternetle paralel şekilde, gelişmiş ve gelişmekte olan
+ülkelerde de 1990'lı yıllardan itibaren oyun endüstrisi de hızla
+
+gelişmeye ve yayılmaya başlamıştır.
+
+Oyun çocukların keşif, deneyimleme ve sorgulama
+becerilerini geliştiren, ana odaklanarak yaratıcılıklarını ortaya
+koydukları ve keyif aldıkları etkinliklerdir. Bilgisayar teknolojisinin
+gelişiminden önceki yıllarda oyun araçları bilgisayarlar, tabletler,
+akıllı telefonlar ya da video konsolları değil; bez bebek, kemik,
+kozalak, top, kâğıt — kalem, taş ve ip gibi araçlardı. Diğer taraftan
+oyun denilince akla taşla ya da topla oynanan, rol yapmaya dayanan,
+saklama ve bulma ya da kaçma — yakalama — ebelemeyi amaçlayan
+sanal değil, eyleme dayalı gerçek oyunlar gelmekteydi. Günümüzde
+ise oyun denildiğinde zihnimizde canlanan ilk imge bir ekran halini
+almaya başladı. Teknolojik aletlerin ekranları karşısında oynanan
+dijital oyunlar ile video oyun konsolları, mobil cihazlar ya da
+bilgisayarlardaki çevrimiçi ya da çevrimdışı oyunlar ifade edilmeye
+başladı (Boyle, Connolly, Hainey ve Boyle, 2012). Oyuncağını alıp
+da oyun oynamaya davet eden bir neslin yerini ekran üzerinden sizi
+
+davet edip çevrimiçi oyunla karşınızda olan bir nesil almaya başladı.
+
+Peki istatistiki veriler ne söylüyor bize? Ülkemiz özelinde,
+
+Türkiye İstatistik Kurumu (TÜİK) tarafından gerçekleştirilen, hane
+
+halkı bilişim teknolojileri kullanım araştırma sonuçlarına göre 2014
+yılında 953.8 olan internet kullanımı 2015 yılının ilk yarısında
+"055.9'a yükselmiş, internet erişim imkânına sahip hane oranı ise
+069.5 olarak bildirilmiştir. İnternet kullanım amaçları arasında
+sosyal medya ilk sırada yer alırken, internet üzerinden alışveriş
+oranının arttığı ve internetin en fazla ev ortamında kullanıldığı rapor
+edilmiştir (TÜİK, 2015). TÜİK 2018 yılı sonuçlarına göre ise
+hanelerin evden internete erişim imkânı, 2017 yılında 480.7 iken bu
+oranının 2018 yılında 9083.8'e yükseldiği bildirilmiştir. İnternet
+kullanım oranları 16-74 yaş grubundaki erkeklerde "080.4;
+kadınlarda ise 965.5 olarak rapor edilmiştir. Bu sonuçlardan
+hareketle, ülkemiz açısından da intermet kullanımının çocukluktan
+yaşlılığa kadar her gelişim dönemi için yaygınlaşmaya başladığı
+görülmektedir. İnternet kullanımının yaygınlığı ya da internet
+kullanım süresi ile intemet bağımlılığı geliştirme riski arasında ilişki
+olduğu bilinmektedir (örn., Batıgün ve Hasta, 2010; Taş, 2018).
+İnternetin farklı doğası ve sunduğu yararlar nedeniyle çağdaş
+toplumlarda kullanım yaygınlığı giderek artmaktadır (Wu ve ark.,
+2016). Araştırmalar ev temelli bir etkinlik olan internet kullanımının
+ergenlik döneminde günlük yaşamın bir parçası haline gelmeye
+başladığını göstermektedir (öm. Gentile ve ark. 2011; Rideout,
+Foehr ve Roberts, 2010). o Dolayısıyla, ergenlik dönemindeki
+bireylerin risk altında olabileceğinden problemli internet
+kullanımına ya da internet oyun oynama bozukluğuna yönelik;
+
+ailelerin ve toplumun farkındalığının arttırılmasının gerekliliği de
+
+gittikçe önem kazanmaya başladı.
+
+İnternet Oyun Oynama Bozukluğuna Yakından Bakalım
+
+DSM-5'te bağımlılık tanımlamalarına ilişkin yapılan
+değişiklikler arasında en dikkat çekici olan, madde dışındaki bir
+bağımlılığın resmi bir psikiyatrik tanı olarak tanıtılmasıdır. Davranış
+bağımlılığı, 1980'den önceki baskılarda olduğu gibi dürtü kontrolü
+bozukluğu olarak sınıflandırılmak yerine, bir bağımlılık bozukluğu
+olarak kabul edilmiştir. Ardından, davranışsal bir bağımlılık olarak
+kabul edilen kumar bozukluğundan sonraki ikinci davranış
+bağımlılığı olarak, ilk defa internet oyun oynama bozukluğuna yer
+verilmiştir (Amerikan Psikiyatri Birliği, 2013). DSM-5'te bu
+bozukluğa genel internet bağımlılığı olarak değil de "intenet oyun
+oynama bozukluğu" olarak yer verilmiş olması dikkat çekicidir.
+Çünkü araştırmalar internet oyun oynama bozukluğunun diğer
+çevrimiçi etkinliklerden ayrı bir görünümünün olduğunu göstermiş
+ve internet bağımlılığı ölçütünün sınırlılığına ve daha ileri
+araştırmalara ihtiyaç olduğuna işaret etmiştir (Cho ve ark., 2014).
+Tanı ölçütleri açısından ise internet bağımlılığı ile ilgili çeşitli
+kavramlar ve öncesindeki madde bağımlılığı ve dürtü denetim
+bozukluğu tanı ölçütlerinden temel alan ya da geliştirilen öz bildirim
+ölçekleri çok sayıda araştırmacı tarafından önerilmiştir. Bazı alt
+boyutlara ise sıklıkla değinilmesine rağmen tanı için
+
+standartlaştırılmış ölçütler önerilmemiştir. Teknoloji kullanımına
+
+ilişkin problemler ile ilgili olarak teknolojinin aşırı kullanımının,
+dikkat çeken ruh hali değişikliği, geri çekilme, tolerans, çatışma ve
+yineleme gibi bağımlılık belirtileri de dahil olmak üzere geleneksel
+olarak madde ile ilişkili bağımlılıklarla ilgili sorunlara neden
+olabileceği gösterilmiştir (Kuss ve ark., 2014). İleri araştırmalar için
+ise DSM-5in 3. Bölümüne eklenen İnternet Oyun Oynama
+Bozukluğu'na ilişkin dokuz tanısal ölçüt önerilmektedir. İnternette
+oyun oynanmadığı zamanlarda bile zihnin sürekli internet oyunları
+ile meşgul olması (zihinsel meşguliyet); tatmin olunabilmesi için
+internet oyunları oynama süresinin sürekli arttırılması (tolerans);
+internet oyunları oynanmadığında huzursuzluk, kızgınlık ya da
+üzgün hissetmek gibi yoksunluk belirtilerinin ortaya çıkması
+(yoksunluk ya da geri çekilme); internet oyunlarını oynamayı
+bırakma girişimlerinde başarısız olunması (süreklilik); kaygı,
+çaresizlik ya da suçluluk gibi olumsuz duyguları hafifletmek ya da
+bu duygulardan kaçınmak (kaçış); tüm olumsuzluklarına rağmen
+internet oyunlarını oynamayı sürdürmek (olumsuzluklar); internet
+oyun süresi ve sıklığı gibi oyun davranışları hakkında diğerlerine
+yalan söylemek (aldatma); diğer yaşam etkinliklerine olan ilginin
+kaybedilmesi (yerine geçme); internet oyunlarını oynuyor olmaya
+bağlı olarak bireyin akademik ya da mesleki fırsatları kaçırması,
+kişilerarası ilişkilerin kaybedilmesi ya da tehlikeye atılması
+(çatışma) olmak üzere dokuz tanı ölçütü önerilmektedir. Bu tanı
+ölçütlerinden tolerans ve yoksunluk/geri çekilme tanı ölçütlerinin en
+
+önemli ölçütler olduğu; bu dokuz tanı ölçütünden ancak beşinin son
+bir yıl içerisinde görülüyor olması durumunda internet oyun oynama
+bozukluğu tanısının konulabileceği ifade edilmektedir (American
+
+Psychiatric Association, 2013).
+
+İnternet oyunları deyince ne anlamalıyız? Kişisel
+bilgisayarlar, özel oyun konsolları, tablet ve dizüstü bilgisayarlar ve
+akıllı telefonlar dahil olmak üzere taşınabilir cihazlardaki çevrimiçi
+oynanabilen oyunları sayabiliriz. Günümüzde, video oyunlarının
+kitlesel çekicilik açısından video ve müzikten daha popüler hale
+geldiği vurgulanmaktadır (UKTE, 2015). Gençlerin yoğun istekle
+oynamasıyla birlikte, video oyunu popülerliğindeki hızlı artış, sosyal
+bilimciler, ebeveynler ve politikacılar arasında oyunların oyuncular
+üzerindeki etkisine ilişkin endişe yaratmaya başlamıştır. İnternet
+bağımlılığı konusundaki önceki çalışmalar, tolerans ve geri çekilme
+gibi davranışsal faktörleri tanımlarken, bazı araştırmacılar ise
+problemli internet kullanımı ile ilgili uyumsuz bilişlere
+odaklanmıştır (örn. Davis, 2001). Diğer bağımlılık bozuklukları gibi
+internet oyun oynama bozukluğu da kişilerarası, sosyal, akademik ve
+mesleki işlevler gibi çok fazla alanı olumsuz yönde etkileyebilir ve
+uyku sorunları (Lam, 2014) ya da sosyal fobi ve depresyon (Wei ve
+ark., 2012) gibi birçok psikolojik sorunla ilişkili olabilir. Sanal
+dünyadaki oyun odaklı yaşamla birlikte gerçek yaşamdaki stresten
+
+uzaklaşılmakta; deneme yanılma yaşantısı olmaksızın, çocukluktan
+
+ergenliğe ya da ergenlikten yetişkinliğe geçiş, izole bir ortamda
+gerçekleşir hale gelmektedir. Madde bağımlılığında olduğu gibi bu
+bireylerin ekrana ulaşmak için para çalması, sokaklarda yaşaması,
+etki altında olduğunda kendisine ya da başkalarına zarar vermesi de
+söz konusu değildir; yalnızca başka bir yerde olması gerekmediği
+sürece ışıkları kısılmış olan odasında ve hatta çok uzun saatler
+masalarının başındadırlar (Lynn ve Johnson, 2018). Bilgi
+teknolojisinin sürekli büyümesi ve genel popülasyon tarafından
+artan kabulü ile birlikte, internet oyun oynama bozukluğu ile ilgili
+sorunların da gün geçtikçe artacağı yönündeki görüşler (örn., Lee,
+
+Lee ve Choo, 2017) oldukça tedirgin edici görünmektedir.
+
+Risk Altındaki Grup: Ergenlik Dönemindeki Bireyler
+Ergenlik dönemi, haz alma ile gerçeklik ilkesi arasında
+yaklaşık 12 ile 22 yaş arasındaki yılları kapsayan bir gelişim
+dönemidir. Aynı zamanda insan hayatının ikinci bireyleşme ve
+aileden ayrışma dönemi olarak da ifade edilebilir (Gander ve
+Gardiner, 2010). UNICEF 10-14 yaş aralığını erken ergenlik dönemi
+olarak tanımlarken geç ergenlik dönemi için ise 15-19 yaş aralığını
+bildirmiştir (United Nations Children's Emergency Fund, 2011, s.6).
+Dünya Sağlık Örgütü (World Health Organization, 2019) ise 10-19
+yaş aralığını ergenlik, 15-24 yaş aralığını gençlik dönemi olarak
+tanımlarken, 19-24 yaş aralığı için ise genç insan kavramını
+
+kullanmıştır. Ergenlik döneminde, bedensel tepkilerin artışı, üretken
+
+bir cinselliğe sahip olunmaya başlanması, duygusal ve zihinsel
+yeterliğin gelişmesiyle birlikte ergen birey kendini ve dünyayı
+keşfetmeye hazır hale gelmektedir. Ergen birey bedenindeki
+değişimlerin ona sağlayacaklarının sınırlarını keşfederken bir
+taraftan da toplumsal sınır arayışındadır (Parman, 2010). Son
+yıllarda ergenlik sürecindeki bireyin sınır arayışının sanal
+ortamlarda da gerçekleşmeye başladığı görüşleri yaygınlaşmaya
+başlamıştır. Ergen birey çevrimiçi sanal bir düşmana karşı savaşması
+ile kendisini güçlü ve yetkin hisseder hale gelmeye başlamıştır.
+İnternetin uzun vadede sorunlara yol açacağı düşünülse de şu anda
+ergen bireylerin bedenlerine doğrudan zarar vermeden, ergenliğe
+geçiş ritüellerini onlara sunduğunu söylemek de yanlış olmayacaktır
+
+(Lynn ve Johnson, 2018, 5.193).
+
+Araştırmalar internetin ergenleri fiziksel sağlık, psikososyal
+gelişim, akademik başarı ve aile ilişkileri olmak üzere dört alanda
+etkilediğini gösterirken; internet bağımlılığı ve ilişkili faktörler,
+psikoloji başta olmak üzere diğer sosyal bilimler, eğitim ve sağlık
+bakımı gibi alanlarda da araştırılmaktadır (örn., Köse, Çınar ve
+Akduran, 2012; Şimşek, Akça ve Şimşek, 2015). Bu araştırmalar
+arasında internet kullanımı ile ilişkili olarak tanımlanan en önemli
+faktörlerden biri ergen davranışlarını etkilediği çok iyi bilinen
+ebeveynlik; diğer bir ifadeyle anne ve babalıktır. Benlik şemaları ile
+
+ilişkili olduğu bulunan önemli bir değişken anne ve babaların
+
+çocukları suçlamaya yönelik tutumları olarak ifade edilmiştir
+
+(Carducci ve Zimbardo, 1995).
+
+Araştırmalar yüksek düzeyde teknoloji kullanımının
+şimdiki/gerçek oOzamanlı sosyal ilişkileri (o etkileyebileceğini
+göstermiştir (Carducci ve Zimbardo, 1995; Erboy ve Akar Vural,
+2010; Kraut, 1998). Olumsuz benlik şemasına sahip bireyler, yalnız
+olmayı istemeseler de kalabalık içerisinde olmaktan rahatsızlık
+duydukları için de yalnızlığı tercih eder, yeni birileri ile tanışmaktan
+hoşlanmaz, başkaları ile yüz yüze iletişimden kaçınır (Chartier,
+Walker ve Stein, 2001; Gard, 2000). Bu özelliklere sahip bireylerin
+zamanlarının çoğunu internette ya da televizyon karşısında (Gard,
+2000) geçirmeleri de şaşırtıcı değildir. Çelik ve Odacı (2012)
+tarafından üniversite öğrencilerinde yürütülen bir araştırma
+sonucunda, kendilik algısı ile internet kullanımı arasında negatif
+yönde anlamlı ilişkiler olduğu bulunmuş ve olumsuz kendilik
+şemasına sahip bireylerin interneti bir kaçış aracı olarak
+kullanabileceği ve bunun sonucunda da internet ortamında, olumlu
+kendilik şemalarında artış algılayabilecekleri ifade edilmiştir. Jeong
+ve Kim (2011) tarafından yapılan araştırma sonucunda, öz yeterlik
+ve internet oyun oynama bozukluğu arasında anlamlı ilişkiler olduğu
+
+gösterilmiştir.
+
+Andiç (2019) tarafından yürütülen araştırmada, internet
+
+oyun oynama bozukluğu üzerinde ergenlik dönemi ile cinsiyet
+
+değişkenlerinin temel etkilerinin anlamlı olduğu görülmüş ve ilk
+olarak erken, orta ve geç ergenlik dönemini temsil eden yaş grupları
+imternet oOoyun Oynama bozukluğu puanları açısından
+karşılaştırılmıştır. 11-14 yaş aralığını içeren erken ergenlik
+dönemindeki bireylerin 19-23 yaş aralığındaki bireylerden; benzer
+şekilde 15-18 yaş aralığını içeren orta ergenlik dönemindeki
+bireylerin de geç ergenlik dönemindeki bireylerden daha yüksek
+internet oyun oynama bozukluğu puanları aldıkları görülmüştür.
+Erken ergenlik ile orta ergenlik dönemindeki bireyler arasında ise
+internet oyun oynama bozukluğu açısından anlamlı farklılık
+olmadığı görülmüştür. Benzer şekilde, Müller (2015) tarafından
+yürütülen araştırma sonucu da 14-15 yaş ile 16-17 yaş gruplarının
+İOOB riskleri açısından anlamlı fark yaratmadığını ortaya koyarken;
+11-18 yaş aralığında yürütülen birçok araştırma (öm., Ahmadi ve
+Saghafi, 2013; Kim ve ark., 2018; Liu ve ark., 2012; Su ve ark,,
+2018) bu yaş döneminin internet bağımlılığı için üzerinde durulması
+
+gereken bir gelişim dönemi olduğu vurgulanmaktadır.
+
+Ailenin Rolünü Anlamak
+
+Ailenin ergen bireylerin davranışları üzerindeki rolü ne
+olabilir? Anne ve babalar çocuklarının davranışlarını anlamak,
+desteklemek ve işlevselliklerini arttırmak için rehberlik
+yapmaları kadar hatta bazen daha fazla onları engelleme,
+kısıtlama ya da eylemlerinden dolayı suçlama ve cezalandırma
+yolunu tercih edebiliyor (Altınay, 2013, s.41). Ebeveynlerin bir
+kısmı ise tamamen görmezden gelip, sınırsızlık kapılarını ardına
+kadar açabiliyor; ihmal edebiliyorlar. Modern ya da çağdaş anne
+babalar, tıpkı balığın suyu soluduğunu bilmediği gibi içinde
+yüzdükleri dijital ortamın onları nasıl içine aldığının farkında
+olmayabilir (Lynn ve Johnson, 2018, s.20). Dahası bu dijital
+ortam onların iyi anne ve baba olmakla ilgili beklenti ve
+inançlarını da şekillendirebiliyor ve bu süreç sinsi şekilde
+
+ilerleyebiliyor.
+
+Çocukların ekranla yakın ilişki içerisinde olması, anne
+babaları ile aralarındaki çatışmaları azaltabilir. Çünkü çocuk ya
+da ergenler bu sayede çoğu zaman sessiz, sakin, zararsız; hatta
+görünmez olurlar. Odalarında ekran başındayken; 15-16
+yaşlarında anne babanın arabasını alıp dışarı çıkma ya da geç
+saatlerde madde kullanımı ya da cinsel ilişki konusunda risk
+
+oluşturacak ortamlarda bulunma olasılıkları yok gibidir.
+
+Özellikle kimlik gelişimi ve özerkleşme gibi gelişimsel ödevlerin
+son derece önemli olduğu ergenlik döneminde, internetin aşırı
+kullanımı oObu gelişim döneminin başarılı (o şekilde
+tamamlanmasını Oo engelleyebilir. (Hatta Onları o yetişkin
+olduklarında da olumsuz yönde etkilemeye devam edebilir (Ko,
+
+Yen, Chen ve Yen, 2005).
+
+Gerçek hayatta öğrenme, hem hatalar hem de başarılarla
+gerçekleşir. Çevrimiçi oyun dünyasında ise ergen bireyler
+korunma şansı olmadan, kendisinden yaşça çok büyük, belki de
+bir istismarcıya maruz kalabilir, Snapchat'i kullanarak
+görüntülendikten 10 saniye sonra mucizevi şekilde ortadan
+kaybolan cinsel içerikli mesajlar alıyor da olabilirler (Lynn ve
+Johnson, 2018). Anne babalara göre ise genelde odasında olan
+ergenin dürtüselliği ve öngörüldüğü kadarıyla riskli davranışları
+yoktur. Dolayısıyla, müdahale süreci gecikebilmektedir. Bu
+nedenle internet oyun oynama bozukluğu sorunu yaşayan
+gençlere ilişkin anne babaların farkındalığı, erken tanılama ve
+etiyolojiye yönelik ipuçlarına ulaşılması, tedavi ve koruyucu
+
+müdahaleler açısından önemli bir yer tutabilir.
+
+İnternet bağımlılığı için risk faktörlerinin anne babalar
+ve aile çevresi ile ilişkili olduğu görüşleri oldukça yaygındır.
+Ergenlerde internet bağımlılığı, anne babalık yaklaşımları ve aile
+
+işlevselliği arasındaki ilişkileri ilk defa inceleyen bir çalışma
+
+sonuçlarına göre boşanmış ebeveynler, düşük gelirli aileler, aile
+çatışmalarının fazla olduğu aileler ve işlevi çok düşük olan
+ailelerin ergenlerdeki internet bağımlılığı için risk oluşturduğu
+bulunmuştur. Miller ve Plant'e (2010) göre ergenlik davranışları
+ile anne babalık düzeyi arasında güçlü ilişki olduğu
+görülmektedir. Ebeveyn rehberliğinin, alkolün ergenler
+üzerindeki kötü etkilerini azalttığı, böylece alkol tüketiminde
+azalma olduğuna ilişkin kanıtlar sunulmaktadır (Austin, Chen ve
+Grube, 2006). Bazı çalışmalar ise anne babaların pozitif rol
+model olduklarında ergen çocuklarını internet bağımlılığından
+koruyabildiklerini göstermektedir (örn., Lin, Lin ve Wu, 2009;
+Park, Kim ve Cho, 2008).
+
+Ailenin rolü ile ilişkili olarak, ergenlik dönemine yönelik
+yaşanılan Oo sorunlara Oo açıklama o getirmeyi (oamaçlayan
+yaklaşımlardan biri davranışsal aile sistemleri yaklaşımıdır.
+Davranışsal aile sistemleri yaklaşımına göre aile anne baba ve
+çocuklardan oluşan bir sistemdir ve aile üyeleri birbirlerinin
+duygu ve davranışları üzerinde karşılıklı olarak etki gücüne
+sahiptir. Her aile sisteminin kendine özgü bir etkileşim biçimi ve
+belli bir dengesi vardır (Robin ve Foster, 2002, s.19). Anne-baba
+ve ergen ilişkilerindeki problem ve çatışmalar, aile üyelerinin
+problem çözme ve iletişim becerileri, bilişler ve içselleştirilmiş
+
+inançların varlığı bu dengeyi bozan ya da dengeyi sağlayan
+
+unsurlar olarak karşımıza çıkabilir. Dengenin korunabilmesi ise
+aile işlevlerinin sürdürülmesi ile sağlanır (Robin ve Foster, 2002,
+s.19). Davranışsal aile sistemleri yaklaşımı, aile yapı ve
+işlevlerini koalisyonlar, üçgenleşme ve bütünleşme olmak üzere
+3 alt boyut üzerinden açıklamaktadır (Robin ve Foster, 2002,
+5.20). Aile sistemi içerisinde, ergen birey ile ailesi arasında,
+anne-baba-çocuk ilişkisinden o yetişkin-yetişkin ( ilişkisine
+dönüşüm sürecinde çatışmalar ortaya çıkabilir (Gander ve
+Gardiner, 2010). Diğer bir ifadeyle, ergenlik dönemindeki
+bireyin özerkleşme isteği aile yapı ve işlevlerini bozucu bir
+unsur olarak karşımıza çıkabilir. Ergenin özerkleşme talepleri
+anne babası ile olan ilişkilerini ya da anne baba arasındaki
+
+ilişkileri etkileyebilir (Daniels, 1990).
+
+Ailenin rolü farklı bakış açılarıyla yine ön plana çıkıyor.
+Anne ve babanın ergen bireye karşı katı tutum ve kurallar
+koyması kadar aşırı izin verici olunması ya da sınırsız özgürlük
+tanınması da sorunları arttırabilmektedir (Eryüksel, 1996)
+Diğer taraftan, aile yapı ve işlevleri açısından, bir çocuk ya da
+ergen birey anne ve/veya babalık rollerini üstlenmek zorunda
+bırakıldığında, anne babadan birine görünür şekilde; diğerine
+ise gizlice bağlı olduğunda, gelişim dönemine uygun olan
+
+deneyim fırsatlarını kaçırabilir (Wolynn, 2017, s.82) ve bu keşif
+
+sürecinde davranış bağımlılıklarına kadar ilerleyebilecek
+
+sağlıksız başa çıkmalar geliştirebilir.
+
+Anne Babaların Tutum ve Yaklaşımları
+
+Çocukların kişilik gelişimi için en uygun anne babalık
+tutumunun demokratik anne baba tutumu olduğu; baskıcı ve
+otoriter, koruyucu ya da tutarsız anne baba tutumlarının ise
+çocukların kişilik gelişimlerini olumsuz yönde etkilediği (örn,,
+Baykan, 2014; Kaya, Bozaslan ve Genç, 2012) ve bağımsız bir
+birey olmalarına engel olduğu ifade edilmektedir (Eni, 2017).
+Sürekli olarak annesinin ya da babasının yönergelerini yerine
+getiren çocuklar, yeni bir durumla karşılaştıklarında ne
+yapacakları konusunda yine yönergeye ihtiyaç duyar ve yaratıcı
+uyumlama yapamazlar. Aslına bakılırsa, çocukların doğal
+potansiyelleri içinde bulunan ve zaman zaman anne baba
+tutumları tarafından sistematik olarak yok edilmeye çalışılan
+spontaniteleri, yaşam içinde onların imdadına yetişen bir
+özelliktir (Altınay, 2013, s.29). Bu bağlamda, bireyleşme dönemi
+olarak ifade edilen ergenlik dönemi açısından, baskıcı ve otoriter
+anne baba tutumu, aşırı koruyucu anne baba tutumu, aşırı izin
+verici anne baba tutumu, tutarsız anne baba tutumu,
+mükemmelliyetçi anne baba tutumu, reddedici anne baba
+tutumu ya da demokratik anne baba tutumu en çok üzerinde
+durulan ve ülkemizdeki ilgili alanyazında araştırılan anne
+
+babalık tutumları arasındadır (örn., Baykan, 2014; Eni, 2017;
+Kaya, Bozaslan ve Genç, 2012; Sezer, 2010).
+
+Teknolojinin gelişimiyle anne babalık yaklaşımlarına
+ilişkin tanımlamalar ve tartışmalar gündeme gelmeye
+başlamıştır. Anne baba rehberliği (parental guidance) kavramı
+anne ve babalar tarafından çocuklarının sağlıklı gelişimlerini
+desteklemek için ortaya konulan çeşitli davranışları temsil
+etmektedir (Vandermaas-Peele, Way ve Umpleby, 2003). Anne
+babalık gözlemi (parental monitoring) ve anne babalık stili
+(parental style) ergenlerin günlük yaşamında, ergenlere özgü
+uğraşlara özel dikkat göstermekten daha yaygın olarak görülen
+anne babalık becerileridir. Anne babalık gözleminin anlamı, bir
+ergene gündelik yaşamında süpervizörlük etmekken (Patterson
+ve Stouthamer-loeber, 1984); ebeveynlik stili tamamıyla evdeki
+anne babalık rol ve ortamına odaklanılır (Leung ve Lee, 2011).
+Oysaki ebeveynlik rehberliği bir etkinlik türü olmaktan çok daha
+fazlasıdır. Ebeveyn rehberliği kurallar koyma, yönerge verme,
+danışmanlık, öneride bulunma ya da tavsiye verme, doğru ve
+yanlış arasındaki farkı net bir şekilde ortaya koyma ve günlük
+aktivitelerde koruma sağlama konularında referans olur (Gafoor
+ve Umer Faroogue, 2006). Bybee, Robinson ve Turow (1982)
+içerisinde televizyon izleme (medyanın ya da ekranın diğer
+
+formlarının kullanılması açısından da düzenlenebilen), kitaplar
+
+ve bilgisayar oyunlarının da yer aldığı, ebeveynlerin rehberliğini
+ölçmek için bir ölçek geliştirmişlerdir. Televizyon için ebeveyn
+rehberliğinin 3 modeli (pattern) vardır: Sınırlayıcı (restrictive),
+değerlendirici (evaluative) ve odaklanmamış (unfocused)
+rehberliktir. Sınırlayıcı rehberlik medya kullanımı üzerinde
+sınırlar belirlemeyi ya da sınırlayıcı /kısıtlayıcı olmayı temsil
+eder. Örneğin, televizyon izlemek için ayrılan süreye bir limit
+konulabilir ve özel programların izlenmesine yasak getirilebilir.
+Değerlendirici ebeveyn rehberliği, ebeveynlerin medya içeriğini
+çocuklarıyla tartışacağı; onlarda bazı içerikler hakkında iyi ya da
+kötü yorum yapabileceği ve gerçekçi olmayan içeriği
+açıklayabildikleri anlamına gelir. Odaklanmamış ebeveyn
+rehberliği ise anne babanın çocuklar televizyon izlerken yalnızca
+çocuklarının yanında oturduğu ve belirli/istenilen izleme
+davranışına teşvik etme durumunu ifade eder (Bybee, Robinson
+
+ve Turow, 1982).
+
+Psikolojik Kontrol
+
+Anne babalık davranışları içerisinde önemli bir yeri olan
+psikolojik kontrol çocuklar üzerindeki kontrolün müdahale,
+sınırlayıcılık, güce dayalılık ve talepkarlık gibi içeriklerinden
+dolayı ergenler üzerinde oldukça zorlayıcı olarak tanımlanmıştır
+(Barber, 1996). Psikolojik kontrol, çocuğun düşünme süreçleri,
+kendini ya da duygularını ifade etme ve ebeveynlerine bağlanma
+
+gibi süreçleri içeren psikolojik ve duygusal gelişimine
+müdahalede bulunan kontrol girişimleri anlamına gelmektedir
+(Barber, 1996). Psikolojik kontrol örtük ve açık ebeveynlik
+davranışlarını içerebilmektedir. Hem bireyci hem de ülkemiz
+gibi toplulukçu kültürlerde anne babanın kontrol edici
+davranışları (oOergenin psikolojik (belirtileri ile ilişkili
+görünmektedir (örn. Sönmez, 2011). Ancak toplulukçu
+kültürlerdeki ergenler anne babanın kontrolünü daha olumlu
+olarak algılayabilmektedir (Başbuğ, Cesur ve Batıgün, 2016).
+Ebeveyn kontrolünün bazı çalışmalarda psikolojik belirtiler ile
+ilişkili (örn., Kurt, Sayıl ve Tepe, 2013) iken bazılarında ise
+psikolojik iyilik hali ile olumlu yönde ilişkili olduğu gibi tutarsız
+sonuçlar olduğu görülmektedir (örn. Sönmez, 2011). Ancak
+ebeveyn okontrolü davranışsal ove psikolojik (olarak
+ayrıştırıldığında, ebeveyn kontrolüne ilişkin daha tutarlı
+sonuçlar elde edilmektedir (Barber, Olsen ve Shagle, 1994).
+Ergen bireyin duygusal ve psikolojik gereksinimlerine karşı
+duyarsız tepkiler, psikolojik kontrol olarak tanımlanırken,
+davranışsal kontrol ise daha çok ergen bireye kural koyma,
+kurallara uymasını sağlayan denetimleme ve izleme gibi
+uygulamaları içermektedir (Barber, 1996). Aile sistemleri
+yaklaşımı temelinde psikolojik özerklik bireyselleşme /ayrışma
+
+ile (o ilişkiliyken o (Barber, 1996), psikolojik (kontrol
+
+yapışma/ayrışamamanın bir formu olarak öne sürülmektedir
+(Barber ve Buchler, 1996; Barber, Olsen ve Shagle, 1994).
+Dolaylı olarak kontrol ve müdahalecilik örtük ebeveynlik
+özellikleri iken, çocuğu yönlendiren sınırlama ve aşırı
+beklentiler, yüksek standartlar içerisinde olma, açık ebeveynlik
+özellikleri olarak ifade edilmektedir. Aşırı müdahalecilik ve
+yönlendiricilik gibi özellikleri içeren psikolojik kontrol, özerklik
+ihtiyacının yoğunlaştığı ergenlikte kendilik sisteminin gelişimini
+olumsuz yönde etkileyebilmektedir (Pettit, Laird, Dodge, Bates
+ve Criss, 2001). Ergenlik dönemindeki düşük kendine güven
+(Barber 2001; Conger, Conger ve Scaramella, 1997), düşük
+benlik saygısı (Garber, Robinson ve Valentiner, 1997), kimlik
+gelişiminde zayıflık (Hein ve Lewko, 1994) ve depresyon gibi
+içselleştirme problemleri ile psikolojik kontrol arasında güçlü
+ilişkiler olduğuna işaret edilmektedir (Barber, 1996; Bean,
+Barber ve Crane, 2001). Benzer şekilde ergenlik dönemindeki
+uyum sorunlarıile psikolojik kontrol arasında da yüksek ilişkiler
+olduğu görülmektedir (Barber, Bean ve Erickson, 2002).
+Psikolojik kontrol ile hem anne hem de babadan algılanan destek
+ve izleme arasında negatif yönde ilişki bulunmuştur. Ergen
+bireyin kimlerle, nerede ve ne yapıyor olduğu ile ilgili bilgiye
+sahip olan anne babalar ergeni uzaktan gözetim ve denetim
+
+altında tutarak olumlu kontrol stratejileri sergilediğinde, bu
+
+davranışların olumlu olduğunu düşünen ergenler daha az
+psikolojik kontrol algılamaktadır. Benzer şekilde ergen
+bireylerin ebeveyninden algıladığı destek arttıkça daha düşük
+düzeyde kontrol algılamaktadırlar (Sayıl ve Kındap, 2010). Pek
+çok kültürde ergenlerin davranışlarının uygun biçimde kontrolü
+olumlu sonuçlarla ilişkiliyken, ergenin benliğini kontrole yönelik
+uygulamalar ise olumsuz gelişimsel sonuçlarla ilişkili
+bulunmuştur (Barber, Stolz, Olsen ve Maughan, 2005; Shek,
+2007; Stewart ve ark. 1998; 1999; Stewart, Bond, Abdullah ve
+Ma, 2000). İnternet kullanımı ile ilişkili olarak ergen bireyler
+üzerinde yapılan bir araştırma sonucunda ise psikolojik kontrol
+ve problemli internet kullanımı arasında pozitif ilişki olduğu
+
+ortaya konulmuştur (Li, Li ve Newman, 2013).
+
+Erikson'a (1995, s.560) göre anne babaların çocuklarını
+aşırı koruması hatta ebeveynlerden birinin diğerinden
+koruması, Oo gelişimlerini (oOolumsuz yönde etkileyerek
+kendilerinden emin olamamalarına, dolayısıyla (o sosyal
+karşılaştırmalardan kaçınmalarına yol açabilmektedir. Bilişsel
+yaklaşım da çarpıtılmış ya da abartılı inançların varlığının
+bireyde sosyal ilişkilerden ve olumsuz duygulardan kaçınmalara
+
+yol açabileceği üzerinde durmaktadır.
+
+Duygulardan Kaçmanın En Kolay Yolu:
+İnternette Oyun Oynamak
+
+Duygu düzenleme becerilerinin ogelişimsel (o süreçte
+kazanıldığı ve psikolojik iyilik halinde önemli etkilerinin olduğu
+bilinmektedir (Gross ve Munoz, 1995). Gross'a (1998) göre duygu
+düzenleme, duygularımızı nasıl yaşadığımız, nasıl ifade ettiğimiz ve
+bu duyguları değiştirme çabamızı içerir ve duygu düzenlemenin
+temel amacının duygusal tepkileri değiştirmek olduğunu (Gross,
+2002) da ifade eder. Başka bir ifadeyle, duygu düzenleme,
+duyguların Oo tanınması, Oo izlenmesi, Oo değerlendirilmesi Oo ve
+
+değiştirilebilmesi süreçlerini içerir (Phillips ve Power, 2007).
+
+Duygu düzenleme güçlüğü, duygulara ilişkin farkındalığın
+olmaması, duyguların anlaşılamaması ya da tanınmaması ve kabul
+edilmemesi olarak tanımlanabilir. Duyguların işlevsel olmayan
+şekilde ifade edilmesi, diğer bir deyişle, olumsuz duygular yaşarken
+dürtü kontrolünde ve amaç odaklı davranışlara yönelmede zorlanma,
+işlevsel duygu düzenleme stratejileriyle duyguları değiştirmede
+güçlük yaşama olarak ifade edilebilir (Gratz ve Roemer, 2004).
+Phillips ve Power (2007) ergenlerin yalnızca duygu düzenleme
+güçlüklerini ve bilişsel duygu düzenlemelerini değil, aynı zamanda
+
+duygu düzenleme durumlarının bilişsel, duygusal ve davranışsal
+
+yönden işlevsel olup olmadığını hem içsel (bireysel) hem de dışsal
+(kişilerarası) oOkaynaklı etmenler üzerinde odeğerlendirmeyi
+amaçlamışlardır. İçsel ve dışsal işlevsel olmayan duygu düzenleme
+ile duygulanım belirtileri, davranım sorunları, akran sorunları ve
+psikosomatik belirtiler arasında pozitif yönde ilişki olduğu, sosyal
+davranış ve yaşam doyumu arasında ise negatif yönlü ilişki olduğunu
+bulmuşlardır. Diğer taraftan, içsel ve dışsal işlevsel duygu
+düzenleme ile sosyal davranış ve yaşam doyumu arasında pozitif
+yönde ilişki olduğu bulunurken; duygulanım belirtileri, davranım
+sorunları ve akran sorunları ile arasında negatif yönde ilişki olduğu
+
+bulunmuştur.
+
+Duygu düzenleyememenin birçok psikopatolojide ortak bir
+sorun olduğu bilinmektedir (Gross, 2002). Çocuk ve ergenlerdeki
+kaygı (Bender ve ark. 2012), depresyon, yeme bozuklukları gibi
+içselleştirilmiş bozukluklar (Aldao, Nolen-Hoeksema ve Schweizer,
+2010) ve depresif belirtiler (Beblo ve ark., 2012; Joormann, 2010)
+ile duygu düzenleme güçlükleri arasında anlamlı ilişkiler olduğu
+görülmektedir. Werner ve Gross (2010) birçok psikopatoloji ile
+ilişkili olan duygu düzenleme sorunlarının tedavide önemli bir rol
+oynayabileceği görüşünü ifade etmişlerdir. Hormes, Keams ve
+Timko (2014) tarafından yapılan araştırma ile sosyal medya
+bağımlılığı olan bireylerin daha fazla duygu düzenleme güçlüğüne
+
+sahip olduğu ortaya konulmuştur. İnsan yaşamında duygu iniş
+
+çıkışlarının en yoğun olduğu dönem olan ergenlikte duyguların
+işlevsel olarak düzenlenmesi hem bu gelişim süreci için hem de
+yetişkinlikte psikolojik sağlıklılıkta önemli role sahip olabilir. Aynı
+zamanda, aile yapı ve işlevleri açısından sorunlar yaşayan ergenlerin
+duygularını düzenleme biçimlerinin intemet oyun oynama
+bozukluğu üzerinde etkili olabileceği ortaya konulmuştur (Andiç,
+2019).
+
+En Önemli Kayıplardan Biri: Gerçek Akran İlişkileri
+
+Sosyal ilişkiler bağlamında, kendini diğerleri ile kıyaslama
+açısından internet kullanımı gençler arasında giderek artmıştır.
+Sosyal ağlarda alınan beğeni ya da paylaşımların niceliği, henüz
+katılaşmamış benlik şemalarını ergenlik ve genç yetişkinlik
+döneminde de etkileyebilmektedir. Bu bağlamda, internetteki sosyal
+ağlar, psikolojik sorunları olan üniversite öğrencilerinin akranları ile
+iletişim kurmasını sağlayan, yeni bir sosyal çevre oluşturmaktadır.
+Ancak bu sanal etkileşimlerin doğası ve etkileri ise henüz tam olarak
+anlaşılamamıştır (Odacı ve Çelik, 2013). Diğer taraftan, sosyal
+ağlarda artan sosyal karşılaştırmalara bağlı kendilik algısının
+psikolojik belirtiler için risk faktörü olduğunu ortaya koyan
+
+çalışmalara rastlanmaktadır (Örn., De Veries ve Kühne, 2015).
+
+Teknolojinin bu kadar etkin olmadığı dönemlerde, erken
+ergenlikle birlikte anne baba ve ergen arasındaki ilişkilerdeki
+
+çatışmalar artarken; kendilerini daha rahat ifade edebildikleri akran
+
+ilişkileri ise güçlenmekteydi. Bu yönelim zaman zaman anne ve
+babaları endişelendiren konular arasında yer alırdı. Son yıllarda ise
+ergen bireyin gerçek akran ilişkilerine yönelimi anne babayı
+rahatlatan davranışlar arasında yer alırken, ergenin ışık almayan
+odasından saatlerce, bazen günlerce çıkmayarak çevrimiçi
+oyunlardaki sanal ilişkilerle yetişkinlik sürecine hazırlanıyor oluşu,
+problemli internet kullanımı ya da internet oyun oynama bozukluğu
+gibi psikolojik belirtiler ile ilişkili farklı kaygıları gündeme
+
+getirmeye başlamıştır.
+
+Ergen bireylerin ergenlik dönemi denilen bu keşif sürecinde,
+özellikle aile içerisinde sınır arama çabası (Parman, 2010) ya da
+çatışmaların uygun şekilde çözümlenememesi (Gander ve Gardiner,
+2010) ya da anne babanın yaklaşımı aile sisteminin işleyişini
+bozabiliyor. Bu işleyişin ya da dengenin bozulması sonucu olarak da
+içsel problemler ve riskli davranışlar ortaya çıkabilmektedir (örn.,
+Farrell ve Barnes, 1993). Ergenlik süresince ebeveyn-çocuk
+ilişkilerinde çok fazla değişim meydana gelir. Oysaki ergenlerin,
+zamanlarının çok az bir kısmı aileleriyle geçerken, onların akran
+ilişkilerine ve ailenin dışındaki yaşantılara (De Goede, Branje ve
+Mecus, 2009; Larson ve ark. 1996), son dönemlerde özellikle de
+internet ile ilişkili etkinliklere dikkatleri giderek artmaktadır.
+
+Kanıta Dayalı Bakış: İnternet Oyun Oynama Bozukluğunun
+Önlenmesi
+
+Ailesel faktörler ile internet oyun oynama bozukluğu
+arasındaki anlamlı ilişkiler farklı araştırmalar ile ortaya konulmuştur
+(örn., Wu ve ark., 2016). Problemli çevrimiçi oyun oynama davranışı
+ve işlevsel olmayan aile uyumu olan ergenlik dönemindeki
+bireylerin ebeveynlerine bağlılığının daha az olduğu; aile uyumu
+zayıf olan ergenlerin, zayıf ebeveyn sevgisinden kaynaklanan temel
+psikolojik gereksinimlerini telafi etmek için çevrimiçi oyunları
+oynamaya yöneldiği şeklinde görüşlere rastlanmıştır (örn., Han ve
+ark., 2012). Ebeveyn-ergen ilişkilerinin kalitesindeki düşüklük,
+şiddetli çatışma, düşük aile işlevleri, ekran kullanımına ilişkin anne
+babalık yaklaşımları da dahil olmak üzere çok sayıda ailesel etmenin
+çocuk ve ergenlerin internet oyun oynama bozukluğu
+geliştirmesinde önemli sosyal faktörler olduğu vurgulanmaktadır
+(Yen ve ark., 2007). Ailesel ve psikolojik faktörlerin ergenlik
+döneminde internet oyun oynama bozukluğu açısından risk
+faktörleri olabileceğine ilişkin önerilen ve test edilen bir model
+Andiç (2019) tarafından sunulmuştur (bkz. Şekil 1). Model aile
+içerisinde bütünleşmeden uzaklaşılarak aile üyelerinden biriyle
+
+kurulan ikili ilişkiler, ergenin anne ve babasının arasında kalması,
+
+ergenin davranışlarına ilişkin anneden psikolojik kontrol algılaması,
+diğer taraftan babanın ekran kullanımına yönelik aşırı izin verici
+olması ya da sınırlar/yasaklar koymasının internet oyun oynama
+bozukluğu geliştirme riskini arttırdığını ortaya koymaktadır. Bu
+model ile babanın sınırlar ve yasaklar koyması ile anneden algılanan
+psikolojik kontrol sonucunda ergenin işlevsel olmayan duygu
+düzenleme becerilerini kullanarak kendisini belki de duygusal
+açıdan yatıştırmak için internet oyunlarına yöneliyor olabileceği
+
+söylenebilir.
+
+Özellikle duygu düzenleme açısından güçlük yaşayan 11-18
+yaş aralığındaki ergenlerin, gerçek yaşamda problem yaratabilecek
+yeni teknolojileri kullanma konusunda daha fazla eğilim gösterdiği
+ve teknoloji bağımlılığı açısından riskli grup olduğu ifade
+edilmektedir (Amendola ve ark., 2018). Ülkemiz açısından da 11-18
+yaş aralığı interet oyun oynama bozukluğu geliştirme riski
+açısından odaklanılması gereken gelişim dönemi olabilir. Diğer
+taraftan, ülkemizde internet ve intermet oyunlarının yaygınlaşmaya
+başladığı dönemin 2000'li yılların başları olduğu düşünüldüğünde,
+günümüzde erken ve orta ergenlik döneminde olan bireylerin
+bebeklik döneminden bu yana ekrana daha büyük yaş gruplarına
+göre daha fazla maruz kalan ve hatta "intemetle büyüyen çocuklar"
+olmaları, yaş grupları açısından daha riskli grup olmalarını
+
+açıklayabilir.
+
+Peki Erkekler mi Kadınlar mı Daha Bağımlı?
+
+Andiç (2019) intermet oyun oynama bozukluğu toplam
+puanlarının cinsiyet değişkeni açısından da anlamlı olarak
+farklılaştığı sonucuna ulaşmıştır. İnternet oyun oynama bozukluğu
+puanları cinsiyet değişkeni açısından incelendiğinde, erkeklerin
+daha yüksek puanlar aldıkları, bu bulgunun ilgili alanyazınla uyumlu
+olduğu görülmektedir (Örn., Batıgün ve Kılıç, 2011). İnternetin
+erkekler için erkekler tarafından geliştirilen; erkekleri bilgi ve
+eğlence açısından doyuma ulaştıran elektronik bir yol ve hatta erkek
+oyuncağı olarak ifade edildiği bilinmektedir (örn, Weiser, 2000).
+İnternet oyunları oynamanın yaygınlığının da araştırıldığı bir
+çalışmada, erkek ergenlerde (084.7) kadın ergenlere (442.8) göre
+internet oyunları oynama sıklığının daha fazla olduğu; bozukluk
+açısından bakıldığında da araştırmaya katılan tüm Avrupa ülkeleri
+için erkeklerin kadınlardan daha fazla internet oyun oynama
+bozukluğu tanı ölçütlerini karşıladığı ortaya konulmuştur (Müller ve
+ark., 2015). Kelleci ve arkadaşları (2009) tarafından lise öğrencileri
+ile yürütülen araştırma sonuçları da internet kullanım sıklığının
+erkeklerde kadınlardan 4 kat daha fazla olduğunu göstermektedir.
+Paralel şekilde, Weiser (2000) tarafından yürütülen araştırma
+sonuçları ise kadınların interneti öncelikli olarak kişilerarası iletişim
+ve eğitim amacıyla kullanırken, erkeklerin interneti çoğunlukla
+eğlence ve boş zaman etkinliği amacıyla kullandığını ortaya
+
+koymuştur.
+
+Anne Babaların Yüksek Eğitim Düzeyi Bir Kurtarıcı Olabilir
+mi?
+
+Geleceğimiz olan gençlerimizin sağlıklı bireyler olması için
+alınabilecek ne gibi önlemler olabilir? Tek bir kurtarıcı olsa da tüm
+kaygılarımız ortadan kalksa. Ancak ne yazık ki heterojen doğası ile
+bilinen intermet oyun oynama bozukluğunun önlenmesini sağlayacak
+bir reçete sunabilmek oldukça zor. Ancak tam da böyle bir reçete
+sunabilmek umuduyla Andiç (2019) ergenlerin anne ve baba eğitim
+düzeyinin internet oyun oynama bozukluğu üzerindeki etkilerini
+incelemiştir. Yalnızca anne eğitim düzeyi temel etkisinin anlamlı
+olduğu görülmüştür. Anne eğitim düzeyine göre karşılaştırılan
+internet oyun oynama bozukluğu puanlarına ilişkin bulgular
+incelendiğinde, annesi lisans ve üzeri eğitim düzeyine sahip olan
+katılımcıların annesi ilkokul ve ortaokul mezunu olan
+katılımcılardan daha yüksek internet oyun oynama bozukluğu
+puanları aldıkları; annesi lise ve yüksekokul mezunu olan
+katılımcıların da annesi ilkokul mezunu olan katılımcılardan daha
+yüksek internet oyun oynama bozukluğu puanları aldıkları sonucuna
+ulaşılmıştır. Benzer şekilde internet bağımlılığı puanlarının anne
+eğitim düzeyine göre karşılaştırıldığı bir çalışmada anne eğitim
+düzeyi üniversite olan ergenlerin en yüksek internet bağımlılığı
+puanlarını alırken, en düşük intemet bağımlılığı puan ortalamasını
+anne eğitim düzeyi "okur yazar olmayan" ergenlerin aldığı ortaya
+
+konulmuştur (Büyükşahin Çevik ve Çelikkaleli, 2010). Beklenilenin
+
+aksine eğitim seviyesi yüksek annelerin risk oluşturması
+toplumumuz açısından önemli bir farkındalık da yaratabilir. Ancak
+eğitim seviyesi yüksek olan annelerin ekonomik gücün daha fazla
+olması dolayısıyla evde tablet, akıllı telefon ya da diğer teknolojik
+aletlere daha kolay ulaşma imkânı sağlaması da ergenlerin internet
+oyun oynama bozukluğu geliştirmeleri açısından risk yaratıyor
+
+olabilir.
+
+Baba eğitim düzeyi açısından internet oyun oynama
+bozukluğu incelendiğinde, babanın eğitim düzeyine göre intemet
+oyun oynama bozukluğu puanlarının anlamlı şekilde farklılaşmadığı
+sonucuna ulaşılmıştır. Ancak farklı bir araştırmada 14-19 yaş
+aralığındaki katılımcılar ile yürütülen araştırma sonucunda internet
+bağımlılığı geliştirme açısından, babanın eğitim düzeyinin annenin
+eğitim düzeyinden neredeyse iki kat daha belirleyici olduğu ortaya
+konulmuştur (Ahmadi ve Saghafi, 2013). Diğer taraftan, eğitim
+seviyesi düşük ebeveynlerle yaşayan ergenlerin problemli internet
+kullanıcısı olma olasılığının daha yüksek olduğuna ilişkin bulgulara
+da rastlanmıştır (Örn., Liu ve ark. 2012). Anne ve baba eğitim düzeyi
+açısından internet bağımlılığı puanları arasında anlamlı farklılık
+olmadığına ilişkin araştırmalara da rastlanmış olması (örn.,
+Gökçearslan ve Günbatar, 2012), anne ve baba eğitim düzeyleri ile
+internet oyun oynama bozukluğu geliştirme riski açısından daha
+
+fazla araştırma yapılmasına gereksinim olduğunu düşündürmektedir.
+
+Anne Babaların Ne Söylediği Değil Ne Yaptığı mı Önemli?
+Model alma ergen davranışlarını belirleyen önemli faktörler
+arasındadır. Dolayısıyla, anne babanın kurallar ya da sözlü
+uyarılarından; ne söylediklerinden daha çok ne yaptıkları, nasıl
+davrandıklarının önemli olduğu söylenebilir. Andiç (2019) internet
+oyun oynama bozukluğu puanlarını anne ve baba intemet kullanım
+sıklığı açısından incelediğinde, annesinin çok sık internete girdiğini
+ifade eden katılımcıların, annesinin intemete hiç girmediğini ifade
+eden katılımcılardan daha yüksek internet oyun oynama bozukluğu
+puanları aldıklarını ortaya koymuştur. Babasının internete çok sık
+girdiğini ifade eden katılımcıların ise hem babasının internete hiç
+girmediğini hem de bazen internete girdiğini ifade eden
+katılımcılardan daha yüksek internet oyun oynama bozukluğu
+puanları aldıkları ve bu puan farklılıklarının anlamlı olduğunu ifade
+etmektedir. Liu ve arkadaşları (2012) tarafından yürütülen araştırma
+sonuçları, ebeveyn normları ile davranışları farklılık gösterdiğinde,
+normlardan daha çok ebeveyn davranışlarının problemli internet
+kullanımının belirleyicileri arasında olduğunu ortaya koymuştur.
+Aynı zamanda, internette çok sık zaman geçiren anne ya da babaların
+diğer aile üyeleriyle daha az zaman geçireceği de düşünülmelidir. Bu
+görüşü destekler nitelikte, düşük ebeveyn ergen ilişkisi ya da
+iletişimi ile ergenlerde problemli internet kullanımı arasında ilişki
+olduğunu gösteren alışmalara rastlamak mümkündür (Ömn., Liu ve
+ark. 2012; Park ve ark., 2008).
+
+İnternet Oyun Oynama Bozukluğuna Giden Yoldaki Taşları
+Tanımak
+
+Andiç (2019) ortaya koyduğu araştırma sonuçları ile aile
+içerisindeki koalisyonlar, anne babadan algılanan psikolojik kontrol,
+sınırlayıcı ya da aşırı izin verici anne babalık yaklaşımları ve bireyin
+işlevsel olmayan duygu düzenleme becerilerini kullanması gibi
+psikososyal faktörlerin internet oyun oynama bozukluğu üzerinde
+anlamlı etkilerinin olduğunu ortaya koymuştur. Parçalanmış aile,
+aile çatışmaları ve düşük aile işlevselliği gibi kötü koşulların ergenin
+internet bağımlılığı ile ilişkili olduğu farklı araştırmacılar tarafından
+da raporlanmıştır (örn., Niaz ve ark., 2005). İşlevsel olmayan ailesel
+faktörlerin davranış problemleri altında gruplandığına işaret eden
+hem madde kullanımı hem de intermet bağımlılığı ile ilişkili
+olduğunu gösteren araştırma sonuçları da konunun önemine dikkat
+
+çekmektedir (Örn., Yen, Yen, Chen ve Ko, 2007).
+
+Psikolojik kontrol ebeveyn-çocuk ilişkilerinde zararlı bir
+unsur olarak kabul edilir; çünkü duygusal açıdan tehdit, suçluluk
+hissettirme, sevmekten vazgeçme gibi stratejilerin kullanılması
+psikolojik (istismara neden olan müdahaleci davranışları
+içermektedir (Leön-del-Barco ve ark., 2019). Andiç (2019) de
+internet oyun oynama bozukluğu ile anneden ve babadan algılanan
+psikolojik kontrol arasında pozitif yönde anlamlı ilişkiler olduğu
+sonucuna ulaşmıştır. Li, Li ve Newman (2013) tarafından, yaş
+
+ortalaması 13.67 olan 694 ergen birey ile yürütülen araştırma
+
+sonucunda, psikolojik kontrolün bir türü olan sevgiyi kaybetme ile
+problemli internet kullanımı arasında pozitif yönde ilişki olduğu
+bulunmuş, ebeveynlerin sınırlamayı içeren davranışsal kontrolleri ile
+problemli internet kullanımı arasında ise negatif yönde ilişki olduğu
+bulunmuştur. Diğer taraftan araştırmacıların beklentilerinin aksine,
+talepkarlık gibi davranışsal kontrol ve suçlama, otoriter davranma
+gibi psikolojik kontrol boyutlarının problemli internet kullanımı ile
+anlamlı ilişkiler göstermediği de ortaya konulmuştur. Başka bir
+araştırma sonucu ise internet oyun oynama bozukluğu belirtileri
+gösteren ergenlere tepkisel şekilde verilen yanıtların onların internet
+oyun oynama bozukluğu belirtilerini daha da arttırdığını ortaya
+koymuştur (Koning ve ark., 2018). Dolayısıyla psikolojik kontrol
+algısı ile problemli intemet kullanımı ve intemet oyun oynama
+bozukluğu arasındaki ilişkileri inceleyen araştırma sonuçlarının
+tutarlı olmadığı; bu konuda daha fazla araştırma yapılmasına ihtiyaç
+
+duyulduğu söylenebilir.
+
+Andiç (2019) tarafından incelenen anne babalık yaklaşımları
+ile internet oyun oynama bozukluğu arasındaki ilişkiler ise internet
+oyun oynama bozukluğu ile sınırlayıcı annelik ve babalık, aşırı izin
+verici annelik ve babalık ile odaklanmamış babalık yaklaşımları
+arasında pozitif yönde anlamlı ilişkiler olduğunu; değerlendirici ve
+odaklanmamış annelik ile değerlendirici babalık yaklaşımları
+
+arasındaki ilişkilerin ise anlamlı olmadığını ortaya koymuştur. Yaş
+
+ortalaması 12.03 olan erken ergenlik dönemini kapsayan bir
+araştırma sonucunda, çocuklarının duygusal gereksinim ve ilgilerini
+gözlemlemeyi içeren ebeveyn izleme ile internet oyun oynama
+bozukluğu arasında anlamlı ilişkiler olduğu bulunmuştur (Su ve ark.,
+2018). Koning ve arkadaşları (2018) tarafından yürütülen bir
+araştırma sonucunda ise internete özgü ebeveynlik ile internet oyun
+oynama bozukluğu arasında çift yönlü ve anlamlı ilişkiler olduğunun
+anlaşılması ile ailenin psikolojik ya da davranışsal kontrollerinin
+psikolojik sorunlar konusunda önemli bir risk faktörü ya da
+koruyucu faktör olabileceği söylenebilir. Aile üyeleri arasındaki
+ilişkilerin, duygusal bağların niteliğinin, ergenin aile içinde hissettiği
+destek ya da suçlanmanın yanı sıra ailenin ergenin ihtiyaç duyduğu
+değişimlere kendini adapte etme esnekliğinin, ergenin internet oyun
+
+oynama bozukluğuna ilişkin eğilimini arttırabileceği söylenebilir.
+
+Ülkemizde, internet bağımlılığı ile internet oyun oynama
+bozukluğunun gelişmesinde ya da önlenmesinde aile işlevinin ve
+ebeveynlik (o yaklaşımlarının o etkililiğine (yönelik o araştırma
+gereksiniminin oldukça fazla olduğu bilinmektedir. Bu bağlamda,
+erken, orta ve geç ergenlik dönemlerinde, internet oyun oynama
+bozukluğu üzerinde ailedeki koalisyonlar (ikili ilişkiler), ergenin
+anneden algıladığı psikolojik kontrol, babalık yaklaşımları ve
+işlevsel olmayan duygu düzenleme biçimlerinin doğrudan ve dolaylı
+
+etkilerine ilişkin üç farklı model önerilmiştir.
+
+Ergen baba
+koalisyonu
+
+İşlevsel olmayan İnternet Oyun
+dışsal duygu Oynama
+düzenleme Bozukluğu
+
+Anneden
+algılanan
+
+psikolojik kontrol
+
+Aşırı izin verici
+baba yaklaşımı
+
+Şekil 1. Erken Ergenlik Dönemi (11-14 yaş) İnternet Oyun Oynama Bozukluğuna
+İlişkin Test Edilen Model (Andiç, 2019)
+
+11-14 yaş grubunu ifade eden erken ergenlik dönemine
+ilişkin olarak, ergen ve babanın anneye karşı iş birliği içerisinde
+olması, ergenin anneden algıladığı psikolojik kontrol ve aşırı izin
+verici babalık yaklaşımı öncül değişkenler; işlevsel olmayan dışsal
+duygu düzenleme aracı değişken olarak internet oyun oynama
+bozukluğunu açıklamaya çalışan bir model önerilmiştir. Modelin test
+edilmesi sonucunda, uyum indekslerinin tüm değerler açısından iyi
+olduğu görülmüş ve model doğrulanmıştır. Modele ilişkin yapılar
+incelendiğinde, işlevsel olmayan dışsal duygu düzenlemenin, ergen
+ile babanın anneye karşı iş birliği içerisinde olması ve ergenin
+anneden psikolojik kontrol algılaması ile internet oyun oynama
+bozukluğu arasında aracı rolünün olduğu görülmektedir. Aşırı izin
+
+verici babalık yaklaşımı ise internet oyun oynama bozukluğunu
+
+doğrudan yordamaktadır. Anne ve babalar internet oyunlarına erişim
+konusunda, ayrı ayrı ya da birlikte sınırlandırma yapmaya
+başladıklarında, çocukları onların kuralları esnetmeleri ya da geri
+adım atmaları konusunda, babalarının interneti ya da ekran
+kullanımını en güçlü savunmaları olarak kullanabilirler (Lynn ve
+Johnson, 2018, s.177). Bu noktada da internet kullanımından
+vazgeçmek istemeyen babalar kaçınılmaz şekilde, ergen bireyler ile
+anneye karşı işbirliği içine girebilmektedirler. Ayas ve Horzum
+(2013) tarafından ilköğretim öğrencileri ile yürütülen araştırma
+sonucunda, internete yönelik ihmal eden tutuma sahip ailelerin
+çocuklarının otoriter, izin verici ve demokratik internet tutumuna
+sahip ailelerin çocuklarından daha fazla internet bağımlılığı
+özellikleri gösterdiği ortaya konulmuştur. İhmal eden tutuma sahip
+anne ve babaların genellikle çocukların yiyecek ve giyecek
+ihtiyaçlarını karşıladığı, ancak duygusal yönden onlara ilgi ve
+yakınlık göstermediği; günümüzde de her türlü teknolojik aleti
+çocuğuna alan anne babaların "üzerine düşeni yapan anne-baba"
+olarak teknolojik gereksinimleri karşıladıkları görülmektedir.
+Velayetin paylaşıldığı oçocuklarla ilgili yapılan gözlemler
+sonucunda, ekran karşısında zaman geçirmenin daha çok babanın
+evinde olduğu; annelerin ise babalara göre çok daha güçlü sınırlar
+koyduğu, bu nedenle de babanın evinden annenin evinde
+dönüldüğünde, annenin ergen çocuğun şiddetine maruz kaldığı ifade
+
+edilmektedir. Diğer bir ifadeyle, babanın aşırı izin vericiliği ile
+
+babanın evindeyken sürekli internet oyunları oynamak doğrudan;
+annenin evindeyken suçlanma ya da eleştiriliyor olmak, duygu
+düzenleme güçlüklerinin aracılığıyla İOOB"na yol açabilmektedir
+
+(Lynn ve Johnson, 2018, 5.176).
+
+Ergen Anne |
+Koalisyonu —
+— 2 İşlevsel olmayan
+
+İnternet Oyun
+içsel duygu Oynama
+
+N İ düzenleme Bozukluğu
+Anneden i
+algılanan |
+
+psikolojik kontrol
+
+Sınırlayıcı
+babalık yaklaşımı
+
+Şekil 2. Orta Ergenlik Dönemi (15-18 yaş) İnternet Oyun Oynama Bozukluğuna
+İlişkin Test Edilen Model (Andiç, 2019)
+
+15-18 yaş grubunu ifade eden orta ergenlik dönemine ilişkin
+olarak, ergen ve annenin babaya karşı iş birliği içerisinde olması,
+ergenin anneden algıladığı psikolojik kontrol ve sınırlayıcı babalık
+yaklaşımı öncül değişkenler; işlevsel olmayan içsel duygu
+düzenleme aracı değişken olarak, internet oyun oynama
+bozukluğunu açıklamaya çalışan bir model önerilmiştir. Modelin test
+edilmesi sonucunda, uyum indekslerinin tüm değerler açısından iyi
+olduğu görülmüş ve orta ergenlik dönemi için önerilen model
+
+doğrulanmıştır. Modele ilişkin yapılar incelendiğinde, işlevsel
+
+olmayan içsel duygu düzenlemenin, ergen ile annenin babaya karşı
+iş birliği içerisinde olması ve ergenin anneden psikolojik kontrol
+algılaması ile interet oyun oynama bozukluğu arasında aracı
+rolünün olduğu görülmektedir. Sınırlayıcı babalık yaklaşımı ise
+internet oyun oynama bozukluğunu doğrudan yordamaktadır. Bu
+bulguyu paralel şekilde, ülkemizde 14-19 yaş aralığındaki ergen
+bireylerle gerçekleştirilen araştırma sonucunda, internet bağımlılığı
+puanlarının anne baba tutumlarına göre anlamlı şekilde farklılaştığı;
+anne babalarının otoriter tutuma sahip olduğunu ifade eden ergen
+bireylerin internet bağımlılık düzeylerinin, anne babalarının
+demokratik anne baba tutumuna sahip olduğunu ifade eden ergen
+bireylerden daha yüksek olduğu ortaya konulmuştur (Taş, 2018).
+Xiugin ve arkadaşları (2010) tarafından yürütülen araştırmada ise
+internet bağımlılığı olan ergenler, anne ve babalarının ebeveynlik
+tarzlarını sürekli olarak müdahaleci, cezalandırıcı ve yanıt vermek
+konusunda isteksiz ve yetersiz olarak değerlendirmiş; aile işlevlerine
+ve ebeveynlik yaklaşımlarının etkilerine dikkat çekmişlerdir. Diğer
+taraftan, anne babalar tarafından ergenin oyun davranışlarına tepki
+olarak yapılan sınırlamalar ve internete yönelik konulan kuralların
+internet oOoyun oynama bozukluğu belirtilerinin düzeyini
+yordamaması (Koning ve ark., 2018) ve problemli oyun oynama
+davranışları üzerinde kısıtlamanın bir etkisinin bulunmaması (Choo
+ve ark., 2015) şeklindeki araştırma sonuçlarına da rastlanmıştır. Bir
+diğer görüş ise sınırlayıcı ebeveynliğin internet oyun oynama
+
+bozukluğu riskini azaltmada etkili bir yol olmadığı, ancak internet
+oyun oynama bozukluğu riskini de arttırmadığı şeklindedir (örn.
+Benrazavi, Teimouri ve Griffths, 2015; Koning ve ark., 2018).
+Babanın sınırlar, yasaklar koyması ve anneden algılanan psikolojik
+kontrol sonucunda ergen içsel işlevsel duygu düzenleme
+yapamayarak diğer bir ifadeyle kendisini duygusal açıdan
+
+yatıştırmak için internet oyunlarına yöneliyor olabilir.
+
+inne buba İşlevsel olmayan
+koali dışsal duygu
+öleli düzenleme
+İnternet Oyun
+Oynama
+Bozukluğu
+Aşırı izin verici İşlevsel olmayan
+babalık yaklaşımı içsel duygu
+düzenleme
+
+Şekil 3. Geç Ergenlik Dönemi (19-23 yaş) İnternet Oyun Oynama Bozukluğuna
+İlişkin Test Edilen Model (Andiç, 2019)
+
+19-23 yaş grubunu ifade eden geç ergenlik ya da beliren
+yetişkinlik dönemine ilişkin olarak, anne ve babanın ergene karşı iş
+birliği içerisinde olması ve aşırı izin verici babalık yaklaşımı öncül
+değişkenler; işlevsel olmayan içsel ve dışsal duygu düzenlemenin
+aracı değişkenler olduğu, internet oyun oynama bozukluğunu
+açıklamaya çalışan bir model önerilmiştir. Modelin test edilmesi
+
+sonucunda, uyum indekslerinin tüm değerler açısından iyi olduğu
+
+görülmüş ve model doğrulanmıştır. Modele ilişkin yapılar
+incelendiğinde, anne ve babanın ergene karşı iş birliği içerisinde
+olması ile internet oyun oynama bozukluğu arasındaki ilişkide
+işlevsel olmayan içsel ve dışsal duygu düzenlemenin, aracı rollerinin
+olduğu görülmektedir. Aşırı izin verici babalık yaklaşımı ile internet
+oyun oynama bozukluğu arasındaki ilişkide ise işlevsel olmayan
+içsel duygu düzenlemenin aracı rolünün olduğu görülmektedir. Bu
+dönemde aileden ayrışma aşamasında olan genç yetişkinler anne ve
+babanın onlara karşı kurduğu koalisyon nedeniyle, anne ve
+babalarıyla olan ilişki ve iletişimlerinin niteliği giderek azalabilir;
+anne babadan duygusal uzaklaşma ve beraberindeki işlevsel
+olmayan duygu düzenleme biçimleri aracılığıyla internet oyunlarına
+daha fazla yönelmeye başlayabilirler. Diğer iki modelde (erken ve
+orta ergenlik döneminde) babanın aşırı izin verici ya da sınırlayıcı
+yaklaşımı İOOB"nu doğrudan yordarken, geç ergenlik döneminde
+ise işlevsel olmayan içsel duygu düzenleme aracılığı ile yordamıştır.
+Babanın aşırı izin verici olan yaklaşımı ilişkilerin azalması ya da
+iletişimlerin açık olmaması gibi nedenlerle babanın genç yetişkine
+karşı ilgisiz olması anlamını da taşır ki içsel işlevsel olmayan duygu
+düzenleme aracılığıyla kaçış yolu olarak yine internet oyunlarına
+yönelebilirler. Erken ve orta ergenlik dönemine ilişkin önerilen
+modellerde anneden algılanan psikolojik kontrolün etkisi
+görülürken, genç yetişkinlik döneminde anlamlı ilişki görülmemesi
+nedeniyle modelden çıkarılmıştır. Bu farklılık, özerkleşme
+
+sürecinde, annenin psikolojik kontrolünün etkisinin azaldığı ya da
+erken ve orta ergenlik döneminde psikolojik kontrolün genç
+yetişkinlik dönemine göre daha olumsuz etkisi (Pettit ve ark., 2001)
+olabileceği şeklinde yorumlanabilir. Ancak bu yaş grubu için henüz
+yetişkinlik sürecinin tamamlanmamış olduğu da dikkatten
+kaçmamalıdır. Yuan ve ark. (2016) tarafından yapılan bir
+araştırmada internet oyun oynama bozukluğu olan genç yetişkinlerin
+beyin ağları arasındaki anormal etkileşimler ve bozulan yapıların
+bilişsel kontrolün azalmasına aracılık etmiş olabileceği ortaya
+konulmuştur. Dolayısıyla erken yetişkinlik dönemi de en az erken ve
+orta ergenlik dönemi kadar internet oyun oynama bozukluğu
+
+açısından önemsenmesi gereken bir gelişim dönemidir.
+
+Bu Modeller Bize Neler mi Fısıldıyor?
+
+Üç ayrı yaş grubuna ilişkin model birlikte
+değerlendirildiğinde, internetin ve internet oyunlarının gün geçtikçe
+yaygınlaşmaya başladığı ülkemizde, İOOB belirtileri yüksek olan
+ergen ve aileleri ile yapılan klinik görüşme sonuçlarında (örn., Lynn
+ve Johnson, 2018), babaların çocuklarına ekran kullanımı konusunda
+aşırı izin verici olmasına ek olarak, annelerin teknoloji kullanımına
+yönelik kurallar koymak istediğinde, ergen baba arasında anneye
+karşı koalisyonlar kurulduğu gözlenmektedir. Diğer taraftan,
+ergenlik dönemindeki bireylerin çok uzun süreler internet oyunları
+
+oynuyor olmaları anne babalık yaklaşımlarını da şekillendiriyor
+
+olabilir. Ekran kullanımına yönelik olarak konulan kurallara
+uyulmadıkça, anneler örtük mesajlar iletmekte; ergenlerin
+kendilerini suçlu hissetmesini sağlayarak, uygun gördükleri şekilde
+davranmaları konusunda onlara psikolojik kontrol
+uygulayabilmektedir. Lise dönemine gelindiğindeyse internette
+geçirilen sürenin artmasına bağlı olarak, akademik başarılar
+düşmekte, aile içerisindeki çatışmalar arttıkça babalar yasak koyma
+gereksinimi içine girmekte; aşırı izin vericilikten sınır ve yasaklar
+koyan babalık yaklaşımına doğru eğilim artmaktadır. Anneler ise
+içinde bulunulan süreçten babaları da suçlar hale gelmektedirler.
+Diğer taraftan babanın katı kuralları ile karşı karşıya kalan orta
+ergenlik dönemindeki bireyler bu süreçte babaya karşı anne ile
+işbirliği içinde olmaya başlamaktadırlar. Özerkleşme sürecinde, orta
+ergenlik dönemi tam olarak konulan kuralların yıkılmaya çalışıldığı,
+engellerin kaldırılmasının nihai amaç olduğu bir gelişim dönemidir.
+Ergenin öfke ve zıtlaşmasının arttığı bu dönem aynı zamanda,
+ergenin üniversiteye hazırlanma sürecidir. Ergen bireyin internet
+kullanımına ilişkin sorunları arttıkça anne ile baba arasındaki
+koalisyon güçlenebilir. Ancak babanın yeniden aşırı izin verici
+olmaya başlaması ise internet oyun oynama bozukluğu açısından
+riskleri arttırabilmektedir. Bu süreçte aile içerisinde bütünleşmeden
+uzaklaşılması, aşırı izin verici babalık yaklaşımının belki de ihmal
+ve ilgisizlik olarak algılanması ya da babanın "aşırı izin verici olmak
+ya da yasaklar koymak arasında gidip geldiği" tutarsız yaklaşımlar
+
+sergilemesi, ergenin duygularını düzenleyememesine ve beraberinde
+
+internet oyun oynama bozukluğuna yol açıyor olabilir.
+
+Ergenlerin oyun oynama davranışlarının sıklığı ve süresi
+arttıkça anne babalar bir tepki olarak oyunlar hakkında soru sormak
+ve daha fazla bilgi talep ederek oyun davranışları hakkında daha
+fazla bilgi sahibi olmak isteyebilirler (Koning ve ark., 2018). Ancak
+önce aşırı izin verici davranıp, sonrasında sınırlamalar ve kurallar
+getirmek şeklindeki yaklaşımlar destekleyici ya da etkileşimli bir
+iletişim ya da ebeveynlik yaklaşımı olmadığından, ergenler için
+internette oyun oynama davranışlarının artmasına yol açabilir (Yen,
+Yen, Chen, Chen ve Ko, 2007). Birçok anne ve baba çocuklarının
+ekran karşısında çok fazla zaman geçirmesine bağlı olarak sosyal ve
+duygusal gelişimleri açısından, gerekli uyaranlardan uzak
+kaldıklarını ifade etmelerine karşın; ergenlik döneminde gelişim
+dönemine özgü olarak ortaya çıkan "her şeye muhalif olma",
+"memnuniyetsizlik" ve "dürtüselliğin" aile içerisinde yaratacağı
+huzursuzluktan korkar ve kaçınmak isterler. Bu korku ve kaçınma
+isteği de anne ve babaların çocuklarının internette oyun oynama
+sürelerini sınırlandırmakta zorlanmalarının zeminini
+oluşturabilmektedir (Lynn ve Johnson, 2018, 5.194). Ergenlerle
+yürütülen bir çalışmada, oyun oynama davranışı olan ergenlerin
+ebeveynleriyle daha fazla çatışma yaşadıkları ve daha sonra
+
+ebeveynlerin kısıtlayıcı önlemler alarak sorunlu internet kullanımına
+
+daha etkin şekilde müdahale ettikleri rapor edilmiştir (Yen, Yen,
+Chen, Chen ve Ko, 2007). Sonradan gelen kurallar ve müdahaleler,
+ergen bireyler açısından bir çeşit cezalandırılma algısı yaratıyor
+olabilir. Oysaki işbirliği kurmak ergenlik dönemindeki bireylerle
+yeniden ilişki kurabilmede çok daha etkili bir yöntemdir. Çünkü
+cezalandırılma algısı da özerkleşme sürecindeki bireylerin öfkelerini
+arttırabilir. Diğer taraftan, baba ya da anne internet oyunlarını
+oğulları ya da kızlarıyla birlikte oynadıklarında, onlarla aralarında
+hızlıca bir bağ kurulabilir; çocukların bakış açısıyla bakabilmeleri
+sağlanırken, kurulan ilişki onların sınır koymalarını da
+
+kolaylaştırabilir.
+
+İnternet Oyun Bozukluğu ile Nasıl Başa Çıkmalı?
+
+Andiç (2019) ülkemizde geniş bir örneklem üzerinde
+yürüttüğü araştırması ile ergenlik dönemi internet oyun oynama
+bozukluğuna (İOOB) ilişkin tanı, değerlendirme ve müdahale
+sürecinde, cinsiyetin erkek olması, annenin eğitim düzeyinin yüksek
+olması, anne ve babanın internet kullanım sıklığının fazla olması,
+aile yapı ve işlevleri temelinde ebeveyn-çocuk ilişki niteliği, ergenin
+ekran kullanımına ilişkin anne ve babanın yaklaşımları gibi
+psikososyal faktörlerin göz önünde bulundurulmasının son derece
+önemli olduğu ortaya konulmuştur. Koruyucu olabilecek faktörlerin
+ve olası risk faktörlerinin ortaya konulmasına ek olarak, 11-23 yaş
+aralığında, erken, orta ve geç ergenlik dönemlerinin enlemesine
+kesitsel yaklaşımla karşılaştırılması ile alana önemli katkılar
+sunulduğu görülmektedir. Çalışmanın sonuçları doğrultusunda, 11-
+23 yaş aralığındaki normal örneklemde riskli grup olduğu öngörülen,
+11-18 yaş aralığındaki ergenlerin kendilerine ve anne baba algılarına
+ilişkin sonuçlar oldukça dikkat çekicidir. Hem anne babalar hem de
+çocuklar için ekran kullanım sıklığı göz önüne alındığında, araştırma
+bulgularını destekler nitelikte, evde bir akşam yemeğinde ya da
+dışarıda parkta, deniz kenarındayken dahi yaşamın "gerçek"ten sanal
+
+bir noktaya doğru evrildiği gözlenmektedir. Dolayısıyla bireylerin
+
+normalleşen bu sanal sürecin etkilerinin farkına varması da zaman
+almaktadır. Erken ergenlik dönemindeyken genellikle babalar ekran
+kullanımı konusunda aşırı izin verici yaklaşımlar sergilerken,
+annelerin ise rahatsızlık ya da memnuniyetsizliklerini örtük
+şekillerde, imalarla, yüksek beklentiler ya da suçlayarak ifade
+etmelerinin; bir taraftan da baba ergen arasında anneye karşı işbirliği
+içerisinde olunmasının inteemet oyun oynama bozukluğu
+
+geliştirilmesi açısından risk faktörü olabileceği söylenebilir.
+
+Erken ergenlikten orta ergenlik dönemine geçiş sürecinde,
+ergenlerin anne ve babalarından uzaklaşmaya başlaması ya da
+liselere giriş sınavlarında başarısızlık ile birlikte okul arayışı belki
+de internet oyun oynama bozukluğuna ilişkin anne babaların
+farkındalığını arttırarak ekran kullanımına ilişkin sınırlamaları da
+beraberinde getirmektedir. Ancak anne babaların da interneti ya da
+ekranlı teknolojik aletleri çok sık kullanıyor olmalarının, onların
+kabul ve müdahale sürecini geciktirdiği düşünülmektedir. Akademik
+başarının öneminin arttığı orta ergenlik döneminde, babalar sınır ve
+kurallar ile aile içerisindeki rollerini vurgularken, ergenin babaya
+karşı anne ile işbirliği içerisine girme zorunluluğu, annenin suçlu
+hissettirmesine yol açan psikolojik kontrolüne maruz kalma sıklığını
+da arttırabilir. Bu durum içsel işlevsel olmayan duygu düzenlemenin
+aracılığıyla internet oyun oynama bozukluğu için risk
+
+oluşturabilmektedir. Diğer bir ifadeyle, baba yasaklar koyarken anne
+
+suçlu hissettirmesine rağmen, ergen bireyin bu süreçle başa
+çıkabilmek için anne ile işbirliği içine girmek zorunda kalmasının da
+etkisiyle başına olumsuz bir olay geldiğinde, "Kendime zarar
+verecek veya kendimi cezalandıracak bir şey yaparım. Başkalarının
+benden iyi durumda olduğunu düşünerek kendimi daha kötü
+hissederim." şeklindeki davranışları içeren işlevsel olmayan içsel
+duygu düzenleme biçimlerini kullanmaları, beraberinde internet
+
+oyunlarına yönelimlerini arttırabilmektedir.
+
+Aile yapı ve işlevleri (aile içerisindeki ilişkiler, üçgenleşme
+ya da bütünleşme) gibi ailesel ya da ergenin duygu düzenleme
+biçimleri (işlevsel ya da işlevsel olmayan) ile kendilik algısı gibi
+bireysel özelliklerin İOOB'yi açıklamaya yönelik yalnızca 9025
+oranında açıklama getirmiş olması, İOOB'nin heterojen yapısına
+ilişkin olarak da bir bakış açısı sunmaktadır. Dolayısıyla, diğer
+psikolojik belirtilerin yanı sıra İOOB açısından yapılacak klinik
+değerlendirmelerde, bireye özgü ancak aile yapı ve işlevlerinin de
+inceleneceği kapsamlı bir değerlendirme yapılmasının son derece
+önemli olduğu düşünülmektedir. Ancak, İOOB açısından riskli
+gruplarda, bireylerin kendilerini objektif değerlendirmelerinin
+güvenilir olmayabileceği; ergen bireyle yapılacak bireysel
+görüşmelere ek olarak, aile ve öğretmen görüşmelerinin de yer aldığı
+çoklu değerlendirme yöntemlerinin kullanılması da bir gereklilik
+
+olarak karşımıza çıkabilir.
+
+Aile sistemi içerisinde, aile üyeleri arasındaki ilişkiler
+açısından İOOB gibi olumsuz sonuçların oluştuğu bir döngü
+durumunda, bu döngünün farkında olunması oldukça önemlidir. Bu
+döngülerin kırılmasında aile terapi yaklaşımları ile gerekli
+müdahalelerde bulunulmaktadır. Anne ve babaların, aile içerisindeki
+ikili ilişkilerin, hiyerarşi ya da güç dağılımı ile aile bütünlüğünün
+farkına varabilmesinde yapısal aile sistemleri, davranışsal aile
+sistemleri yaklaşımı ya da içsel aile sistemleri yaklaşımı temelindeki
+
+aile terapi yaklaşımlarından destek alınabilir.
+
+Anne ve babaların ergen bireyler ile ilişki ve iletişim kurma
+konusunda istekli olmaları, intemet oyun oynama bozukluğuna
+ilişkin koruyucu bir faktör olabilir. Anne ya da babanın çocuklarına
+karşı uyguladığı psikolojik kontrol ise açık olmayan iletişimin bir
+türüdür. Ergen birey, anne ya da babanın suçlu hissettirmesi dışında,
+hangi davranış ya da tutumlarının yanlış ya da zararlı olduğuna
+ilişkin yeterli bilgiye ise bu nedenle ulaşamayabilir. Suçlu ya da
+yetersiz hissettikçe de çözümü intemette oyun oynamaya kaçmak
+şeklinde bulabilir. Benzer şekilde, aile içerisinde bütünleşmeden
+anne ve babanın arasında kalması, ergenin davranışlarına ilişkin
+anneden psikolojik kontrol algılaması, diğer taraftan babanın ekran
+kullanımına yönelik aşırı izin verici olması ya da sınırlar/yasaklar
+
+koyması İOOB geliştirme riskini arttırmaktadır. Diğer taraftan, anne
+
+ve babaların çocuklarının olumsuz davranışları ile ilgili kaygıları
+arttığında daha kısıtlayıcı ve oyun oynama davranışları konusunda
+daha sorgulayıcı oldukları ve aralarındaki çatışmanın giderek arttığı;
+oyunun olumlu sosyal duygusal etkilerini beklediklerindeyse
+çocuklarıyla ekran karşısında, birlikte oynayıp, birlikte benzer
+duygular hissederek daha fazla zaman geçirdikleri bilinmektedir
+(Nikken ve Jansz, 2006). Dolayısıyla anne ve babaların çocuklarının
+ekran karşısında oyun oynamanın olumsuz etkilerini en aza indirmek
+için aşırı izin vericilik ya da yasaklar, katı kurallar ile varlıklarını
+hissettirmek ya da dolaylı iletişim ile onlara kendilerini suçlu ya da
+yetersiz hissettirmek yerine ergen çocukları ile teknolojik konularda
+daha fazla teknik ve etkileşimli iletişim kurmaları önerilebilir. Anne
+ve babaların ergenlik dönemindeki çocuklarıyla internet kullanımı,
+keyif aldıkları oyunlar, diziler ya da filmler hakkında daha fazla
+paylaşımda bulunmaları, öncesinde ise teknik açıdan bilgi sahibi
+olarak aynı terminolojide konuşabilmeleri, nitelikli ilişki kurmayı
+
+kolaylaştırabilir.
+
+Olumlu kendilik algısının düşük olmasının ergenlerin
+internet oyunlarına yönelmeleri açısından bir risk oluşturduğu ve
+internet oyunlarının tam bu noktada pekiştirici rolünün olduğu
+unutulmamalıdır. Ekran karşısında zaman geçirmek yerine, aile
+
+üyelerinin etkinlikler düzenleyerek birlikte vakit geçirmeleri
+
+ergenlerin kendilerine ve anne babalarına ilişkin olumlu algılarını
+
+arttırabilir.
+
+Anne ve babaların kendi ekran kullanımlarına ilişkin
+farkındalığı ove çocuklarının ekran kullanımı konusundaki
+davranışlarını izliyor olmaları da sürecin sağlıklı şekilde kontrolü
+için son derece gereklidir. Aksi halde, anne babalar akıllı telefonların
+kontrolündeyken kurdukları cümleler ya da koydukları kuralların
+
+etkisiz olması kaçınılmazdır.
+
+Son dönemlerdeki çoğu modem babanın duygusal
+yaşamlarında ve babalık rollerine ilişkin sorunlar konusunda inkâr
+savunma mekanizmasını kullandıkları, dolayısıyla sorunlardan
+uzaklaşmayı seçerek eşlerini durumla baş etmekte yalnız bıraktıkları
+ifade edilmektedir (Lynn ve Johnson, 2018, s.180). Diğer taraftan
+babanın ebeveynlik kontrolü açısından en az anne kadar, hatta
+davranışsal kontrol açısından anneden daha etkin şekilde rolünün
+olduğu sonucuna ulaşılmıştır (Andiç, 2019). Dolayısıyla, aile
+içerisinde internet oyun oynama Sorunlarına ilişkin çözüm
+üretilmesinde ve sürecin yönetilmesinde babaların etkin şekilde rol
+alması; diğer bir deyişle "babalık rolü" nü üstlenmeleri gerekliliğini
+
+kavramalarının son derece önemli olduğu düşünülmektedir.
+
+Daha Çok Yolumuz Var...
+
+Ergenlik döneminde kadın ve erkeklere göre ebeveynlere
+ilişkin algılar farklılaşabilmektedir (örn. Liu, Fang, Zhou, Zhang ve
+Deng, 2013). Aynı cinsiyetteki ebeveyn ile kurulan ilişkilerin
+ergenlerin psikolojik iyilik halleri üzerinde daha büyük etkilerinin
+olduğuna ilişkin araştırmalara da rastlanmıştır (örn., Videon, 2005).
+Andiç (2019) tarafından önerilen ve test edilen modeller yalnızca yaş
+gruplarına göre karşılaştırılmıştır. Gelecekteki (çalışmalarda
+modellerin cinsiyete göre de karşılaştırılmasına ilişkin araştırmalar
+
+önerilebilir.
+
+Andiç (2019) çalışmasında, bilgi toplama formunda yalnızca
+çevrimiçi ya da çevrimdışı oyun oynamaya ilişkin sorulara yer
+vermiş, bireylerin ne tür oyunlar oynadıklarına ya da hangi araçlar
+(örn., akıllı telefon, tablet, lap top vb.) üzerinde oyun oynadıklarına
+ilişkin bilgi toplamamıştır. Diğer bir deyişle, oyunculara
+odaklanmaya ek olarak oyunların da dahil edildiği araştırmalara
+gereksinim olduğu düşünülmektedir. İleri araştırmalarda internet
+oyunlarının türlerine ilişkin bilgi edinilmesi ile riskli internet
+
+oyunlarına ilişkin daha kapsamlı bakış açısı edinilebilir.
+
+Andiç (2019) çalışmasında, internet oyun oynama
+bozukluğu toplam puanı üzerinden analizler yürütmüştür. Ancak
+DSM-5 tanı ölçütlerini içeren internet oyun oynama bozukluğu
+
+ölçeği alt boyutları olan zihinsel meşguliyet, tolerans, yoksunluk,
+
+süreklilik, kaçış, olumsuzluklar, aldatma, yerine geçme ve çatışma
+ile farklı psikolojik belirtiler arasındaki ilişkilerin incelenmesine ve
+bu bağlamda, daha fazla araştırma yapılmasına da gereksinim olduğu
+
+düşünülmektedir.
+
+İnternet kullanımına bağlı bozuklukların gelişiminde
+ebeveynliğin rolü hakkındaki boylamsal çalışmalara gereksinim
+duyulmaktadır. İnternet oyun oynama bozukluğu temelinde
+yürütülecek boylamsal çalışmalar, ebeveynler ile çocukları
+arasındaki çevrimiçi davranışların, ergenlerin problemli internet
+kullanımlarını nasıl etkilediği ve ne şekilde önlemler alınabileceği
+konusundaki öngörümüzü arttırmada yarar sağlayabilir. Sorunlu
+oyun oynama davranışlarını önlemede etkili oebeveynlik
+yaklaşımlarına ilişkin kanıtlar hala çok yetersizdir. Ancak
+değerlendirici ve odaklanmamış anne babalık gibi farklı ebeveynlik
+yaklaşımları, etkililiği test edilebilecek yaklaşımlar olarak
+önerilebilir. Bu Oo yaklaşımların opsikoeğitim ve müdahale
+programlarına dahil edilerek test edilmesi ile yararlı sonuçlara
+
+ulaşılabilir.
+
+Yönümüzü teknolojinin yaşamımızı kolaylaştırdığı ve hızlı
+bilgi edinme açısından sağladığı yararlara çevirdiğimizde; konu
+intermet ve ekran kullanımı iken konunun doğası gereği eğitici
+olabilecek internet kaynaklarının önerilmesinin de yararlı olacağı
+
+düşünülmektedir. Teknoloji ve nörobilim alanındaki yenilikleri
+
+g2
+
+kullanarak çevrenin çocukları nasıl etkilediği ve çocukların
+geleceğimizi nasıl etkileyebileceğinin incelendiği "Yaşamın
+Başlangıcı" ve psikolojik bozukluklar, e-spor, müzik, cinsiyet rolleri
+gibi birçok konunun bilimsel çalışmalarla desteklenerek aktarıldığı
+"Explained" isimli belgesel diziler anne ve babalara farkındalık
+yaşamada yararlı bilgiler sunabilir. Ekran Bağımlılığı (Lynn ve
+Johnson, 2018), İnternet Bağımlılığı (Feindel, 2019) kitapları ise
+aileler ve bu alanda çalışan uzmanlar açısından yararlı bilgiler
+
+sunmaktadırlar.
+
+Kaynakça
+
+Andiç, S. (2019). Ergenlik dönemi internet oyun oynama bozukluğu:
+Ailesel ve bireysel değişkenler temelinde bir modelleme
+(Yayımlanmamış Doktora Tezi). Ankara Üniversitesi, Ankara.
+
+Akel, K. (2016). Çocuğumu internette kaybettim (1. Baskı). İstanbul: Az
+Kitap Yayınevi.
+
+Aldao, A., Nolen-Hoeksema, S. ve Schweizer, S. (2010). Emotion-
+regulation strategies across psychopathology: a meta-analytic
+review. Clinical Psychology Review, 30(2), 217-237.
+
+Altınay, D. (2013). Çocuk Psikodraması. İstanbul: Sistem Yayıncılık.
+
+Amendola, S., Spensieri, V, Guidetti, V. ve Cerutti, R. (2018). The
+relationship between difficulties in emotion regulation and
+dysfunctional technology use among adolescents. Journal of
+Psychopathology, 25(1), 10-17.
+
+American Psychiatric Association (2013). Diagnostic and Statistical
+Manual of Mental Disorders, 5th edn. American Psychiatric
+Publishing, Arlington, VA.
+
+Austin E. W, Chen |. C. ve Grube J. W. (2006). How does alcohol
+advertising influence underage drinking? The role of
+desirability, identification and skepticism. / Adolesc Health, 38,
+376-384.
+
+Ayas, T. ve Horzum, M. B. (2013). İlköğretim öğrencilerinin internet
+bağımlılığı ve aile internet tutumu. Türk Psikolojik Danışma ve
+Rehberlik Dergisi, 4(39), 46-57.
+
+Barber, B. K., Bean, R. L. ve Erickson, L. D. (2002). Expanding the study
+and understanding of psychological control. B.K. Barber, (Ed.),
+Intrusive parenting: How psychological control affects children
+and adolescents içinde (263-289).
+
+Barber, B. K,, Stolz, H. E,, Olsen, |. A. ve Maughan, S. L. (2005). Parental
+support, psychological control, and behavioral control:
+Assessing relevance across time, method, and culture.
+Monographs of the Society for Research in Child Development,
+70, 1-151.
+
+Barber, B. K. ve Buehler, C. (1996). Family cohesion and enmeshment:
+Different constructs, different effects. Journal of Marriage and
+the Family, 433-441.
+
+Batıgün, A. D. ve Hasta, D. (2010). İnternet bağımlılığı: Yalnızlık ve
+kişilerarası ilişki tarzları açısından bir değerlendirme. Anadolu
+Psikiyatri Dergisi, 11(3), 213-219.
+
+Bybee, C.R., Robinson, D. ve Turov, |. (1982). Determinants of parental
+guidance of children's television viewing for a special subgroup:
+Mass media scholars./ournal of Broadcasting & Electronic
+Media, 26(3), 697-710.
+
+Leön-del-Barco, B., Mendo-Lâzaro, S., Polo-del-Rio, M. I. ve Löpez-
+Ramos, V. M. (2019). Parental Psychological Control and
+Emotional and Behavioral Disorders among Spanish
+Adolescents. /nternational journal of environmental research and
+public health, 16(507), 1-13.
+
+Başbuğ, S., Cesur, G. ve Durak-Batıgün, A. (2017). Algılanan ebeveynlik
+biçimi ve yetişkin ayrılma anksiyetesi: kişilerarası bilişsel
+çarpıtmaların aracı rolü. Türk Psikiyatri Derg, 28, 255-67.
+
+Batıgün, A. D. ve Kılıç, N. (2011). İnternet Bağımlılığı ile Kişilik
+Özellikleri, Sosyal Destek, Psikolojik Belirtiler ve Bazı Sosyo-
+Demografik Değişkenler Arasındaki İlişkiler Turk Psikoloji
+Dergisi, 26(67).
+
+Beblo, T, Fernando, S. Klocke, S., Griepenstroh, |., Aschenbrenner, S. ve
+Driessen, M. (2012). Increased suppression of negative and
+positive emotions in major depression. Journal of Affective
+Disorders, 5, 1-6.
+
+Bender, P. K., Reinholdt-Dunne, M. L., Esbjorn, B. H. ve Pons, E (2012).
+Emotion dysregulation and anxiety in children and adolescents:
+
+>
+
+Gender differences. Personality and Individual Differences, 53(3),
+284-288.
+
+Barber, B. K. (1996). Parental psychological control: Revisiting a
+neglected construct. Child Development, 67,3296-3319,
+
+Barber, B., Olsen, |. ve Shagle, S. (1994). Associations between parental
+psychological and behavioral control and youth internalizing
+and externalizing behaviors. Child Development, 65, 1120-1136.
+
+Baykan, N. (2014). Anne-baba tutumları ile internet bağımlılık düzeyi
+arasındaki ilişkinin incelenmesi -Sultanbeyli ilçesi örneği-
+(Yayınlanmamış yüksek lisans tezi). Yeditepe Üniversitesi,
+Eğitim Bilimleri Enstitüsü, İstanbul.
+
+Bean, R. A,, Barber, B. K. ve Crane, D. R. (2001). Academic grades,
+delinguency, and depression among ethnically diverse youth: The
+influences of parental support, behavioral control, and
+psychological control. Manuscript under review.
+
+Benrazavi, R., Teimouri, M. ve Griffiths, M. D. (2015). Utility of parental
+mediatton model on youths problematic online
+gaming. International oOJournal of Mental Health and
+Addiction, 13(6), 712-727.
+
+Boyle, E. A., Connolly, T. M., Hainey, T. ve Boyle, |. M. (2012). Engagement
+in digital entertainment games: A systematic review. Computers
+in human behavior, 28(3), 771-780.
+
+Carducci, J. B ve Zimbardo, G.E (1995) Are You Shy? Psychology Today,
+28 (6),34- 46.
+Chartier, M. |., Walker, |. R. ve Stein, M. B. (2001). Social phobia and
+
+potential (ochildhood risk factors in a community
+sample. Psychological Medicine, 31(2), 307-315.
+
+Cho, H., Kwon, M., Choi, |. H., Lee, S.K., Choi,|. S., Choi, S. W ve Kim,D. |.
+(2014). Development of the Internet addiction scale based on
+the Internet Gaming Disorder criteria suggested in DSM-5.
+Addictive behaviors, 39(9), 1361-1366.
+
+Choo, H., Sim, T, Liau, A. K, Gentile, D. A. ve Khoo, A. (2015). Parental
+influences on pathological symptoms of video-gaming among
+
+children and adolescents: A prospective study. Journal of Child
+and Family Studies, 24(5), 1429-1441.
+
+Conger, K. |., Conger, R. D. ve Scaramella, L. V. (1997). Parents, siblingşs,
+psychological control, and adolescent adjustment. Journal of
+Adolescent Research, 12, 113- 138.
+
+Çelik, Ç. B. ve Odacı, H. (2012). Kendilik algisi ve benlik saygisinin
+problemli Oo internet (o kullanimi Oo üzerindeki Oo yordayici
+rolü. Education sciences, 7(1), 433-441.
+
+Daniels, |. A. (1990). Adolescent Seperation-Individuation and Family
+Transitions. Adolescence, 25(97), 105-116.
+
+Davis, R. A. (2001). A cognitive-behavioral model of pathological
+Internet use. Computers in human behavior, 17(2), 187-195.
+
+De Goede, 1. H., Branje, S. J. ve Meeus, W. H. (2009). Developmental
+changes in adolescents' perceptions of relationships with their
+parents. /ournal of Youth and Adolescence, 38(1), 75-88.
+
+De Vries, D. A. ve Kühne, R. (2015). Facebook and self-perception:
+Individual susceptibility to negative social comparison on
+Facebook. Personality and Individual Differences, 86, 217-221.
+
+Eni, B. (2017). Lise öğrencilerinin dijital oyun bağımlılığı ve
+algıladıkları Oo ebeveyn Oo tutumlarının Oo değerlendirilmesi.
+Yayınlanmamış yüksek lisans tezi, Haliç Üniversitesi, Sosyal
+Bilimler Enstitüsü, İstanbul.
+
+Entertainment Software Association (2013) Essential Facts About
+Computer and Video Industry 2012. Washington D.C, USA:
+Entertainment Software Association.
+
+Erikson, E.H. (1995). A way of'looking at things: Selected papers, 1930-
+1980. WW Norton & Company.
+
+Eryüksel, G. N. (1996). Ana-baba ve ergen ilişkilerinin problem çözme
+iletişim becerileri, bilişsel çarpıtmalar ve aile yapısı açısından
+incelenmesi (Yayınlanmamış doktora tezi). Ege Üniversitesi,
+İzmir.
+
+Erboy, E. ve Akar Vural, R. (2010). İlköğretim 4 ve 5 Sınıf Öğrencilerinin
+Bilgisayar Oyun Bağımlılığını Etkileyen Faktörler. Ege Eğitim
+Dergisi, 11(1), 39-58.
+
+Farrel, M. P ve Barnes, G.M. (1993). Family systems and social support:
+A test of the effect of cohesion and adaptability on the
+functioning of parents and adolescents. Journal of Marriage and
+the Family, 55, 119-132.
+
+Feindel, H. (2019). İnternet Bağımlılığı -Bağımlılar ve Aileleri için El
+Kitabı- (A. Dirim, Çev.), Ankara: İletişim Yayınları.
+
+Gafoor, A. K. ve Umer Faroogue, T. K. (2006). Comparison of high and
+low efficient schools in terms of school, pupil and home related
+variables. /ournal of Indian Education, 33(2), 89-105.
+
+Gander, M. |, ve Gardiner, H. W. (2007). Çocuk ve Ergen Gelişimi
+(6.baskı). (B. Onur, Ed.). Ankara: İmge Kitabevi.
+
+Gard, C. (2000). How to overcome shyness. Current Health, 27(1), 28-
+30.
+
+Garber, |., Robinson, N. S. ve Valentiner, D. (1997). The relation between
+parenting and adolescent depression: Self-worth as a mediator.
+Journal of Adolescent Research, 12, 12- 33.
+
+Gentile,D. A., Choo, H.,Liau, A.,Sim,T, Li, D., Fung, D. ve Khoo, A. (2011).
+Pathological video game use among youths: a two-year
+longitudinal study. Pediatrics, 127(2), e319-e329.
+
+Gratz, K. L. ve Roemer, L. (2004). Multidimensional assessment of
+emotion regulation and dysregulation: Development, factor
+structure, and initial validation of the Difficulties in Emotion
+Regulation Scale. Journal of Psychopathology and Behavioral
+Assessment, 26, 41-54,
+
+Gross, |. J. (1998). The emerging field of emotion regulation: An
+integrative review. Review of general psychology, 2(3), 271-299.
+
+Gross, |. (2002). Emotion regulation: Affective, cognitive, and social
+conseguences. Psychophysiology, 39, 281- 291.
+
+Gross,|J.J. ve Mufioz,R. E (1995). Emotion regulation and mental health.
+Clinical Psychology: Science and Practice, 2, 151-164.
+
+Han, D. H., Kim, S. M,, Lee, Y. S. ve Renshaw, P E (2012). The effect of
+family therapy on the changes in the severity of on-line game
+play and brain activity in adolescents with on-line game
+addiction. Psychiatry Research: Neuroimaging, 202(2), 126-131.
+
+Hein, C. ve Lewko, |. H. (1994). Gender differences in factors related to
+parenting style: A study of high performing science students.
+Journal of Adolescent Research, 9(2), 262-281.
+
+Hormes, J. M., Kearns, B. ve Timko, C. A. (2014). Craving F acebook?
+Behavioral addiction to online social networking and its
+association with emotion regulation deficits. Addiction, 109(12),
+2079-2088.
+
+Jeong E. |, Kim D. H. (2011). Social activities, self-efficacy, game
+attitudes, and game addiction. Cyberpsychol. Behav. Soc. Netw.
+14,213-221.
+
+Joormann, |. (2010). Cognitive inhibition and emotion regulation in
+depression. Current Directions in Psychological Science, 19(3),
+161-166.
+
+Kaya, A,, Bozaslan, H. ve Genç, G. (2012). Üniversite öğrencilerinin
+anne-baba tutumlarının problem çözme becerilerine, sosyal
+kaygı düzeylerine ve akademik başarılarına etkisi. Dicle
+University Journal of Ziya Gokalp Education Faculty, 18, 208-225.
+
+Ko, C. H,, Yen, |. Y. Chen, C.C,, Chen, S. H. ve Yen, C. E (2005). Gender
+differences and related factors affecting online gaming addiction
+among Taiwanese adolescents. The Journal of Nervous and
+Mental Disease, 193, 273-277.
+
+Köse, D., Çınar, N. ve Akduran, E (2012). Hemşirelik öğrencilerinde
+internet bağımlılığının kişilik özellikleri ve zaman yönetimi ile
+ilişkisi. Sakarya University Journal of Science, 16(3), 227-233.
+
+Kraut, R., Patterson, M., Lundmark, V., Kiesler, S., Mukophadhyay, T. ve
+Scherlis, W. (1998). Internet paradox: A social technology that
+reduces social oinvolvement and psychological (oweli-
+being?. American psychologist, 53(9), 1017.
+
+Ko,C.H., Yen,|J. Y, Yen,C.E, Chen,c. S., Weng,C.C.ve Chen, C.C. (2008).
+The association between internet addiction and problematic
+
+alcohol use in adolescents: The problem behavior model.
+Cyberpsychol Behav, 11, 571-576.
+
+Koning,I. M., Peeters, M., Finkenauer, C. ve Van Den Eijnden, R. |. (2018).
+Bidirectional effects of Internet-specific parenting practices and
+compulsive social media and Internet game use. Journal of
+behavioral addictions, 7(3), 624-632.
+
+Kurt, D., Sayıl, M. ve Tepe, Y. K. (2013). Ana babanın psikolojik kontrolü
+ile gencin yalnızlığı arasındaki ilişkide kişilerarası güven inancı
+ve bağlanmanın rolü. Türk Psikoloji Dergisi, 28(71), 105-116.
+
+Kuss, D. |, Shorte,r G. W, van Rooij, A. |, Griffiths, M. D. ve
+Schoenmakers, T. M. (2014). Assessing internet addiction using
+the parsimonious internet addiction components model—a
+preliminary study. International Journal of Mental Health and
+Addiction, 12(3), 351-366.
+
+Larson, R. W, Richards, M. H., Moneta, G., Holmbeck, G. ve Duckett, E.
+(1996). Changes in adolescents" daily interactions with their
+families from ages 10 to 18: Disengagement and transformation.
+Developmental Psychology, 32, 744-754.
+
+Lee, S. Y, Lee, H.K. ve Choo, H. (2017). Typology of Internet gaming
+disorder and its clinical implications. Psychiatry and clinical
+neurosciences, 71(7),479-491.
+
+Leung, L. ve Lee, S. N. (2011). The influences of information literacy,
+internet addiction and parenting styles on internet risks. New
+Media Soc. 8, 1-21.
+
+Li,X, Li, D.ve Newman, |. (2013). Parental behavioral and psychological
+control and problematic Internet use among Chinese
+adolescents: The mediating role of self-control. Cyberpsychology,
+Behavior, and Social Networking, 16(6), 442-447.
+
+Lin,C.H.,Lin,S.L.ve Wu,C.P.(2009). The effects of parental monitoring
+and leisure boredom on adolescents' internet
+addiction. Adolescence, 44(176), 993-1004.
+
+Liu, Ç. X,, Fang, X. Y., Zhou, Z. K,, Zhang, |. T. ve Deng, L. Y. (2013).
+Perceived parent-adolescent relationship, perceived parental
+
+online behaviors and pathological internet use among
+adolescents: Gender-specific differences. PloS one, 8(9), e75642.
+
+Liu, O. X,, Fang, X. Y., Deng, L.Y.veZhang,|J.T. (2012). Parent-adolescent
+communication, parental Internet use and Internet-specific
+norms and pathological Internet use among Chinese
+adolescents. Computers in Human Behavior, 28(4), 1269-1275.
+
+Lynn, G. T. ve Johnson, C. |. (2018). Ekran Bağımlılığı. İstanbul: Destek
+Yayınları.
+
+Miller P. ve Plant M. (2010). Parental guidance about drinking;
+Relationship with teenage psychoactive substance use. / Adolesc,
+33, 55-68.
+
+Müller, K. W, Janikian, M., Dreier, M., Wölfling, K., Beutel, M. E., Tzavara,
+C.,... ve Tsitsika, A. (2015). Regular gaming behavior and internet
+gaming disorder in European adolescents: results from a cross-
+national representative survey of prevalence, predictors, and
+psychopathological correlates. European Child & Adolescent
+Psychiatry, 24(5), 565-574.
+
+Niaz, U,, Siddigui, S. S., Hassan, S., Husain, H., Ahmed, S. ve Akhter, R.
+(2005). A survey of psychosocial correlates of drug abuse in
+young adults aged 16-21, in Karachi: Identify "high risk"
+population to target intervention strategies. Pak / Med Sci, 21,
+271-277.
+
+Nikken, P. ve Jansz, |. (2006). Parental mediation of children's
+videogame playing: A comparison of the reports by parents and
+children. Learning, media and technology, 31(2), 181-202.
+
+Odacı, H. ve Çelik, Ç. B. (2013). Who are problematic internet users? An
+investigation of the correlations between problematic internet
+use and shyness, loneliness, narcissism, aggression and self-
+perception. Computers in Human Behavior, 29(6), 2382-2387.
+
+Park, S. K., Kim, |. Y. ve Cho, C. B. (2008). Prevalence of Internet
+addiction and correlations with family factors among South
+Korean adolescents. Adolescence, 43, 895-909,
+
+Parman, T. (2010). Ergenliğin Yüzleri. İstanbul: Bağlam Yayıncılık.
+
+ol
+
+Patterson, G. R. ve Stouthamer-loeber M. (1984). The correlation of
+family management practices and delinguency. Child Dev, 25,
+1299-307.
+
+Pettit, G. S., Laird, R.D., Dodge, K. A,, Bates,|J. E. ve Criss,M.M. (2001).
+Antecedents and behavior-problem outcomes of parental
+monitoring and psychological control in early adolescence. Child
+development, 72(2), 583-598.
+
+Phillips, K. E V. ve Power, M. |. (2007). A new self- report measure of
+emotion regulation in adolescents: The regulation of emotions
+guestionnaire. Clinical Psychology and Psychotherapy, 14, 145-—
+156.
+
+Rideout, V. |, Foehr, U. G. ve Roberts, D. E (2010). Generation M 2: Media
+in the Lives of 8-to 18-Year-Olds.Henry |. Kaiser Family
+
+Foundation. 11 Ağustos 2019'da http://
+www.kff.org/entmedia/entmedia012010nr.com adresinden
+indirildi.
+
+Robin, A. L. ve Foster, S. L. (2002). Negotiating parent-adolescent
+conflict: A behavioral-family systems approach. Guilford Press.
+
+Sayıl, M. ve Kındap, Y. (2010). Ergenin anne-babadan algıladığı
+psikolojik kontrol: Psikolojik kontrol ölçeğinin geçerlik ve
+güvenirliği. Türk Psikoloji Yazıları, 13(25), 62-75.
+
+Shek, D. T. L. (2007). A longitudinal study of perceived differences in
+parental control and parent-child relational gualities in Chinese
+adolescents in Hong Kong. Journal of Adolescent Research, 22(2),
+156-188.
+
+Sezer, Ö. (2010). Ergenlerin kendilik algılarının anne baba tutumları ve
+bazı faktörlerle ilişkisi. Yüzüncü Yıl Üniversitesi Eğitim Fakültesi
+Dergisi, 7(1), 1-19.
+
+Sönmez, Ş. (2011). Ergenliğe geçişte annenin davranışsal ve psikolojik
+kontrolünün anne-ergen ilişkisine ve ergenin bir yıl sonraki
+uyumuna etkisi (Yayımlanmamış yüksek lisans tezi). Hacettepe
+Üniversitesi, Ankara.
+
+Stewart, S.M., Bond, M. H., Abdullah, A. S. M. ve Ma, 5. (2000). Gender,
+parenting and adolescent functioning in Bangladesh. Merrill
+Palmer Ouarterly, 46, 540-64.
+
+Stewart, 5. M., Bond, M. H., Zaman, R. M., McBride-Chang, C., Rao, N. ve
+Fielding, R. (1999). Functional parenting in Pakistan.
+International Journal of Behavioral Development, 23, 747-770.
+
+Stewart, 5. M., Rao, N., Bond, M. H,, Fielding, R., McBrideChang, C. ve
+Kennard, B. D. (1998). Chinese dimensions of parenting:
+Broadening western predictors and outcomes. İnternational
+Journal of Psychology, 33, 345- 358.
+
+Su, B., Yu, C,, Zhang, W, Su, O,, Zhu, |. ve Jiang, Y. (2018). Father-child
+longitudinal relationship: Parental monitoring and Internet
+gaming disorder in Chinese adolescents. Frontiers in
+psychology, 9, 95.
+
+Şimşek, N., Akça, N. K. ve Şimşek, M. (2015). Lise öğrencilerinde
+umutsuzluk ve internet bağımlılığı. TAF preventive medicine
+bulletin, 14(1).
+
+Tabachnick, B. G. ve Fidel, L. S. (2014). Using multivariate statistics
+(Sixth Edition). U. S.: Pearson Education Limited.
+
+Taş, İ. (2018). Ergenlerde İnternet Bağımlılığı ve Psikolojik Belirtilerin
+Çeşitli oDeğişkenler Açısından İncelenmesi. Anemon Muş
+Alparslan Üniversitesi Sosyal Bilimler Dergisi, 6(2), 31-41.
+
+TÜİK (2015). Hanehalkı bilişim teknolojileri kullanım araştırma
+sonuçları (Alınma tarihi 25.12. 2016).
+http://www.tuik.gov.tr/PreHaberBultenleri.do?id-18660
+
+UKIE (2015). The games industry in numbers. Retrieved from
+http://ukie.org.uk/research#Market
+
+United Nations Children's Emergency Fund (UNICEF), (2011).
+Adolescence, http://www.ungei.org/SOWcC-2011-Main-
+Report EN 02092011.pdf (erişim: 01 Ekim 2019).
+
+Wei, H.T, Chen, M. H., Huang, P.C. ve Bai, Y. M. (2012). The association
+between online gaming, social phobia, and depression: An
+internet survey. BMC psychiatry, 12(92), 1-7.
+
+Werner K. ve Gross, |. |J. (2010). Emotion regulation and
+psychopathology: A conceptual framework. In A. M. Kring &D.
+M. Sloan (Eds.), Emotion regulation and psychopathology: A
+transdiagnostic approach to etiology and treatment (5.13-37).
+New York, NY, US: The Guilford Press.
+
+World oOHealth oOrganizatton (WHO), Adolescent o health,
+https://www.who.int/maternal child adolescent/adolescence
+/en/ (erişim: 02 Kasım 2019).
+
+Wu,C.S.T, Wong,H.T, Yu, K.E, Fok, K. W, Yeung,S.M.,Lam, C.H. ve
+Liu, K.M. (2016). Parenting approaches, family functionality, and
+internet addictiton among Hong Kong adolescents. BMC
+pediatrics, 16(1), 130.
+
+Vandermaas-Peeler, M. Way, E. ve Umpleby, |. (2003). Parental guidance
+ina cooking activity with preschoolers. / App! Dev Psychol. (24),
+75-89.
+
+Videon T. M. (2005). Parent-child relations and children's
+psychological well-being: Do dads matter?. Journal of family
+issues, 26(1), 55-78.
+
+Weiser, E. B. (2000). Gender differences in internet use patterns and
+internet application preferences: A two-sample
+comparison. Cyberpsychology and behavior, 3(2), 167-178.
+
+Wolynn, M. (2017). Itdidn'tstart with you: How inherited family trauma
+shapes who we are and how to end the cycle. Penguin.
+
+Xiugin, H., Huimin, Z., Mengchen, L., Jinan, W, Ying, Z. ve Ran, T. (2010).
+Mental health, personality, and parental rearing styles of
+adolescents with Internet addiction disorder. Cyberpsychology,
+Behavior, and Social Networking, 13(4), 401-406.
+
+Yen|J.Y. Yen C.E, Chen C.C.,ChenS.H.veKocC.H. (2007). Family factors
+ofinternetaddiction and substance use experience in Taiwanese
+adolescents. Cyberpsychol Behav. 10, 323-9,
+
+Yuan, K,, Gin, W., Yu, D., Bi, Y., Xing, L., Jin, C. ve Tian, |. (2016). Core brain
+networks interactions and cognitive control in internet gaming
+disorder individuals in late adolescence/early adulthood. Brain
+Structure and Function, 221(3), 1427-1442.
+
+"aa? :
+"g#s-ARTSUREM
+ai b
+
+Cih
+ni
+
+ni
+
+ISBN: 978-605-72285-0-3
