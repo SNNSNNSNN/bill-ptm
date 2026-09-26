@@ -1,73 +1,74 @@
-2026-09-26 18:24:31,622 INFO Loaded 431560 rows, 41 columns from data/turkish_books_list1_all_isbns.csv
-2026-09-26 18:24:55,845 INFO ISBN checks: 426 duplicates, 207 invalid check digits
-2026-09-26 18:24:55,902 INFO Rows without a title: 159190
-2026-09-26 18:24:55,962 INFO OpenLibrary: 159190 ISBNs to query (0 already cached)
-2026-09-26 18:41:26,820 INFO openlibrary: 159190 queried, 110 resolved
-2026-09-26 18:41:27,236 WARNING Google Books: HTTP 429 (Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'books.googleapis.com' for consumer 'pr). Stage stopped; set GOOGLE_BOOKS_API_KEY with a raised quota to use it.
-2026-09-26 18:41:27,257 INFO google_books: 0 queried, 0 resolved
-2026-09-26 18:41:29,071 WARNING Anna's Archive (https://annas-archive.gl): HTTP 403, bot-protection page returned. Stage skipped; 159080 ISBNs left unresolved.
-2026-09-26 18:41:29,106 INFO annas_archive: 0 queried, 0 resolved
-2026-09-26 18:41:29,238 INFO Enrichment filled titles for 110 of 159190 rows
-2026-09-26 18:42:24,968 INFO ==================================================================
-2026-09-26 18:42:24,968 INFO Input rows:              431560
-2026-09-26 18:42:24,969 INFO Cleaned (approved):      270834  -> output/cleaned_books.csv
-2026-09-26 18:42:24,969 INFO Eliminated:              160726  -> output/eliminated_books.csv
-2026-09-26 18:42:24,969 INFO   enrich openlibrary    queried  159190  resolved    110
-2026-09-26 18:42:24,969 INFO   enrich google_books   queried       0  resolved      0
-2026-09-26 18:42:24,969 INFO   enrich annas_archive  queried       0  resolved      0
-2026-09-26 18:42:24,969 INFO Eliminated by category / confidence:
-2026-09-26 18:42:24,969 INFO   No metadata found                                              n/a     159080
-2026-09-26 18:42:24,969 INFO   Duplicate ISBN                                                 n/a        426
-2026-09-26 18:42:24,969 INFO   Adult / sexual content                                         review     353
-2026-09-26 18:42:24,969 INFO   Occultism / satanism                                           review     332
-2026-09-26 18:42:24,969 INFO   Invalid ISBN                                                   n/a        207
-2026-09-26 18:42:24,969 INFO   Adult / sexual content                                         high       141
-2026-09-26 18:42:24,969 INFO   Anti-Islamic / religiously offensive                           high        63
-2026-09-26 18:42:24,970 INFO   Anti-Islamic / religiously offensive                           review      50
-2026-09-26 18:42:24,970 INFO   Occultism / satanism                                           high        31
-2026-09-26 18:42:24,970 INFO   Harmful: self-harm, violence, illegal acts, extremist ideology high        26
-2026-09-26 18:42:24,970 INFO   Harmful: self-harm, violence, illegal acts, extremist ideology review      17
-2026-09-26 18:42:24,970 INFO Rule hits (a row can hit several):
-2026-09-26 18:42:24,970 INFO   tarot/astroloji/fal                              219
-2026-09-26 18:42:24,970 INFO   erotic                                           154
-2026-09-26 18:42:24,970 INFO   seks                                             111
-2026-09-26 18:42:24,970 INFO   cinsellik                                        103
-2026-09-26 18:42:24,970 INFO   okultizm                                          94
-2026-09-26 18:42:24,970 INFO   LoC: occult subject                               64
-2026-09-26 18:42:24,970 INFO   LoC: erotic/sex instruction                       61
-2026-09-26 18:42:24,970 INFO   sehvet/sevisme                                    40
-2026-09-26 18:42:24,970 INFO   author: Ilhan Arsel                               37
-2026-09-26 18:42:24,970 INFO   author: Turan Dursun                              37
-2026-09-26 18:42:24,970 INFO   prostitution                                      34
-2026-09-26 18:42:24,971 INFO   author: Adolf Hitler                              26
-2026-09-26 18:42:24,971 INFO   ateizm                                            26
-2026-09-26 18:42:24,971 INFO   LCC BF1228-1999 (occult sciences)                 25
-2026-09-26 18:42:24,971 INFO   orgy/orgasm                                       24
-2026-09-26 18:42:24,971 INFO   porn                                              23
-2026-09-26 18:42:24,971 INFO   kara buyu                                         22
-2026-09-26 18:42:24,971 INFO   sex                                               20
-2026-09-26 18:42:24,971 INFO   nihilism                                          16
-2026-09-26 18:42:24,971 INFO   explicit genre                                    14
-2026-09-26 18:42:24,971 INFO   Mein Kampf                                        12
-2026-09-26 18:42:24,971 INFO   obscene                                           10
-2026-09-26 18:42:24,971 INFO   satanism                                          10
-2026-09-26 18:42:24,971 INFO   author: LaVey/Crowley                              9
-2026-09-26 18:42:24,971 INFO   sex manual                                         8
-2026-09-26 18:42:24,971 INFO   LCC HQ21-32 (sex instruction)                      8
-2026-09-26 18:42:24,971 INFO   author: New Atheism                                8
-2026-09-26 18:42:24,972 INFO   Dewey 306.7 (sexual relations)                     7
-2026-09-26 18:42:24,972 INFO   Dewey 133 (occultism)                              6
-2026-09-26 18:42:24,972 INFO   yetiskin icerik / +18                              5
-2026-09-26 18:42:24,972 INFO   LoC: Islam -- Controversial literature             5
-2026-09-26 18:42:24,972 INFO   LCC HQ450-472 (erotica)                            5
-2026-09-26 18:42:24,972 INFO   Tanri Yanilgisi                                    4
-2026-09-26 18:42:24,972 INFO   seytana tapma                                      3
-2026-09-26 18:42:24,972 INFO   LoC: Satanism                                      3
-2026-09-26 18:42:24,972 INFO   cinsel haz/teknik                                  2
-2026-09-26 18:42:24,972 INFO   Islam fasizmi                                      2
-2026-09-26 18:42:24,972 INFO   din bir afyon/yalan                                1
-2026-09-26 18:42:24,972 INFO   adult romance                                      1
-2026-09-26 18:42:24,972 INFO   psychedelics                                       1
-2026-09-26 18:42:24,972 INFO   LCC BF1546-1550 (satanism)                         1
-2026-09-26 18:42:24,972 INFO   author: Ayaan Hirsi Ali                            1
-2026-09-26 18:42:24,973 INFO Elapsed: 18.0 min
+2026-09-26 19:01:27,902 INFO Loaded 431560 rows, 41 columns from data/turkish_books_list1_all_isbns.csv
+2026-09-26 19:01:52,028 INFO ISBN checks: 426 duplicates, 207 invalid check digits
+2026-09-26 19:01:52,080 INFO Rows without a title: 159190
+2026-09-26 19:01:52,613 INFO OpenLibrary: 0 ISBNs to query (159190 already cached)
+2026-09-26 19:01:52,702 INFO openlibrary: 159190 queried, 110 resolved
+2026-09-26 19:01:53,259 WARNING Google Books: HTTP 429 (Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'books.googleapis.com' for consumer 'pr). Stage stopped; set GOOGLE_BOOKS_API_KEY with a raised quota to use it.
+2026-09-26 19:01:53,289 INFO google_books: 0 queried, 0 resolved
+2026-09-26 19:01:54,874 WARNING Anna's Archive (https://annas-archive.gl): HTTP 403, bot-protection page returned. Stage skipped; 159080 ISBNs left unresolved.
+2026-09-26 19:01:54,893 INFO annas_archive: 0 queried, 0 resolved
+2026-09-26 19:01:55,024 INFO Enrichment filled titles for 110 of 159190 rows
+2026-09-26 19:02:50,996 INFO ==================================================================
+2026-09-26 19:02:50,997 INFO Input rows:              431560
+2026-09-26 19:02:50,997 INFO Cleaned (approved):      270834  -> output/cleaned_books.csv
+2026-09-26 19:02:50,997 INFO Eliminated:                1646  -> output/eliminated_books.csv
+2026-09-26 19:02:50,997 INFO No metadata:             159080  -> output/NO ISBNS.csv
+2026-09-26 19:02:50,997 INFO   enrich openlibrary    queried  159190  resolved    110
+2026-09-26 19:02:50,997 INFO   enrich google_books   queried       0  resolved      0
+2026-09-26 19:02:50,997 INFO   enrich annas_archive  queried       0  resolved      0
+2026-09-26 19:02:50,997 INFO Eliminated by category / confidence:
+2026-09-26 19:02:50,997 INFO   No metadata found                                              n/a     159080
+2026-09-26 19:02:50,997 INFO   Duplicate ISBN                                                 n/a        426
+2026-09-26 19:02:50,998 INFO   Adult / sexual content                                         review     353
+2026-09-26 19:02:50,998 INFO   Occultism / satanism                                           review     332
+2026-09-26 19:02:50,998 INFO   Invalid ISBN                                                   n/a        207
+2026-09-26 19:02:50,998 INFO   Adult / sexual content                                         high       141
+2026-09-26 19:02:50,998 INFO   Anti-Islamic / religiously offensive                           high        63
+2026-09-26 19:02:50,998 INFO   Anti-Islamic / religiously offensive                           review      50
+2026-09-26 19:02:50,998 INFO   Occultism / satanism                                           high        31
+2026-09-26 19:02:50,998 INFO   Harmful: self-harm, violence, illegal acts, extremist ideology high        26
+2026-09-26 19:02:50,998 INFO   Harmful: self-harm, violence, illegal acts, extremist ideology review      17
+2026-09-26 19:02:50,998 INFO Rule hits (a row can hit several):
+2026-09-26 19:02:50,998 INFO   tarot/astroloji/fal                              219
+2026-09-26 19:02:50,998 INFO   erotic                                           154
+2026-09-26 19:02:50,998 INFO   seks                                             111
+2026-09-26 19:02:50,998 INFO   cinsellik                                        103
+2026-09-26 19:02:50,998 INFO   okultizm                                          94
+2026-09-26 19:02:50,998 INFO   LoC: occult subject                               64
+2026-09-26 19:02:50,998 INFO   LoC: erotic/sex instruction                       61
+2026-09-26 19:02:50,999 INFO   sehvet/sevisme                                    40
+2026-09-26 19:02:50,999 INFO   author: Ilhan Arsel                               37
+2026-09-26 19:02:50,999 INFO   author: Turan Dursun                              37
+2026-09-26 19:02:50,999 INFO   prostitution                                      34
+2026-09-26 19:02:50,999 INFO   author: Adolf Hitler                              26
+2026-09-26 19:02:50,999 INFO   ateizm                                            26
+2026-09-26 19:02:50,999 INFO   LCC BF1228-1999 (occult sciences)                 25
+2026-09-26 19:02:50,999 INFO   orgy/orgasm                                       24
+2026-09-26 19:02:50,999 INFO   porn                                              23
+2026-09-26 19:02:50,999 INFO   kara buyu                                         22
+2026-09-26 19:02:50,999 INFO   sex                                               20
+2026-09-26 19:02:50,999 INFO   nihilism                                          16
+2026-09-26 19:02:50,999 INFO   explicit genre                                    14
+2026-09-26 19:02:50,999 INFO   Mein Kampf                                        12
+2026-09-26 19:02:50,999 INFO   obscene                                           10
+2026-09-26 19:02:51,000 INFO   satanism                                          10
+2026-09-26 19:02:51,000 INFO   author: LaVey/Crowley                              9
+2026-09-26 19:02:51,000 INFO   sex manual                                         8
+2026-09-26 19:02:51,000 INFO   LCC HQ21-32 (sex instruction)                      8
+2026-09-26 19:02:51,000 INFO   author: New Atheism                                8
+2026-09-26 19:02:51,000 INFO   Dewey 306.7 (sexual relations)                     7
+2026-09-26 19:02:51,000 INFO   Dewey 133 (occultism)                              6
+2026-09-26 19:02:51,000 INFO   yetiskin icerik / +18                              5
+2026-09-26 19:02:51,000 INFO   LoC: Islam -- Controversial literature             5
+2026-09-26 19:02:51,000 INFO   LCC HQ450-472 (erotica)                            5
+2026-09-26 19:02:51,000 INFO   Tanri Yanilgisi                                    4
+2026-09-26 19:02:51,000 INFO   seytana tapma                                      3
+2026-09-26 19:02:51,000 INFO   LoC: Satanism                                      3
+2026-09-26 19:02:51,000 INFO   cinsel haz/teknik                                  2
+2026-09-26 19:02:51,000 INFO   Islam fasizmi                                      2
+2026-09-26 19:02:51,000 INFO   din bir afyon/yalan                                1
+2026-09-26 19:02:51,000 INFO   adult romance                                      1
+2026-09-26 19:02:51,001 INFO   psychedelics                                       1
+2026-09-26 19:02:51,001 INFO   LCC BF1546-1550 (satanism)                         1
+2026-09-26 19:02:51,001 INFO   author: Ayaan Hirsi Ali                            1
+2026-09-26 19:02:51,001 INFO Elapsed: 1.5 min
