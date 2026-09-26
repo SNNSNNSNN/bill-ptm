@@ -644,10 +644,17 @@ def main():
     eliminated.insert(3, "Elimination_Reason", [elim[i][2] for i in gone])
     eliminated.insert(4, "Matched_Terms", [elim[i][3] for i in gone])
     eliminated = eliminated.sort_values(["Elimination_Category", "Confidence", "ISBN"])
+    # Bare ISBNs with no metadata get their own file; they were never screened.
+    bare = eliminated["Elimination_Category"] == CATEGORY_NAMES["no_metadata"]
+    no_isbns = tidy_df.loc[eliminated.index[bare]].sort_values("ISBN")
+    no_isbns = no_isbns.loc[:, (no_isbns != "").any()]
+    eliminated = eliminated[~bare]
 
     cleaned_path, elim_path = outdir / "cleaned_books.csv", outdir / "eliminated_books.csv"
+    bare_path = outdir / "NO ISBNS.csv"
     cleaned.to_csv(cleaned_path, index=False, encoding="utf-8-sig", quoting=csv.QUOTE_MINIMAL)
     eliminated.to_csv(elim_path, index=False, encoding="utf-8-sig", quoting=csv.QUOTE_MINIMAL)
+    no_isbns.to_csv(bare_path, index=False, encoding="utf-8-sig", quoting=csv.QUOTE_MINIMAL)
 
     # Summary ----------------------------------------------------------------
     by_cat = Counter((elim[i][0], elim[i][1]) for i in gone)
@@ -655,6 +662,7 @@ def main():
     log.info("Input rows:            %8d", n_in)
     log.info("Cleaned (approved):    %8d  -> %s", len(cleaned), cleaned_path)
     log.info("Eliminated:            %8d  -> %s", len(eliminated), elim_path)
+    log.info("No metadata:           %8d  -> %s", len(no_isbns), bare_path)
     for key in ("openlibrary", "google_books", "annas_archive"):
         if f"{key}_queried" in enrich_stats or f"{key}_resolved" in enrich_stats:
             log.info("  enrich %-14s queried %7d  resolved %6d", key,
