@@ -1,0 +1,35 @@
+19:47:29 output/cleaned_books.csv.gz: 270834 rows
+19:47:30 phase 1: auditing existing files in texts/
+19:47:37   cull   en  texts/Aabedan.org/The Abrogation Issue.txt  [en 100%]
+19:47:38   cull   ru  texts/Aynur Ağören/Semanticheskie i strukturnye osobennosti leksiko-frazeologicheskogo polja «trudovaja dejatel''nost'' cheloveka» v sovrem.txt  [ru 100%]
+19:47:38   keep   tr  texts/Doç. Dr. İbrahim Demir/Teoride ve Pratikte İnsani Yardım 1.txt  [tr 70%, en 30%]
+19:47:38   keep   tr  texts/Esgin, Metin/Mendeley Desktop Nasıl Kullanılır.txt  [tr 97%, en 3%]
+19:47:39   cull   ar  texts/Farīd Anṣārī/Riwāyat ʻawdat al-fursān.txt  [ar 100%]
+19:47:39   cull   ru  texts/Firat Basbug/Başbuğ Fırat 2021.txt  [ru 100%]
+19:47:41   keep   tr  texts/Necati İşler/Suûdü’l-Mevlevî Hayatı, Eserleri ve Dîvânı (Zâdegân).txt  [tr 100%]
+19:47:41   keep   tr  texts/Oku Okut Yayınları/Oku Okut Derneği Faaliyet Raporu 2022.txt  [tr 58%, en 42%, de 0%]
+19:47:41   keep   tr  texts/Oku Okut Yayınları/Oku Okut Derneği Faaliyet Raporu-2021.txt  [tr 81%, en 18%, de 0%]
+19:47:41   cull   fa  texts/Oku Okut Yayınları/Şîvenâme-i İstinâddehî be Reveş-i İSNAD.txt  [fa 100%]
+19:47:43   keep   tr  texts/Oğuz Karayemiş/Ekoloji ve Ekonomi I.txt  [tr 100%]
+19:47:43   keep   tr  texts/Oğuz Karayemiş/Felsefeye Giriş Seminerleri.txt  [tr 100%]
+19:47:43   cull   en  texts/Robert Reigle (editor)/Spectral World Musics , Proceedings of the Istanbul Spectral Music Conference.txt  [en 100%]
+19:47:43   keep   tr  texts/Sezin Andic/İnternet Oyun Oynama Bozukluğu Full Text.txt  [tr 93%, en 7%]
+19:47:43   cull   en  texts/Talha Kaplan & Cemre Melek Küçük/THE SPRING KINGDOM.txt  [en 100%]
+19:47:44   keep   tr  texts/edited by Sertaç SÜMER/Kahramanmaraş Depremi Yıkılanlar dışında yeni bir şey yok.txt  [tr 100%]
+19:47:45   keep   tr  texts/Özcan Yazıcı & Claude/Evrensel Temel Hizmetler Kolektif Güvence, Demokratik Ekonomi, Sol Strateji.txt  [tr 100%]
+19:47:45   cull   ar  texts/امجان, فريدون، author/سليمان القانوني سلطان البرين والبحرين حقائق في ضوءالمصادر.txt  [ar 100%]
+19:47:46   cull   ar  texts/عرفان يلماز/التطور.. نظرية علمية أم أيديولوجيا؟.txt  [ar 100%]
+19:47:46   cull   ar  texts/كثرين براننج/شاي تركي من فضلك - تركيا من الماضي الي الحاضر.txt  [ar 100%]
+19:47:53   output/cleaned_books.csv.gz now has 270824 rows
+19:47:53 phase 1: kept 10, culled 10
+19:47:53 phase 2: looking up remaining ISBNs
+19:47:58   270814 ISBNs to check (20 already settled)
+19:48:43   archive.org index: 27311 openly licensed ISBNs, 9 of ours
+19:48:45 openlibrary: 3 failures in a row, skipping it for this run (404 Client Error: Not Found for url: https://openlibrary.org/api/books?bibkeys=ISBN%3A9780387238371%2CISBN%3A9780387238388%2CISBN%3A9780394710167%2CISBN%3A9780395593035%2CISBN%3A9780405053481%2CISBN%3)
+19:50:16 googlebooks: 3 failures in a row, skipping it for this run (HTTP 429)
+19:50:28   saved  9786250038468  texts/Oğuz Karayemiş/Ekoloji ve Ekonomi I.txt  [tr 100%]
+19:50:32   saved  9786250040140  texts/Oğuz Karayemiş/Felsefeye Giriş Seminerleri.txt  [tr 100%]
+19:50:40   output/cleaned_books.csv.gz now has 270822 rows
+19:50:42 phase 2: saved 2, culled 2, failed 153, left for a later run 270657
+19:50:42   openlibrary was unreachable this run: 404 Client Error: Not Found for url: https://openlibrary.org/api/books?bibkeys=ISBN%3A9780387238371%2CISBN%3A9780387238388%2CISBN%3A9780394710167%2CISBN%3A9780395593035%2CISBN%3A9780405053481%2CISBN%3
+19:50:42   googlebooks was unreachable this run: HTTP 429
