@@ -32,13 +32,13 @@ import ftfy
 import pandas as pd
 import requests
 
+from build_wanted_list import update as update_wanted
 from fetch_open_texts import CP1254, HOMOGLYPHS, is_open, safe
 
 BOOKS = Path("output/cleaned_books.csv.gz")
 TEXTS = Path("texts")
 DB = Path("pipeline_checkpoint.db")
 CULLED = Path("culled_books.csv")
-FAILED = Path("failed_downloads.csv")
 LID_MODEL = Path("data/lid.176.bin")
 LID_URL = "https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin"
 
@@ -633,9 +633,6 @@ def phase2(books, db, lid):
         mark(db, isbn, "failed", "; ".join(why)[:500])
     db.commit()
 
-    fail_rows = [{"ISBN": i, "Title": rows[i]["Title"], "Author": rows[i]["Author"],
-                  "Reason": "; ".join(w)[:500], "Time": now()} for i, w in failures.items()]
-    append_csv(FAILED, fail_rows, ["ISBN", "Title", "Author", "Reason", "Time"])
     if culled_rows:
         append_csv(CULLED, culled_rows, list(books.columns) + ["Reason", "Detected_Language", "File"])
         books = books[~books.ISBN.isin({r["ISBN"] for r in culled_rows})]
@@ -659,6 +656,7 @@ def main():
     books = phase1(books, db, lid)
     if "--audit-only" not in sys.argv:
         phase2(books, db, lid)
+    log(f"{len(update_wanted(db))} books still wanted -> output/wanted_books.csv.gz")
     db.close()
 
 
