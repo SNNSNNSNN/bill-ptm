@@ -146,7 +146,18 @@ def load_libgen_manual_queue():
     return []
 
 def libgen_queue_book_urls():
-    return {line.split(" ||| ")[0].strip() for line in load_libgen_manual_queue() if " ||| " in line}
+    urls = set()
+    md5s = set()
+    for line in load_libgen_manual_queue():
+        if " ||| " in line:
+            urls.add(line.split(" ||| ")[0].strip())
+        elif line.startswith("http"):
+            m = re.search(r'[?&]md5=([0-9a-fA-F]{32})', line)
+            if not m:
+                m = re.search(r'/md5/([0-9a-fA-F]{32})', line)
+            if m:
+                md5s.add(m.group(1).lower())
+    return urls, md5s
 
 def save_libgen_queue():
     global _libgen_saved, _libgen_saved_count
@@ -1601,15 +1612,21 @@ def main():
                     print("No accessible links found!")
                     return
 
-            libgen_queued_urls = libgen_queue_book_urls()
+            libgen_queued_urls, libgen_queued_md5s = libgen_queue_book_urls()
             already_processed = completed_urls.union(not_turkish_cached).union(libgen_queued_urls)
-            targets = [t for t in targets if t["url"] not in already_processed]
+
+            def _is_libgen_queued_by_md5(target_url):
+                if not libgen_queued_md5s:
+                    return False
+                m = re.search(r'/md5/([0-9a-fA-F]{32})', target_url)
+                return m and m.group(1).lower() in libgen_queued_md5s
+
+            targets = [t for t in targets if t["url"] not in already_processed and not _is_libgen_queued_by_md5(t["url"])]
 
             print(f"\n[INFO] Pre-filtered targets:")
-            print(f"  Original pool size:      ~{len(targets) + len(already_processed)}")
             print(f"  Already downloaded:      {len(completed_urls)}")
             print(f"  Not Turkish (cached):    {len(not_turkish_cached)}")
-            print(f"  Libgen manual queue:     {len(libgen_queued_urls)}")
+            print(f"  Libgen manual queue:     {len(libgen_queued_urls)} URLs + {len(libgen_queued_md5s)} MD5s")
             print(f"  Remaining to process:    {len(targets)}")
             print("=" * 70 + "\n")
 
