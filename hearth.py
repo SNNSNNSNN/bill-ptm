@@ -853,7 +853,7 @@ def trigger_url_download(page, dl_url, remove_referer=False):
         page.evaluate("""(args) => {
             const a = document.createElement('a');
             a.href = args.url;
-            a.download = '';
+            a.target = '_top';
             if (args.noRef) {
                 a.rel = 'noreferrer';
             }
@@ -1261,107 +1261,148 @@ def get_fast_download_urls(page, book_url):
         print(f"  [!] API Error: {e}")
         return []
 
+_explicitly_handled_downloads = set()
+
+def _save_playwright_download(download, md5_url):
+    _explicitly_handled_downloads.add(id(download))
+    try:
+        suggested = download.suggested_filename
+        download.save_as(os.path.join(DOWNLOAD_DIR, suggested))
+        fp = os.path.join(DOWNLOAD_DIR, suggested)
+        size = os.path.getsize(fp) if os.path.exists(fp) else 0
+        if size < 1024:
+            return None
+        clean_title = clean_downloaded_title(suggested, md5_url)
+        base_file_name = generate_custom_filename(clean_title, md5_url, NAME_FORMAT)
+        final_name = get_unique_filename(DOWNLOAD_DIR, base_file_name)
+        final_path = os.path.join(DOWNLOAD_DIR, final_name)
+        if fp != final_path:
+            shutil.move(fp, final_path)
+        print(f"  [+] Download COMPLETE! {final_name} ({size:,} bytes)")
+        return suggested, final_name
+    except Exception as e:
+        print(f"  [!] save_as failed: {truncate_error(e)}")
+        return None
+
+def _setup_download_handler(page, md5_url):
+    captured = []
+    def on_download(download):
+        try:
+            suggested = download.suggested_filename
+            print(f"  [*] Download event caught: {suggested}")
+            download.save_as(os.path.join(DOWNLOAD_DIR, suggested))
+            captured.append(suggested)
+        except Exception as e:
+            print(f"  [!] Background download handler error: {truncate_error(e)}")
+    page.on("download", on_download)
+    return captured
+
 def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeout_minutes=25, max_cancel_attempts=3):
-    """
-    SIMPLIFIED FIX:
-    - Poll DOWNLOAD_FOLDER for NEW files (PRIMARY completion signal)
-    - 25-minute timeout as HARD FALLBACK
-    - Returns IMMEDIATELY when file detected
-    - No chrome://downloads/ scraping
-    """
     download_cancel_count = 0
     scan_start_time = time.time()
-    
+
     try:
         t_start = datetime.now().strftime("%H:%M:%S")
         print(f"  [*] [{t_start}] Triggering {source_label} download...")
-        
-        # Record which files existed BEFORE triggering
+
+        # --- METHOD 1: Playwright expect_download() ---
+        try:
+            with page.expect_download(timeout=30000) as download_info:
+                trigger_action()
+            download = download_info.value
+            print(f"  [*] Playwright intercepted download: {download.suggested_filename}")
+            result = _save_playwright_download(download, md5_url)
+            if result:
+                elapsed = format_elapsed_time(time.time() - scan_start_time)
+                print(f"  [+] [{datetime.now().strftime('%H:%M:%S')}] Elapsed: {elapsed}\n")
+                return result
+        except Exception as e:
+            err_str = str(e).lower()
+            if "timeout" in err_str or "waiting" in err_str:
+                print(f"  [*] No Playwright download event in 30s, trying fallbacks...")
+            else:
+                print(f"  [!] expect_download error: {truncate_error(e)}")
+
+        # --- METHOD 2: Inline PDF detection ---
+        page.wait_for_timeout(2000)
+        pdf_result = save_inline_pdf(page, md5_url)
+        if pdf_result:
+            return pdf_result
+
+        # --- Check for mirror errors before long poll ---
+        try:
+            title_lower = page.title().lower()
+            body_lower = ""
+            try:
+                body_lower = page.inner_text("body").lower()[:2000]
+            except Exception:
+                pass
+            mirror_404_signals = [
+                "404", "not found", "file not found",
+                "does not exist", "no longer available",
+                "has been removed", "unavailable",
+            ]
+            for sig in mirror_404_signals:
+                if sig in title_lower or (body_lower and sig in body_lower and len(body_lower) < 1500):
+                    raise Exception("MIRROR_404")
+        except Exception as check_err:
+            if "MIRROR_404" in str(check_err):
+                raise
+
+        # --- METHOD 3: Disk polling fallback ---
+        print(f"  [*] Falling back to disk polling ({timeout_minutes} min max)...")
         existing_files = set(os.listdir(DOWNLOAD_DIR))
-        print(f"  [*] Triggering download (25 min max, checking disk for completion)...")
-        
-        # Fire the download
-        trigger_action()
-        page.wait_for_timeout(2000)  # Give browser time to start
-        
-        # ===== POLL DISK FOR NEW FILES =====
+
         while time.time() - scan_start_time < timeout_minutes * 60:
-            # Scan folder for NEW files
             current_files = set(os.listdir(DOWNLOAD_DIR))
             new_files = current_files - existing_files
-            
+
             for f in new_files:
                 fp = os.path.join(DOWNLOAD_DIR, f)
                 if not os.path.isfile(fp):
                     continue
-                
-                # Skip temp/incomplete files
                 if f.endswith('.part') or f.endswith('.tmp') or f.endswith('.crdownload'):
                     continue
-                
                 try:
                     size = os.path.getsize(fp)
-                    
-                    # Skip tiny files (error pages)
                     if size < 1024:
                         continue
-                    
-                    # Validate file type
                     with open(fp, 'rb') as vf:
                         header = vf.read(8)
-                        valid = False
-                        
-                        if header[:4] == b'%PDF':
-                            valid = True
-                        elif header[:4] == b'PK\x03\x04':  # EPUB/ZIP
-                            valid = True
-                        elif len(header) > 60 and header[60:68] == b'BOOKMOBI':
-                            valid = True
-                        elif header[:4] == b'AT&TFORM':  # DJVU
-                            valid = True
-                    
+                        valid = (
+                            header[:4] == b'%PDF'
+                            or header[:4] == b'PK\x03\x04'
+                            or header[:4] == b'AT&T'
+                        )
                     if not valid:
                         continue
-                    
-                    # FILE DETECTED! Verify size is stable (not still downloading)
-                    time.sleep(3)  # Brief pause to ensure download finished
+                    time.sleep(3)
                     new_size = os.path.getsize(fp)
-                    
                     if new_size != size:
-                        print(f"  [*] File still growing: {size} → {new_size} bytes, waiting...")
-                        existing_files.add(f)  # Don't check this again
+                        print(f"  [*] File still growing: {size} -> {new_size} bytes, waiting...")
+                        existing_files.add(f)
                         break
-                    
-                    # SIZE STABLE! Download complete.
                     print(f"  [+] Download COMPLETE! Found: {f} ({new_size:,} bytes)")
-                    
-                    # Generate final name
                     clean_title = clean_downloaded_title(f, md5_url)
                     base_file_name = generate_custom_filename(clean_title, md5_url, NAME_FORMAT)
                     final_name = get_unique_filename(DOWNLOAD_DIR, base_file_name)
                     final_path = os.path.join(DOWNLOAD_DIR, final_name)
-                    
                     if fp != final_path:
                         shutil.move(fp, final_path)
-                    
                     elapsed = format_elapsed_time(time.time() - scan_start_time)
                     print(f"  [+] [{datetime.now().strftime('%H:%M:%S')}] Saved: {final_name}")
                     print(f"  [+] Elapsed: {elapsed}\n")
                     return f, final_name
-                    
                 except Exception:
                     continue
-            
-            # Check if browser is rendering a PDF inline instead of downloading
+
             pdf_result = save_inline_pdf(page, md5_url)
             if pdf_result:
                 return pdf_result
 
-            # Check for cancel/fail signals
             if download_cancel_count >= max_cancel_attempts:
                 raise Exception(f"CANCELLED_{download_cancel_count}_TIMES")
 
-            # Check the page for error signals
             try:
                 title_lower = page.title().lower()
                 body_lower = ""
@@ -1369,17 +1410,9 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
                     body_lower = page.inner_text("body").lower()[:2000]
                 except Exception:
                     pass
-
-                # 404 / file-not-found from the mirror server
-                mirror_404_signals = [
-                    "404", "not found", "file not found",
-                    "does not exist", "no longer available",
-                    "has been removed", "unavailable",
-                ]
                 for sig in mirror_404_signals:
                     if sig in title_lower or (body_lower and sig in body_lower and len(body_lower) < 1500):
                         raise Exception("MIRROR_404")
-
                 if 'canceled' in title_lower or 'failed' in title_lower:
                     download_cancel_count += 1
                     print(f"  [!] Download cancelled ({download_cancel_count}/{max_cancel_attempts}), retrying...")
@@ -1391,12 +1424,10 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
                 if "MIRROR_404" in str(page_check_err):
                     raise
 
-            # Not done yet, wait and check again
             page.wait_for_timeout(5000)
-        
-        # TIMEOUT - no file appeared
+
         raise Exception(f"{source_label} TIMEOUT ({timeout_minutes} mins)")
-    
+
     except Exception as e:
         if "CANCELLED_" in str(e) or "TIMEOUT" in str(e) or "MIRROR_404" in str(e):
             raise e
@@ -1654,6 +1685,17 @@ def main():
             
             print("[*] Step 5/5: Opening new page...")
             page = context.new_page()
+            def _bg_download_handler(download):
+                if id(download) in _explicitly_handled_downloads:
+                    return
+                try:
+                    name = download.suggested_filename
+                    dest = os.path.join(DOWNLOAD_DIR, name)
+                    download.save_as(dest)
+                    print(f"  [*] Background download saved: {name}")
+                except Exception:
+                    pass
+            page.on("download", _bg_download_handler)
             print("[✓] Page opened successfully!")
             print("")
 
@@ -1744,6 +1786,7 @@ def main():
                             except Exception:
                                 pass
                         page = context.new_page()
+                        page.on("download", _bg_download_handler)
                         if AA_SECRET:
                             auto_login_to_annas_archive(page, AA_SECRET, DOWNLOAD_DIR)
                         browser_restart_count += 1
