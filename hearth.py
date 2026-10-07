@@ -1301,9 +1301,25 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
             if download_cancel_count >= max_cancel_attempts:
                 raise Exception(f"CANCELLED_{download_cancel_count}_TIMES")
             
-            # Check for DDoS/connection errors on the page
+            # Check the page for error signals
             try:
                 title_lower = page.title().lower()
+                body_lower = ""
+                try:
+                    body_lower = page.inner_text("body").lower()[:2000]
+                except Exception:
+                    pass
+
+                # 404 / file-not-found from the mirror server
+                mirror_404_signals = [
+                    "404", "not found", "file not found",
+                    "does not exist", "no longer available",
+                    "has been removed", "unavailable",
+                ]
+                for sig in mirror_404_signals:
+                    if sig in title_lower or (body_lower and sig in body_lower and len(body_lower) < 1500):
+                        raise Exception("MIRROR_404")
+
                 if 'canceled' in title_lower or 'failed' in title_lower:
                     download_cancel_count += 1
                     print(f"  [!] Download cancelled ({download_cancel_count}/{max_cancel_attempts}), retrying...")
@@ -1311,9 +1327,10 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
                     page.wait_for_timeout(3000)
                     trigger_action()
                     continue
-            except Exception:
-                pass
-            
+            except Exception as page_check_err:
+                if "MIRROR_404" in str(page_check_err):
+                    raise
+
             # Not done yet, wait and check again
             page.wait_for_timeout(5000)
         
@@ -1321,7 +1338,7 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
         raise Exception(f"{source_label} TIMEOUT ({timeout_minutes} mins)")
     
     except Exception as e:
-        if "CANCELLED_" in str(e) or "TIMEOUT" in str(e):
+        if "CANCELLED_" in str(e) or "TIMEOUT" in str(e) or "MIRROR_404" in str(e):
             raise e
         raise Exception(f"{source_label} download failed: {truncate_error(e)}")
 
@@ -1352,9 +1369,9 @@ def create_archived_file(name, urls):
         print(f"[!] Error creating archive: {e}")
 
 def try_mirror_download(page, book_url, mirror_label, mirror_href, mirror_type, should_skip_libgen):
-    # Libgen is now excluded from mirrors list entirely, so this shouldn't be called
-    print(f"  [-] Libgen download disabled - URL already saved to manual queue")
-    return False, False, None, None, "LIBGEN_DISABLED"
+    if mirror_type == "libgen":
+        print(f"  [-] Libgen download disabled - URL already saved to manual queue")
+        return False, False, None, None, "LIBGEN_DISABLED"
     try:
         print(f"  [*] [{datetime.now().strftime('%H:%M:%S')}] Mirror: {mirror_label}")
         response = page.goto(mirror_href, wait_until="domcontentloaded", timeout=60000)
@@ -1371,10 +1388,14 @@ def try_mirror_download(page, book_url, mirror_label, mirror_href, mirror_type, 
         if check_out_of_fast_downloads(page):
             print(f"  [!] OUT OF FAST DOWNLOADS - switching to slow")
             return False, False, None, None, "OUT_OF_FAST_DOWNLOADS_PAGE"
+        if response and response.status == 404:
+            return False, False, None, None, "MIRROR_404"
         try:
             check_for_page_error(page, response)
         except Exception as check_err:
             return False, True, None, None, str(check_err)
+        if check_book_not_found(page, response):
+            return False, False, None, None, "MIRROR_404"
         if mirror_type == "slow":
             print(f"  [*] Waiting for download option (up to 3 mins)...")
             start_wait = time.time()
@@ -1821,6 +1842,10 @@ def main():
                                 print(f"  [!] Out of fast - switching to slow")
                                 hit_out_of_fast_page = True
                                 continue
+                            if "MIRROR_404" in err_str:
+                                print(f"  [!] {mirror_label}: 404 / file not found on server")
+                                failure_reason = "MIRROR_404"
+                                continue
                             print(f"  [!] {mirror_label} failed: {truncate_error(e)}")
                             failure_reason = f"MIRROR_FAIL_{mirror_label}"
 
@@ -1841,7 +1866,11 @@ def main():
                             item_downloaded = True
                             break
                         else:
-                            failure_reason = f"MIRROR_FAIL_{mirror_label}_{reason}" if reason else f"MIRROR_FAIL_{mirror_label}"
+                            if reason and "MIRROR_404" in reason:
+                                print(f"  [!] {mirror_label}: 404 / file not found on server")
+                                failure_reason = "MIRROR_404"
+                            else:
+                                failure_reason = f"MIRROR_FAIL_{mirror_label}_{reason}" if reason else f"MIRROR_FAIL_{mirror_label}"
 
                     elif mirror_type == "ipfs":
                         try:
@@ -1946,12 +1975,16 @@ def main():
                             if found_fallback:
                                 continue
                     
-                    if book_has_libgen:
+                    if book_has_libgen or failure_reason == "MIRROR_404":
+                        libgen_urls_found.append(f"{url} ||| MANUAL_CHECK")
                         mark_completed(url, "LIBGEN_MANUAL")
                         completed_urls.add(url)
                         processed_in_this_session.add(url)
-                        session_success += 1
-                        print(f"  [+] No fast/slow mirrors worked - Libgen URL already in manual queue, marking done")
+                        session_skipped += 1
+                        if failure_reason == "MIRROR_404":
+                            print(f"  [+] Mirror 404 - added to libgen_manual_queue.txt for manual check")
+                        else:
+                            print(f"  [+] Libgen URL in manual queue, marking done")
                     else:
                         session_failed += 1
                         processed_in_this_session.add(url)
