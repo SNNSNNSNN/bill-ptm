@@ -61,6 +61,7 @@ AA_SECRET = ""
 last_libgen_3306_time = None
 processed_in_this_session = set()
 libgen_urls_found = []  # Store Libgen URLs for export
+libgen_urls_seen = set()  # Fast dedup lookup across sessions
 
 def recover_downloaded_files(download_dir, url, max_age_hours=None):
     """
@@ -393,6 +394,20 @@ def load_libgen_retry_queue():
         except Exception:
             return []
     return []
+
+def load_existing_libgen_urls():
+    if os.path.exists(LIBGEN_MANUAL_FILE):
+        try:
+            with open(LIBGEN_MANUAL_FILE, "r", encoding="utf-8") as f:
+                for line in f:
+                    url = line.strip()
+                    if url and url not in libgen_urls_seen:
+                        libgen_urls_found.append(url)
+                        libgen_urls_seen.add(url)
+            if libgen_urls_seen:
+                print(f"  [+] Pre-loaded {len(libgen_urls_seen)} Libgen URLs from existing queue (won't re-add)")
+        except Exception as e:
+            print(f"  [!] Warning: Could not load existing Libgen queue: {e}")
 
 def insert_failed_url_random_position(failed_url):
     try:
@@ -876,9 +891,11 @@ def collect_download_mirrors(page, book_url):
                 href = absolutize(href)
                 if href not in seen_hrefs:
                     seen_hrefs.add(href)
-                    # ADD TO MANUAL QUEUE
-                    libgen_urls_found.append(href)
-                    print(f"  [+💾] Libgen URL saved for manual download")
+                    if href not in libgen_urls_seen:
+                        libgen_urls_seen.add(href)
+                        libgen_urls_found.append(href)
+                        print(f"  [+💾] Libgen URL saved for manual download")
+                    # already in queue from a previous run — nothing to do
     except Exception:
         pass
     
@@ -1421,6 +1438,7 @@ def main():
     global shutdown_requested, AA_SECRET, last_libgen_3306_time, processed_in_this_session
     
     AA_SECRET = load_aa_secret()
+    load_existing_libgen_urls()
     
     if RESET_QUOTA:
         if os.path.exists(FAST_HISTORY_FILE):
@@ -1632,8 +1650,8 @@ def main():
                     pass
                 
                 try:
-                    page.goto(url, wait_until="domcontentloaded", timeout=NAVIGATION_TIMEOUT_SECONDS*1000)
-                    
+                    nav_response = page.goto(url, wait_until="domcontentloaded", timeout=NAVIGATION_TIMEOUT_SECONDS*1000)
+
                     if check_ddos_block(page):
                         resolved = wait_for_ddos_to_resolve(page, DDOS_WAIT_FOR_RESOLUTION_SECONDS, DDOS_POLL_INTERVAL_SECONDS)
                         if not resolved:
@@ -1643,6 +1661,18 @@ def main():
                             print(f"  [-] Book page blocked after DDoS wait - skipping")
                             continue
                         print(f"  [+] DDoS resolved - proceeding with book processing")
+
+                    try:
+                        check_for_page_error(page, nav_response)
+                    except Exception as page_err:
+                        err_str = str(page_err).lower()
+                        print(f"  [!] Book page error: {truncate_error(page_err)}")
+                        if "404" in err_str or "not found" in err_str:
+                            print(f"  [-] Page gone - permanently skipping")
+                            mark_completed(url, "404_GONE")
+                            completed_urls.add(url)
+                        processed_in_this_session.add(url)
+                        continue
                 except Exception as nav_err:
                     print(f"  [!] Navigation error: {truncate_error(nav_err)}")
                     failure_reason = "NAVIGATION_ERROR"
