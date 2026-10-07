@@ -134,15 +134,31 @@ def recover_downloaded_files(download_dir, url, max_age_hours=None):
     return clean_title, final_name
 
 _libgen_saved = False
+_libgen_saved_count = 0
+
+def load_libgen_manual_queue():
+    if os.path.exists(LIBGEN_MANUAL_FILE):
+        try:
+            with open(LIBGEN_MANUAL_FILE, "r", encoding="utf-8") as f:
+                return [line.strip() for line in f if line.strip()]
+        except Exception:
+            pass
+    return []
+
+def libgen_queue_book_urls():
+    return {line.split(" ||| ")[0].strip() for line in load_libgen_manual_queue() if " ||| " in line}
 
 def save_libgen_queue():
-    global _libgen_saved
-    libgen_file = os.path.join(DOWNLOAD_DIR, "libgen_manual_queue.txt")
+    global _libgen_saved, _libgen_saved_count
+    if not libgen_urls_found or len(libgen_urls_found) <= _libgen_saved_count:
+        return
     try:
-        with open(libgen_file, "w", encoding="utf-8") as f:
-            for url in libgen_urls_found:
-                f.write(f"{url}\n")
-        print(f"\n  ✓ Libgen queue saved: {len(libgen_urls_found)} URLs → {libgen_file}")
+        new_entries = libgen_urls_found[_libgen_saved_count:]
+        with open(LIBGEN_MANUAL_FILE, "a", encoding="utf-8") as f:
+            for entry in new_entries:
+                f.write(f"{entry}\n")
+        _libgen_saved_count = len(libgen_urls_found)
+        print(f"\n  Libgen queue: {len(new_entries)} new entries appended ({_libgen_saved_count} total this session)")
         _libgen_saved = True
     except Exception as e:
         print(f"  [!] Error saving Libgen queue: {e}")
@@ -895,7 +911,8 @@ def collect_download_mirrors(page, book_url):
     except Exception:
         pass
     
-    # NEW: Extract Libgen URLs and save for manual processing
+    # Extract Libgen URLs and save for manual processing
+    has_libgen = False
     try:
         libgen_locator = find_valid_link(page, text_match='Libgen.li', href_match='libgen.li')
         if libgen_locator:
@@ -904,16 +921,16 @@ def collect_download_mirrors(page, book_url):
                 href = absolutize(href)
                 if href not in seen_hrefs:
                     seen_hrefs.add(href)
-                    # ADD TO MANUAL QUEUE
-                    libgen_urls_found.append(href)
-                    print(f"  [+💾] Libgen URL saved for manual download")
+                    libgen_urls_found.append(f"{book_url} ||| {href}")
+                    has_libgen = True
+                    print(f"  [+] Libgen URL saved for manual download")
     except Exception:
         pass
-    
+
     # Exclude Libgen from active mirrors (they're saved separately now)
     mirrors = [m for m in mirrors if m[2] != "libgen"]
-    
-    return mirrors
+
+    return mirrors, has_libgen
 
 def find_ipfs_cids(page):
     cids = []
@@ -1584,13 +1601,15 @@ def main():
                     print("No accessible links found!")
                     return
 
-            already_processed = completed_urls.union(not_turkish_cached)
+            libgen_queued_urls = libgen_queue_book_urls()
+            already_processed = completed_urls.union(not_turkish_cached).union(libgen_queued_urls)
             targets = [t for t in targets if t["url"] not in already_processed]
-            
+
             print(f"\n[INFO] Pre-filtered targets:")
             print(f"  Original pool size:      ~{len(targets) + len(already_processed)}")
             print(f"  Already downloaded:      {len(completed_urls)}")
             print(f"  Not Turkish (cached):    {len(not_turkish_cached)}")
+            print(f"  Libgen manual queue:     {len(libgen_queued_urls)}")
             print(f"  Remaining to process:    {len(targets)}")
             print("=" * 70 + "\n")
 
@@ -1711,8 +1730,9 @@ def main():
                         pass
 
                 mirrors_to_try = []
+                book_has_libgen = False
                 try:
-                    page_mirrors = collect_download_mirrors(page, url)
+                    page_mirrors, book_has_libgen = collect_download_mirrors(page, url)
                     current_fast_remaining = fast_remaining()
                     print(f"  [*] Quota: {current_fast_remaining} / {FAST_LIMIT}")
                     if current_fast_remaining > 0:
@@ -1909,13 +1929,19 @@ def main():
                             if found_fallback:
                                 continue
                     
-                    # Still no recovery? Actually fail it
-                    session_failed += 1
-                    processed_in_this_session.add(url)
-                    print(f"\n  [!] ALL MIRRORS FAILED for: {url[:60]}...")
-                    print(f"  [+] Re-queueing for retry at random position...")
-                    insert_failed_url_random_position(url)
-                    session_requeued += 1
+                    if book_has_libgen:
+                        mark_completed(url, "LIBGEN_MANUAL")
+                        completed_urls.add(url)
+                        processed_in_this_session.add(url)
+                        session_success += 1
+                        print(f"  [+] No fast/slow mirrors worked - Libgen URL already in manual queue, marking done")
+                    else:
+                        session_failed += 1
+                        processed_in_this_session.add(url)
+                        print(f"\n  [!] ALL MIRRORS FAILED for: {url[:60]}...")
+                        print(f"  [+] Re-queueing for retry at random position...")
+                        insert_failed_url_random_position(url)
+                        session_requeued += 1
 
             # ===== SESSION COMPLETE - SAVE LIBGEN QUEUE =====
             save_libgen_queue()
