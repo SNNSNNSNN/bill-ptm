@@ -557,26 +557,43 @@ def truncate_error(error_msg, max_length=120):
     return msg
 
 def check_for_page_error(page, response=None):
-    error_codes = [404, 429, 500, 502, 503, 520, 521, 522, 523, 524, 525, 526, 527, 530]
-    if response and response.status in error_codes:
-        raise Exception(f"HTTP {response.status} returned by server")
+    if response and response.status >= 400:
+        raise Exception(f"MIRROR_ERROR:HTTP {response.status}")
     try:
         title = page.title().strip()
         title_lower = title.lower()
-        if re.search(r'\b(404|429|500|502|503|504|520|521|522|523|524|525|526|527|530)\b', title_lower):
-            raise Exception(f"Error page detected via title: '{title}'")
-        text_errors = [
-            "service unavailable", "temporarily unavailable",
+        body_lower = ""
+        try:
+            body_lower = page.inner_text("body").lower()[:3000]
+        except Exception:
+            pass
+        if re.search(r'\b[45]\d{2}\b', title_lower):
+            raise Exception(f"MIRROR_ERROR:{title}")
+        error_phrases = [
             "bad gateway", "gateway time-out", "gateway timeout",
-            "not found", "server error", "too many requests",
+            "service unavailable", "temporarily unavailable",
+            "server error", "internal server error",
+            "not found", "page not found", "file not found",
+            "too many requests", "rate limit",
             "web server is down", "origin is unreachable",
-            "connection timed out", "host error"
+            "connection timed out", "host error",
+            "invalid response from the upstream",
+            "does not exist", "no longer available",
+            "has been removed", "access denied",
+            "forbidden", "unauthorized",
         ]
-        if any(err in title_lower for err in text_errors):
-            raise Exception(f"Error page detected via title: '{title}'")
+        for phrase in error_phrases:
+            if phrase in title_lower:
+                raise Exception(f"MIRROR_ERROR:{title}")
+        if body_lower and len(body_lower) < 2000:
+            if re.search(r'\b[45]\d{2}\b.*(?:error|gateway|found|unavailable|denied)', body_lower):
+                raise Exception(f"MIRROR_ERROR:{title_lower[:60]}")
+            for phrase in error_phrases:
+                if phrase in body_lower:
+                    raise Exception(f"MIRROR_ERROR:{phrase}")
     except Exception as e:
-        if "Error page detected" in str(e):
-            raise e
+        if "MIRROR_ERROR" in str(e):
+            raise
 
 def check_ddos_block(page):
     try:
@@ -1331,23 +1348,9 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
 
         # --- Check for mirror errors before long poll ---
         try:
-            title_lower = page.title().lower()
-            body_lower = ""
-            try:
-                body_lower = page.inner_text("body").lower()[:2000]
-            except Exception:
-                pass
-            mirror_404_signals = [
-                "404", "not found", "file not found",
-                "does not exist", "no longer available",
-                "has been removed", "unavailable",
-            ]
-            for sig in mirror_404_signals:
-                if sig in title_lower or (body_lower and sig in body_lower and len(body_lower) < 1500):
-                    raise Exception("MIRROR_404")
-        except Exception as check_err:
-            if "MIRROR_404" in str(check_err):
-                raise
+            check_for_page_error(page, None)
+        except Exception:
+            raise Exception("MIRROR_404")
 
         # --- METHOD 3: Disk polling fallback ---
         print(f"  [*] Falling back to disk polling ({timeout_minutes} min max)...")
@@ -1404,15 +1407,11 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
                 raise Exception(f"CANCELLED_{download_cancel_count}_TIMES")
 
             try:
+                check_for_page_error(page, None)
+            except Exception:
+                raise Exception("MIRROR_404")
+            try:
                 title_lower = page.title().lower()
-                body_lower = ""
-                try:
-                    body_lower = page.inner_text("body").lower()[:2000]
-                except Exception:
-                    pass
-                for sig in mirror_404_signals:
-                    if sig in title_lower or (body_lower and sig in body_lower and len(body_lower) < 1500):
-                        raise Exception("MIRROR_404")
                 if 'canceled' in title_lower or 'failed' in title_lower:
                     download_cancel_count += 1
                     print(f"  [!] Download cancelled ({download_cancel_count}/{max_cancel_attempts}), retrying...")
@@ -1420,9 +1419,8 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
                     page.wait_for_timeout(3000)
                     trigger_action()
                     continue
-            except Exception as page_check_err:
-                if "MIRROR_404" in str(page_check_err):
-                    raise
+            except Exception:
+                pass
 
             page.wait_for_timeout(5000)
 
@@ -1479,12 +1477,12 @@ def try_mirror_download(page, book_url, mirror_label, mirror_href, mirror_type, 
         if check_out_of_fast_downloads(page):
             print(f"  [!] OUT OF FAST DOWNLOADS - switching to slow")
             return False, False, None, None, "OUT_OF_FAST_DOWNLOADS_PAGE"
-        if response and response.status == 404:
-            return False, False, None, None, "MIRROR_404"
         try:
             check_for_page_error(page, response)
         except Exception as check_err:
-            return False, True, None, None, str(check_err)
+            err_msg = str(check_err)
+            print(f"  [!] Mirror error: {err_msg[:80]}")
+            return False, False, None, None, "MIRROR_404"
         if check_book_not_found(page, response):
             return False, False, None, None, "MIRROR_404"
         if mirror_type == "slow":
