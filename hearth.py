@@ -853,7 +853,7 @@ def trigger_url_download(page, dl_url, remove_referer=False):
         page.evaluate("""(args) => {
             const a = document.createElement('a');
             a.href = args.url;
-            a.target = '_top';
+            a.download = '';
             if (args.noRef) {
                 a.rel = 'noreferrer';
             }
@@ -863,6 +863,61 @@ def trigger_url_download(page, dl_url, remove_referer=False):
         }""", {"url": dl_url, "noRef": remove_referer})
     except Exception as e:
         print(f"  [!] Trigger error: {e}")
+
+def save_inline_pdf(page, md5_url):
+    try:
+        current_url = page.url
+        if not current_url or current_url == "about:blank":
+            return None
+
+        content_type = ""
+        try:
+            content_type = page.evaluate("() => document.contentType || ''").lower()
+        except Exception:
+            pass
+
+        is_pdf = (
+            content_type == "application/pdf"
+            or current_url.lower().endswith(".pdf")
+        )
+        if not is_pdf:
+            return None
+
+        print(f"  [*] PDF rendered in browser - downloading directly...")
+        resp = page.context.request.get(current_url, timeout=300000)
+        if resp.status != 200:
+            return None
+
+        body = resp.body()
+        if not body or len(body) < 1024 or body[:4] != b'%PDF':
+            return None
+
+        md5_match = re.search(r'/md5/([0-9a-fA-F]{32})', md5_url)
+        md5_tag = md5_match.group(1)[:8] if md5_match else "unknown"
+
+        original_name = f"{md5_tag}.pdf"
+        cd = resp.headers.get("content-disposition") or ""
+        m = re.search(r'filename="?([^";]+)"?', cd)
+        if m:
+            original_name = unquote(m.group(1))
+        elif current_url.split('/')[-1].endswith('.pdf'):
+            original_name = unquote(current_url.split('/')[-1].split('?')[0])
+
+        base_file_name = generate_custom_filename(
+            clean_downloaded_title(original_name, md5_url), md5_url, NAME_FORMAT
+        )
+        file_name = get_unique_filename(DOWNLOAD_DIR, base_file_name)
+        file_path = os.path.join(DOWNLOAD_DIR, file_name)
+
+        with open(file_path, "wb") as f:
+            f.write(body)
+
+        print(f"  [+] Saved inline PDF: {file_name} ({len(body):,} bytes)")
+        return original_name, file_name
+
+    except Exception as e:
+        print(f"  [!] Inline PDF save failed: {truncate_error(e)}")
+        return None
 
 def find_valid_link(page, text_match=None, href_match=None):
     selectors = []
@@ -1297,10 +1352,15 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
                 except Exception:
                     continue
             
+            # Check if browser is rendering a PDF inline instead of downloading
+            pdf_result = save_inline_pdf(page, md5_url)
+            if pdf_result:
+                return pdf_result
+
             # Check for cancel/fail signals
             if download_cancel_count >= max_cancel_attempts:
                 raise Exception(f"CANCELLED_{download_cancel_count}_TIMES")
-            
+
             # Check the page for error signals
             try:
                 title_lower = page.title().lower()
