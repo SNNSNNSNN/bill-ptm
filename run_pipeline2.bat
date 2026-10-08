@@ -48,7 +48,7 @@ echo ℹ Keep browser window open for CAPTCHAs
 echo ℹ Press Ctrl+C or run stop_pipeline.ps1 to pause anytime
 echo.
 cd /d %AA_ROOT%
-python hearth.py text "%AA_BOOKS%" full 5 --no-fast
+python hearth.py text "%AA_BOOKS%" full 5
 if !errorlevel! neq 0 (
     echo ERROR: hearth.py failed with error code !errorlevel!
     pause
@@ -79,7 +79,7 @@ echo [2/2] Starting hearth downloader...
 echo ℹ Keep browser window open for CAPTCHAs
 echo.
 cd /d %AA_ROOT%
-python hearth.py text "%AA_BOOKS%" full 5 --no-fast
+python hearth.py text "%AA_BOOKS%" full 5
 
 echo.
 echo ✓ Pipeline resumed successfully!
