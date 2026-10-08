@@ -1282,42 +1282,6 @@ def get_fast_download_urls(page, book_url):
         print(f"  [!] API Error: {e}")
         return []
 
-_explicitly_handled_downloads = set()
-
-def _save_playwright_download(download, md5_url):
-    _explicitly_handled_downloads.add(id(download))
-    try:
-        suggested = download.suggested_filename
-        download.save_as(os.path.join(DOWNLOAD_DIR, suggested))
-        fp = os.path.join(DOWNLOAD_DIR, suggested)
-        size = os.path.getsize(fp) if os.path.exists(fp) else 0
-        if size < 1024:
-            return None
-        clean_title = clean_downloaded_title(suggested, md5_url)
-        base_file_name = generate_custom_filename(clean_title, md5_url, NAME_FORMAT)
-        final_name = get_unique_filename(DOWNLOAD_DIR, base_file_name)
-        final_path = os.path.join(DOWNLOAD_DIR, final_name)
-        if fp != final_path:
-            shutil.move(fp, final_path)
-        print(f"  [+] Download COMPLETE! {final_name} ({size:,} bytes)")
-        return suggested, final_name
-    except Exception as e:
-        print(f"  [!] save_as failed: {truncate_error(e)}")
-        return None
-
-def _setup_download_handler(page, md5_url):
-    captured = []
-    def on_download(download):
-        try:
-            suggested = download.suggested_filename
-            print(f"  [*] Download event caught: {suggested}")
-            download.save_as(os.path.join(DOWNLOAD_DIR, suggested))
-            captured.append(suggested)
-        except Exception as e:
-            print(f"  [!] Background download handler error: {truncate_error(e)}")
-    page.on("download", on_download)
-    return captured
-
 def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeout_minutes=25, max_cancel_attempts=3):
     download_cancel_count = 0
     scan_start_time = time.time()
@@ -1326,26 +1290,12 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
         t_start = datetime.now().strftime("%H:%M:%S")
         print(f"  [*] [{t_start}] Triggering {source_label} download...")
 
-        # --- METHOD 1: Playwright expect_download() ---
-        try:
-            with page.expect_download(timeout=30000) as download_info:
-                trigger_action()
-            download = download_info.value
-            print(f"  [*] Playwright intercepted download: {download.suggested_filename}")
-            result = _save_playwright_download(download, md5_url)
-            if result:
-                elapsed = format_elapsed_time(time.time() - scan_start_time)
-                print(f"  [+] [{datetime.now().strftime('%H:%M:%S')}] Elapsed: {elapsed}\n")
-                return result
-        except Exception as e:
-            err_str = str(e).lower()
-            if "timeout" in err_str or "waiting" in err_str:
-                print(f"  [*] No Playwright download event in 30s, trying fallbacks...")
-            else:
-                print(f"  [!] expect_download error: {truncate_error(e)}")
+        existing_files = set(os.listdir(DOWNLOAD_DIR))
 
-        # --- METHOD 2: Inline PDF detection ---
-        page.wait_for_timeout(2000)
+        trigger_action()
+        page.wait_for_timeout(3000)
+
+        # --- Inline PDF detection ---
         pdf_result = save_inline_pdf(page, md5_url)
         if pdf_result:
             return pdf_result
@@ -1355,10 +1305,6 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
             check_for_page_error(page, None)
         except Exception:
             raise Exception("MIRROR_404")
-
-        # --- METHOD 3: Disk polling fallback ---
-        print(f"  [*] Falling back to disk polling ({timeout_minutes} min max)...")
-        existing_files = set(os.listdir(DOWNLOAD_DIR))
 
         while time.time() - scan_start_time < timeout_minutes * 60:
             current_files = set(os.listdir(DOWNLOAD_DIR))
@@ -1688,13 +1634,11 @@ def main():
             print("[*] Step 5/5: Opening new page...")
             page = context.new_page()
             def _bg_download_handler(download):
-                if id(download) in _explicitly_handled_downloads:
-                    return
                 try:
                     name = download.suggested_filename
                     dest = os.path.join(DOWNLOAD_DIR, name)
                     download.save_as(dest)
-                    print(f"  [*] Background download saved: {name}")
+                    print(f"  [+] Download saved: {name}")
                 except Exception:
                     pass
             page.on("download", _bg_download_handler)
