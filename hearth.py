@@ -194,20 +194,22 @@ LIST_URL = None
 TXT_MODE = False
 RETRY_MODE = False
 
-if 3 <= len(sys.argv) <= 5:
-    arg1 = sys.argv[1].strip()
-    DOWNLOAD_DIR = os.path.abspath(sys.argv[2].strip())
+_positional = [a for a in sys.argv[1:] if not a.startswith("--")]
+
+if 2 <= len(_positional) <= 4:
+    arg1 = _positional[0].strip()
+    DOWNLOAD_DIR = os.path.abspath(_positional[1].strip())
 
     if not os.path.isdir(DOWNLOAD_DIR) and not os.path.exists(DOWNLOAD_DIR):
         try:
             os.makedirs(DOWNLOAD_DIR, exist_ok=True)
-            print(f"[✓] Created download directory: {DOWNLOAD_DIR}")
+            print(f"[+] Created download directory: {DOWNLOAD_DIR}")
         except Exception as e:
             print(f"\n[ERROR] Cannot create download directory: {e}")
             sys.exit(1)
 
-    if len(sys.argv) == 4 and not sys.argv[3].startswith("--"):
-        optional_arg = sys.argv[3].strip().lower()
+    if len(_positional) == 3:
+        optional_arg = _positional[2].strip().lower()
         if optional_arg.isdigit():
             MAX_ATTEMPTS = int(optional_arg)
             if MAX_ATTEMPTS < 1:
@@ -216,24 +218,23 @@ if 3 <= len(sys.argv) <= 5:
         elif optional_arg in ["full", "info", "author", "title"]:
             NAME_FORMAT = optional_arg
         else:
-            print(f"\n[ERROR] Invalid file naming format '{optional_arg}'.")
+            print(f"\n[ERROR] Invalid argument '{optional_arg}'.")
             sys.exit(1)
 
-    elif len(sys.argv) >= 5 and not sys.argv[3].startswith("--"):
-        parsed_format = sys.argv[3].strip().lower()
+    elif len(_positional) >= 4:
+        parsed_format = _positional[2].strip().lower()
         if parsed_format not in ["full", "info", "author", "title"]:
             print(f"\n[ERROR] Invalid file naming format '{parsed_format}'.")
             sys.exit(1)
         NAME_FORMAT = parsed_format
-        if not sys.argv[4].startswith("--"):
-            try:
-                MAX_ATTEMPTS = int(sys.argv[4].strip())
-                if MAX_ATTEMPTS < 1:
-                    print("\n[ERROR] Max attempts must be at least 1.")
-                    sys.exit(1)
-            except ValueError:
-                print(f"\n[ERROR] Invalid max attempts '{sys.argv[4]}'.")
+        try:
+            MAX_ATTEMPTS = int(_positional[3].strip())
+            if MAX_ATTEMPTS < 1:
+                print("\n[ERROR] Max attempts must be at least 1.")
                 sys.exit(1)
+        except ValueError:
+            print(f"\n[ERROR] Invalid max attempts '{_positional[3]}'.")
+            sys.exit(1)
 
     if arg1.lower() == "text":
         TXT_MODE = True
@@ -246,9 +247,9 @@ if 3 <= len(sys.argv) <= 5:
         LIST_URL = arg1
 else:
     print("Invalid arguments! Please use one of the following formats:")
-    print('  python hearth.py text "<download_folder>" [filename format] [--reset-quota]')
-    print('  python hearth.py retry "<download_folder>" [filename format] [--reset-quota]')
-    print('  python hearth.py "https://annas-archive.XX/list/<list_id>" "<download_folder>" [--reset-quota]')
+    print('  python hearth.py text "<download_folder>" [filename format] [max_attempts] [--no-fast] [--reset-quota]')
+    print('  python hearth.py retry "<download_folder>" [filename format] [max_attempts] [--no-fast] [--reset-quota]')
+    print('  python hearth.py "https://annas-archive.XX/list/<list_id>" "<download_folder>" [--no-fast] [--reset-quota]')
     sys.exit(1)
 
 FILTER_TURKISH_ONLY = True
