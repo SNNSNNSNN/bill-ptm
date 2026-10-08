@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 set AA_ROOT=C:\Users\sinan\Desktop\AA_DOWNLOADS2
-set AA_BOOKS=C:\Users\sinan\Desktop\AA_DOWNLOADS2\books
+set AA_BOOKS=C:\Users\sinan\Desktop\AA_DOWNLOADS2
 set MAIN_LIST=%AA_ROOT%\aa_links.txt
 
 set WORKFLOW_MODE=%~1
