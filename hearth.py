@@ -253,12 +253,15 @@ else:
 
 FILTER_TURKISH_ONLY = True
 RESET_QUOTA = False
+NO_FAST = False
 
 for arg in sys.argv:
     if arg.lower() in ["--all-books", "--no-filter"]:
         FILTER_TURKISH_ONLY = False
     if arg.lower() == "--reset-quota":
         RESET_QUOTA = True
+    if arg.lower() == "--no-fast":
+        NO_FAST = True
 
 # ==========================
 # FILE PATH DEFINITIONS
@@ -1872,17 +1875,20 @@ def main():
                 book_has_libgen = False
                 try:
                     page_mirrors, book_has_libgen = collect_download_mirrors(page, url)
-                    current_fast_remaining = fast_remaining()
-                    print(f"  [*] Quota: {current_fast_remaining} / {FAST_LIMIT}")
-                    if current_fast_remaining > 0:
-                        print(f"  [*] ✅ Fast mirrors enabled ({current_fast_remaining} slots)")
-                        for m in page_mirrors:
-                            if m[2] == "fast_page":
-                                mirrors_to_try.append(m)
-                        if AA_SECRET:
-                            mirrors_to_try.append(("API Fallback", None, "fast_api"))
+                    if NO_FAST:
+                        print(f"  [*] ⏭ Fast mirrors disabled (--no-fast)")
                     else:
-                        print(f"  [*] ❌ Fast mirrors skipped (tracker: {current_fast_remaining})")
+                        current_fast_remaining = fast_remaining()
+                        print(f"  [*] Quota: {current_fast_remaining} / {FAST_LIMIT}")
+                        if current_fast_remaining > 0:
+                            print(f"  [*] ✅ Fast mirrors enabled ({current_fast_remaining} slots)")
+                            for m in page_mirrors:
+                                if m[2] == "fast_page":
+                                    mirrors_to_try.append(m)
+                            if AA_SECRET:
+                                mirrors_to_try.append(("API Fallback", None, "fast_api"))
+                        else:
+                            print(f"  [*] ❌ Fast mirrors skipped (tracker: {current_fast_remaining})")
                     # NOTE: Libgen mirrors are NO LONGER added here.
                     # collect_download_mirrors() extracts Libgen URLs into
                     # libgen_manual_queue.txt instead of returning them.
