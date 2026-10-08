@@ -1321,11 +1321,13 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
                     if size < 1024:
                         continue
                     with open(fp, 'rb') as vf:
-                        header = vf.read(8)
+                        header = vf.read(68)
                         valid = (
                             header[:4] == b'%PDF'
                             or header[:4] == b'PK\x03\x04'
                             or header[:4] == b'AT&T'
+                            or (len(header) >= 68 and header[60:68] == b'BOOKMOBI')
+                            or f.lower().endswith(('.mobi', '.azw3', '.fb2', '.cbz', '.cbr'))
                         )
                     if not valid:
                         continue
