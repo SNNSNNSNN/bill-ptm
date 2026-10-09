@@ -1906,6 +1906,44 @@ def main():
                     processed_in_this_session.add(url)
                     continue
 
+                # --- Detect server errors (502/503/etc) and retry before language check ---
+                server_error_detected = False
+                if nav_response and nav_response.status >= 500:
+                    server_error_detected = True
+                else:
+                    try:
+                        title_text = page.title().lower()
+                        if any(code in title_text for code in ["502", "503", "504"]) or "bad gateway" in title_text or "service unavailable" in title_text or "server error" in title_text:
+                            server_error_detected = True
+                    except Exception:
+                        pass
+                if server_error_detected:
+                    status_code = nav_response.status if nav_response else "?"
+                    retried = False
+                    for retry_i in range(3):
+                        wait_secs = (retry_i + 1) * 10
+                        print(f"  [!] Server error ({status_code}) on book page - retry {retry_i+1}/3 in {wait_secs}s...")
+                        time.sleep(wait_secs)
+                        try:
+                            nav_response = page.goto(url, wait_until="domcontentloaded", timeout=NAVIGATION_TIMEOUT_SECONDS*1000)
+                            if nav_response and nav_response.status < 500:
+                                bad_title = False
+                                try:
+                                    t = page.title().lower()
+                                    bad_title = any(c in t for c in ["502", "503", "504"]) or "bad gateway" in t
+                                except Exception:
+                                    pass
+                                if not bad_title:
+                                    print(f"  [+] Server recovered on retry {retry_i+1}")
+                                    retried = True
+                                    break
+                        except Exception:
+                            pass
+                    if not retried:
+                        print(f"  [!] Server still down after 3 retries - skipping (will retry next run)")
+                        session_skipped += 1
+                        continue
+
                 if FILTER_TURKISH_ONLY:
                     try:
                         is_turkish, lang_code, reason = extract_language_from_metadata(page)
