@@ -638,7 +638,7 @@ def wait_for_ddos_to_resolve(page, max_wait_seconds=DDOS_WAIT_FOR_RESOLUTION_SEC
         except Exception:
             pass
         
-        page.wait_for_timeout(poll_interval * 1000)
+        time.sleep(poll_interval)
 
 def check_book_not_found(page, response=None):
     if response and response.status == 404:
@@ -829,7 +829,7 @@ def wait_for_element_or_error(page, selector, timeout_seconds=90, response=None)
                 pass
             if not is_captcha:
                 raise PlaywrightTimeoutError(f"Timed out after {timeout_seconds}s waiting for '{selector}'")
-        page.wait_for_timeout(1000)
+        time.sleep(1)
 
 def detect_connection_error(page, error_msg=None, response=None):
     if response and response.status in [429, 503, 522, 524, 502, 504]:
@@ -1291,7 +1291,7 @@ def auto_login_to_annas_archive(page, secret_key, download_dir):
         login_btn.click()
         
         page.wait_for_load_state("networkidle", timeout=15000)
-        page.wait_for_timeout(2000)
+        time.sleep(2)
         
         body_text = page.inner_text("body").lower()
         account_indicators = ["/account" in page.url.lower(), "account id:" in body_text, "membership:" in body_text]
@@ -1358,7 +1358,7 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
         existing_files = set(os.listdir(DOWNLOAD_DIR))
 
         trigger_action()
-        page.wait_for_timeout(3000)
+        time.sleep(3)
 
         # --- Check if background handler already saved the file ---
         quick_files = set(os.listdir(DOWNLOAD_DIR)) - existing_files
@@ -1472,13 +1472,13 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
                     download_cancel_count += 1
                     print(f"  [!] Download cancelled ({download_cancel_count}/{max_cancel_attempts}), retrying...")
                     page.goto("about:blank", timeout=5000)
-                    page.wait_for_timeout(3000)
+                    time.sleep(3)
                     trigger_action()
                     continue
             except Exception:
                 pass
 
-            page.wait_for_timeout(5000)
+            time.sleep(5)
 
         raise Exception(f"{source_label} TIMEOUT ({timeout_minutes} mins)")
 
@@ -1576,7 +1576,7 @@ def try_mirror_download(page, book_url, mirror_label, mirror_href, mirror_type, 
                             break
                 except Exception:
                     pass
-                page.wait_for_timeout(2000)
+                time.sleep(2)
             if download_btn:
                 print(f"  [*] Found 'Download now' - clicking...")
                 original_name, file_name = trigger_download_and_save(
@@ -1598,8 +1598,8 @@ def try_mirror_download(page, book_url, mirror_label, mirror_href, mirror_type, 
                     print(f"  [*] LIBGEN MODE - waiting up to {LIBGEN_DOWNLOAD_TIMEOUT_MINUTES} mins per attempt (max {max_libgen_retries} retries)...")
                     try:
                         mirror_btn = wait_for_element_or_error(page, "a[href*='ads.php']", timeout_seconds=60, response=response)
-                        with page.expect_navigation(wait_until="domcontentloaded", timeout=60000):
-                            mirror_btn.click()
+                        mirror_btn.click(force=True)
+                        page.wait_for_load_state("domcontentloaded", timeout=60000)
                     except PlaywrightTimeoutError:
                         return False, True, None, None, "Libgen button not found"
                     
@@ -1628,7 +1628,7 @@ def try_mirror_download(page, book_url, mirror_label, mirror_href, mirror_type, 
                         libgen_cancel_count += 1
                         print(f"  [!] Libgen attempt {libgen_cancel_count}/{max_libgen_retries} failed, retrying...")
                         page.goto("about:blank", timeout=5000)
-                        page.wait_for_timeout(5000)
+                        time.sleep(5)
                         continue
                     else:
                         return False, detect_connection_error(page, error_msg, None), None, None, error_msg
@@ -1745,8 +1745,10 @@ def main():
                     dest = os.path.join(DOWNLOAD_DIR, name)
                     download.save_as(dest)
                     print(f"  [+] Download saved: {name}")
-                except Exception:
-                    pass
+                except Exception as e:
+                    err_msg = str(e).lower()
+                    if "canceled" not in err_msg:
+                        print(f"  [!] Background save failed ({name}): {e}")
             page.on("download", _bg_download_handler)
             print("[✓] Page opened successfully!")
             print("")
@@ -1778,7 +1780,7 @@ def main():
                 response = page.goto(LIST_URL, wait_until="domcontentloaded", timeout=60000)
                 try:
                     wait_for_element_or_error(page, "main", timeout_seconds=120, response=response)
-                    page.wait_for_timeout(2000)
+                    time.sleep(2)
                 except PlaywrightTimeoutError:
                     pass
                 hrefs = page.eval_on_selector_all("main a[href*='/md5/']", "els => els.map(e => e.href)")
