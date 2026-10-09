@@ -1360,6 +1360,36 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
         trigger_action()
         page.wait_for_timeout(3000)
 
+        # --- Check if background handler already saved the file ---
+        quick_files = set(os.listdir(DOWNLOAD_DIR)) - existing_files
+        for f in quick_files:
+            fp = os.path.join(DOWNLOAD_DIR, f)
+            if not os.path.isfile(fp):
+                continue
+            if f.endswith('.part') or f.endswith('.tmp') or f.endswith('.crdownload'):
+                continue
+            try:
+                size = os.path.getsize(fp)
+                if size < 1024:
+                    continue
+                time.sleep(2)
+                new_size = os.path.getsize(fp)
+                if new_size != size:
+                    break
+                print(f"  [+] Download COMPLETE! Found: {f} ({new_size:,} bytes)")
+                clean_title = clean_downloaded_title(f, md5_url)
+                base_file_name = generate_custom_filename(clean_title, md5_url, NAME_FORMAT)
+                final_name = get_unique_filename(DOWNLOAD_DIR, base_file_name)
+                final_path = os.path.join(DOWNLOAD_DIR, final_name)
+                if fp != final_path:
+                    shutil.move(fp, final_path)
+                elapsed = format_elapsed_time(time.time() - scan_start_time)
+                print(f"  [+] [{datetime.now().strftime('%H:%M:%S')}] Saved: {final_name}")
+                print(f"  [+] Elapsed: {elapsed}\n")
+                return f, final_name
+            except Exception:
+                continue
+
         # --- Inline PDF detection ---
         pdf_result = save_inline_pdf(page, md5_url)
         if pdf_result:
