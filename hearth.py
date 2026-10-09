@@ -940,6 +940,71 @@ def save_inline_pdf(page, md5_url):
         print(f"  [!] Inline PDF save failed: {truncate_error(e)}")
         return None
 
+def save_direct_download(page, md5_url):
+    try:
+        current_url = page.url
+        if not current_url or current_url == "about:blank":
+            return None
+        is_html = False
+        try:
+            is_html = page.evaluate("() => document.contentType || ''").lower().startswith("text/html")
+        except Exception:
+            pass
+        if is_html:
+            return None
+
+        file_exts = ('.pdf', '.epub', '.mobi', '.azw3', '.djvu', '.fb2', '.cbz', '.cbr', '.zip', '.rar')
+        url_lower = current_url.lower().split('?')[0]
+        has_file_ext = any(url_lower.endswith(ext) for ext in file_exts)
+        content_type = ""
+        try:
+            content_type = page.evaluate("() => document.contentType || ''").lower()
+        except Exception:
+            pass
+        is_binary = content_type in (
+            "application/pdf", "application/epub+zip", "application/x-mobipocket-ebook",
+            "application/octet-stream", "application/zip", "application/x-djvu",
+        )
+        if not has_file_ext and not is_binary:
+            return None
+
+        print(f"  [*] Page navigated to file URL - downloading directly...")
+        resp = page.context.request.get(current_url, timeout=300000)
+        if resp.status != 200:
+            return None
+
+        body = resp.body()
+        if not body or len(body) < 1024:
+            return None
+
+        md5_match = re.search(r'/md5/([0-9a-fA-F]{32})', md5_url)
+        md5_tag = md5_match.group(1)[:8] if md5_match else "unknown"
+
+        ext = os.path.splitext(url_lower)[1] or ".bin"
+        original_name = f"{md5_tag}{ext}"
+        cd = resp.headers.get("content-disposition") or ""
+        m = re.search(r'filename="?([^";]+)"?', cd)
+        if m:
+            original_name = unquote(m.group(1))
+        elif has_file_ext:
+            original_name = unquote(current_url.split('/')[-1].split('?')[0])
+
+        base_file_name = generate_custom_filename(
+            clean_downloaded_title(original_name, md5_url), md5_url, NAME_FORMAT
+        )
+        file_name = get_unique_filename(DOWNLOAD_DIR, base_file_name)
+        file_path = os.path.join(DOWNLOAD_DIR, file_name)
+
+        with open(file_path, "wb") as f:
+            f.write(body)
+
+        print(f"  [+] Direct download saved: {file_name} ({len(body):,} bytes)")
+        return original_name, file_name
+
+    except Exception as e:
+        print(f"  [!] Direct download failed: {truncate_error(e)}")
+        return None
+
 def find_valid_link(page, text_match=None, href_match=None):
     selectors = []
     if text_match:
@@ -1300,6 +1365,11 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
         if pdf_result:
             return pdf_result
 
+        # --- Direct file URL detection (copy-paste URL navigated to a file) ---
+        direct_result = save_direct_download(page, md5_url)
+        if direct_result:
+            return direct_result
+
         # --- Check for mirror errors before long poll ---
         try:
             check_for_page_error(page, None)
@@ -1354,6 +1424,10 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
             pdf_result = save_inline_pdf(page, md5_url)
             if pdf_result:
                 return pdf_result
+
+            direct_result = save_direct_download(page, md5_url)
+            if direct_result:
+                return direct_result
 
             if download_cancel_count >= max_cancel_attempts:
                 raise Exception(f"CANCELLED_{download_cancel_count}_TIMES")
