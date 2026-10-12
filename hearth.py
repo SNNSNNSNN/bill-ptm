@@ -1434,8 +1434,8 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
                     time.sleep(3)
                     new_size = os.path.getsize(fp)
                     if new_size != size:
-                        print(f"  [*] File still growing: {size} -> {new_size} bytes, waiting...")
-                        existing_files.add(f)
+                        print(f"  [*] File still growing: {size:,} -> {new_size:,} bytes, waiting...")
+                        scan_start_time = time.time()
                         break
                     print(f"  [+] Download COMPLETE! Found: {f} ({new_size:,} bytes)")
                     clean_title = clean_downloaded_title(f, md5_url)
@@ -1910,10 +1910,10 @@ def main():
                 server_error_detected = False
                 if nav_response and nav_response.status >= 500:
                     server_error_detected = True
-                else:
+                elif nav_response and nav_response.status >= 400:
                     try:
                         title_text = page.title().lower()
-                        if any(code in title_text for code in ["502", "503", "504"]) or "bad gateway" in title_text or "service unavailable" in title_text or "server error" in title_text:
+                        if any(code in title_text for code in ["502", "503", "504"]) or "bad gateway" in title_text or "service unavailable" in title_text:
                             server_error_detected = True
                     except Exception:
                         pass
@@ -1926,17 +1926,10 @@ def main():
                         time.sleep(wait_secs)
                         try:
                             nav_response = page.goto(url, wait_until="domcontentloaded", timeout=NAVIGATION_TIMEOUT_SECONDS*1000)
-                            if nav_response and nav_response.status < 500:
-                                bad_title = False
-                                try:
-                                    t = page.title().lower()
-                                    bad_title = any(c in t for c in ["502", "503", "504"]) or "bad gateway" in t
-                                except Exception:
-                                    pass
-                                if not bad_title:
-                                    print(f"  [+] Server recovered on retry {retry_i+1}")
-                                    retried = True
-                                    break
+                            if nav_response and nav_response.status < 400:
+                                print(f"  [+] Server recovered on retry {retry_i+1}")
+                                retried = True
+                                break
                         except Exception:
                             pass
                     if not retried:
