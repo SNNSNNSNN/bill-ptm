@@ -940,6 +940,87 @@ def save_inline_pdf(page, md5_url):
         print(f"  [!] Inline PDF save failed: {truncate_error(e)}")
         return None
 
+def stream_http_download(url, md5_url, timeout_minutes=25):
+    """Download a file directly via HTTP, streaming to disk. Bypasses the browser."""
+    import urllib.request
+    try:
+        req = urllib.request.Request(url)
+        req.add_header('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+
+        print(f"  [*] Direct HTTP download: {url[:80]}...")
+        resp = urllib.request.urlopen(req, timeout=120)
+
+        ctype = (resp.headers.get('Content-Type') or '').lower()
+        if ctype.startswith('text/html'):
+            print(f"  [!] Direct download returned HTML, skipping")
+            return None
+
+        content_length = resp.headers.get('Content-Length')
+        if content_length:
+            print(f"  [*] File size: {int(content_length):,} bytes")
+
+        cd = resp.headers.get('Content-Disposition') or ''
+        m = re.search(r'filename="?([^";]+)"?', cd)
+        if m:
+            original_name = unquote(m.group(1))
+        else:
+            url_path = url.split('?')[0].split('/')[-1]
+            original_name = unquote(url_path) if url_path else "download.bin"
+
+        temp_path = os.path.join(DOWNLOAD_DIR, f".direct_dl_{int(time.time())}.tmp")
+        downloaded = 0
+        last_print = time.time()
+        dl_start = time.time()
+
+        with open(temp_path, 'wb') as f:
+            while True:
+                if time.time() - dl_start > timeout_minutes * 60:
+                    print(f"  [!] Direct download timed out after {timeout_minutes} mins")
+                    break
+                chunk = resp.read(65536)
+                if not chunk:
+                    break
+                f.write(chunk)
+                downloaded += len(chunk)
+                now = time.time()
+                if now - last_print > 30:
+                    if content_length:
+                        pct = downloaded * 100 / int(content_length)
+                        print(f"  [*] Progress: {downloaded:,} / {int(content_length):,} bytes ({pct:.0f}%)")
+                    else:
+                        print(f"  [*] Progress: {downloaded:,} bytes...")
+                    last_print = now
+
+        if downloaded < 1024:
+            try:
+                os.remove(temp_path)
+            except Exception:
+                pass
+            print(f"  [!] Direct download too small ({downloaded} bytes)")
+            return None
+
+        clean_title = clean_downloaded_title(original_name, md5_url)
+        base_file_name = generate_custom_filename(clean_title, md5_url, NAME_FORMAT)
+        file_name = get_unique_filename(DOWNLOAD_DIR, base_file_name)
+        file_path = os.path.join(DOWNLOAD_DIR, file_name)
+        shutil.move(temp_path, file_path)
+
+        elapsed = format_elapsed_time(time.time() - dl_start)
+        print(f"  [+] Direct download saved: {file_name} ({downloaded:,} bytes)")
+        print(f"  [+] Elapsed: {elapsed}\n")
+        return original_name, file_name
+
+    except Exception as e:
+        print(f"  [!] Direct HTTP download failed: {truncate_error(e)}")
+        for f in os.listdir(DOWNLOAD_DIR):
+            if f.startswith('.direct_dl_') and f.endswith('.tmp'):
+                try:
+                    os.remove(os.path.join(DOWNLOAD_DIR, f))
+                except Exception:
+                    pass
+        return None
+
+
 def save_direct_download(page, md5_url):
     try:
         current_url = page.url
@@ -1347,9 +1428,11 @@ def get_fast_download_urls(page, book_url):
         print(f"  [!] API Error: {e}")
         return []
 
-def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeout_minutes=25, max_cancel_attempts=3):
+def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeout_minutes=25, max_cancel_attempts=3, fallback_url=None):
     download_cancel_count = 0
     scan_start_time = time.time()
+    fallback_attempted = False
+    probe_fail_count = 0
 
     try:
         t_start = datetime.now().strftime("%H:%M:%S")
@@ -1457,6 +1540,7 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
             # Only check page state if the page isn't navigating to a download
             try:
                 page_url = page.evaluate("() => document.URL", timeout=3000)
+                probe_fail_count = 0
                 if page_url and page_url != "about:blank":
                     pdf_result = save_inline_pdf(page, md5_url)
                     if pdf_result:
@@ -1480,7 +1564,18 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
                     except Exception:
                         pass
             except Exception:
-                pass
+                probe_fail_count += 1
+                # Page is stuck navigating (loading a file from slow server).
+                # After 3 failed probes (~24s), download the file directly via HTTP.
+                if fallback_url and not fallback_attempted and probe_fail_count >= 3:
+                    fallback_attempted = True
+                    remaining = timeout_minutes - int((time.time() - scan_start_time) / 60)
+                    if remaining < 2:
+                        remaining = 2
+                    result = stream_http_download(fallback_url, md5_url, timeout_minutes=remaining)
+                    if result:
+                        return result
+                    print(f"  [*] Direct download failed, continuing to poll...")
 
             time.sleep(5)
 
@@ -1589,7 +1684,8 @@ def try_mirror_download(page, book_url, mirror_label, mirror_href, mirror_type, 
             elif extracted_url:
                 print(f"  [*] Extracted URL: {extracted_url[:60]}...")
                 original_name, file_name = trigger_download_and_save(
-                    page, lambda: trigger_url_download(page, extracted_url, True), book_url, mirror_label
+                    page, lambda: trigger_url_download(page, extracted_url, True), book_url, mirror_label,
+                    fallback_url=extracted_url
                 )
             else:
                 return False, True, None, None, "No download option in 3 mins"
