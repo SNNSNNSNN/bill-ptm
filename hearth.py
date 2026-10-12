@@ -1451,30 +1451,34 @@ def trigger_download_and_save(page, trigger_action, md5_url, source_label, timeo
                 except Exception:
                     continue
 
-            pdf_result = save_inline_pdf(page, md5_url)
-            if pdf_result:
-                return pdf_result
-
-            direct_result = save_direct_download(page, md5_url)
-            if direct_result:
-                return direct_result
-
             if download_cancel_count >= max_cancel_attempts:
                 raise Exception(f"CANCELLED_{download_cancel_count}_TIMES")
 
+            # Only check page state if the page isn't navigating to a download
             try:
-                check_for_page_error(page, None)
-            except Exception:
-                raise Exception("MIRROR_404")
-            try:
-                title_lower = page.title().lower()
-                if 'canceled' in title_lower or 'failed' in title_lower:
-                    download_cancel_count += 1
-                    print(f"  [!] Download cancelled ({download_cancel_count}/{max_cancel_attempts}), retrying...")
-                    page.goto("about:blank", timeout=5000)
-                    time.sleep(3)
-                    trigger_action()
-                    continue
+                page_url = page.evaluate("() => document.URL", timeout=3000)
+                if page_url and page_url != "about:blank":
+                    pdf_result = save_inline_pdf(page, md5_url)
+                    if pdf_result:
+                        return pdf_result
+                    direct_result = save_direct_download(page, md5_url)
+                    if direct_result:
+                        return direct_result
+                    try:
+                        check_for_page_error(page, None)
+                    except Exception:
+                        raise Exception("MIRROR_404")
+                    try:
+                        title_lower = page.title().lower()
+                        if 'canceled' in title_lower or 'failed' in title_lower:
+                            download_cancel_count += 1
+                            print(f"  [!] Download cancelled ({download_cancel_count}/{max_cancel_attempts}), retrying...")
+                            page.goto("about:blank", timeout=5000)
+                            time.sleep(3)
+                            trigger_action()
+                            continue
+                    except Exception:
+                        pass
             except Exception:
                 pass
 
