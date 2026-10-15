@@ -1063,7 +1063,7 @@ def collect_download_mirrors(page, book_url):
     except Exception:
         pass
     
-    # Extract Libgen URLs and save for manual processing
+    # Add Libgen as a downloadable mirror
     has_libgen = False
     try:
         libgen_locator = find_valid_link(page, text_match='Libgen.li', href_match='libgen.li')
@@ -1073,14 +1073,11 @@ def collect_download_mirrors(page, book_url):
                 href = absolutize(href)
                 if href not in seen_hrefs:
                     seen_hrefs.add(href)
-                    libgen_urls_found.append(f"{book_url} ||| {href}")
+                    mirrors.append(("Libgen.li", href, "libgen"))
                     has_libgen = True
-                    print(f"  [+] Libgen URL saved for manual download")
+                    print(f"  [+] Libgen.li mirror queued for download")
     except Exception:
         pass
-
-    # Exclude Libgen from active mirrors (they're saved separately now)
-    mirrors = [m for m in mirrors if m[2] != "libgen"]
 
     return mirrors, has_libgen
 
@@ -1514,9 +1511,6 @@ def create_archived_file(name, urls):
         print(f"[!] Error creating archive: {e}")
 
 def try_mirror_download(page, book_url, mirror_label, mirror_href, mirror_type, should_skip_libgen):
-    if mirror_type == "libgen":
-        print(f"  [-] Libgen download disabled - URL already saved to manual queue")
-        return False, False, None, None, "LIBGEN_DISABLED"
     try:
         print(f"  [*] [{datetime.now().strftime('%H:%M:%S')}] Mirror: {mirror_label}")
         response = page.goto(mirror_href, wait_until="domcontentloaded", timeout=60000)
@@ -2279,23 +2273,12 @@ def main():
                             if found_fallback:
                                 continue
                     
-                    if book_has_libgen or failure_reason == "MIRROR_404":
-                        libgen_urls_found.append(f"{url} ||| MANUAL_CHECK")
-                        mark_completed(url, "LIBGEN_MANUAL")
-                        completed_urls.add(url)
-                        processed_in_this_session.add(url)
-                        session_skipped += 1
-                        if failure_reason == "MIRROR_404":
-                            print(f"  [+] Mirror 404 - added to libgen_manual_queue.txt for manual check")
-                        else:
-                            print(f"  [+] Libgen URL in manual queue, marking done")
-                    else:
-                        session_failed += 1
-                        processed_in_this_session.add(url)
-                        print(f"\n  [!] ALL MIRRORS FAILED for: {url[:60]}...")
-                        print(f"  [+] Re-queueing for retry at random position...")
-                        insert_failed_url_random_position(url)
-                        session_requeued += 1
+                    session_failed += 1
+                    processed_in_this_session.add(url)
+                    print(f"\n  [!] ALL MIRRORS FAILED for: {url[:60]}...")
+                    print(f"  [+] Re-queueing for retry at random position...")
+                    insert_failed_url_random_position(url)
+                    session_requeued += 1
 
             # ===== SESSION COMPLETE - SAVE LIBGEN QUEUE =====
             save_libgen_queue()
