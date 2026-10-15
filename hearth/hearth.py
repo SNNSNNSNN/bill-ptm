@@ -1857,11 +1857,124 @@ def main():
 
                 book_counter += 1
                 print(f"\n[{idx}/{len(targets)}] [{datetime.now().strftime('%H:%M:%S')}] Book #{book_counter}: {url[:60]}...")
-                
+
                 failure_reason = None
                 item_downloaded = False
                 hit_out_of_fast_page = False
-                
+
+                # ===== DIRECT LIBGEN URL HANDLING =====
+                if "libgen.li" in url.lower() or "libgen.is" in url.lower():
+                    print(f"  [*] Direct Libgen URL detected - bypassing AA page logic")
+
+                    if last_libgen_3306_time:
+                        elapsed_since_3306 = time.time() - last_libgen_3306_time
+                        if elapsed_since_3306 < LIBGEN_SKIP_WINDOW_MINUTES * 60:
+                            print(f"  [*] Libgen 3306 cooldown active ({format_elapsed_time(elapsed_since_3306)} elapsed)")
+                            print(f"  [-] Skipping until cooldown expires")
+                            session_skipped += 1
+                            continue
+
+                    try:
+                        page.goto("about:blank", timeout=5000)
+                    except Exception:
+                        pass
+
+                    libgen_max_retries = 3
+                    for libgen_attempt in range(1, libgen_max_retries + 1):
+                        try:
+                            print(f"  [*] Libgen attempt {libgen_attempt}/{libgen_max_retries}")
+                            nav_response = page.goto(url, wait_until="domcontentloaded", timeout=60000)
+
+                            if detect_libgen_connection_limit(page):
+                                last_libgen_3306_time = time.time()
+                                failure_reason = "LIBGEN_CONNECTION_LIMIT"
+                                print(f"  [!] Libgen connection limit hit - cooldown activated")
+                                break
+
+                            if nav_response and nav_response.status >= 500:
+                                failure_reason = f"LIBGEN_SERVER_{nav_response.status}"
+                                print(f"  [!] Server error {nav_response.status}")
+                                time.sleep(10)
+                                continue
+
+                            ads_btn = None
+                            try:
+                                ads_btn = wait_for_element_or_error(page, "a[href*='ads.php']", timeout_seconds=30, response=nav_response)
+                            except (PlaywrightTimeoutError, Exception):
+                                pass
+
+                            if ads_btn:
+                                print(f"  [*] Found ads.php link - navigating...")
+                                ads_btn.click(force=True)
+                                try:
+                                    page.wait_for_load_state("domcontentloaded", timeout=60000)
+                                except Exception:
+                                    pass
+
+                                if detect_libgen_connection_limit(page):
+                                    last_libgen_3306_time = time.time()
+                                    failure_reason = "LIBGEN_CONNECTION_LIMIT"
+                                    print(f"  [!] Libgen connection limit hit - cooldown activated")
+                                    break
+
+                            print(f"  [*] Waiting for GET button...")
+                            try:
+                                get_btn = wait_for_element_or_error(page, "a:has-text('GET'), a[href*='get.php']", timeout_seconds=60, response=nav_response)
+                            except PlaywrightTimeoutError:
+                                failure_reason = "Libgen GET button not found"
+                                print(f"  [!] GET button never appeared")
+                                time.sleep(5)
+                                continue
+
+                            print(f"  [*] [{datetime.now().strftime('%H:%M:%S')}] Attempting download from Libgen...")
+                            original_name, file_name = trigger_download_and_save(
+                                page, lambda: get_btn.click(force=True), url, "Libgen Direct",
+                                LIBGEN_DOWNLOAD_TIMEOUT_MINUTES, max_cancel_attempts=libgen_max_retries
+                            )
+
+                            file_path = os.path.join(DOWNLOAD_DIR, file_name)
+                            if os.path.exists(file_path) and os.path.getsize(file_path) < 1024:
+                                print(f"  [!] Small/empty file - skipping")
+                                mark_duplicate(url)
+                                session_duplicates += 1
+                                item_downloaded = True
+                                break
+
+                            clean_title = clean_downloaded_title(original_name, url)
+                            mark_completed(url, clean_title)
+                            completed_urls.add(url)
+                            session_success += 1
+                            processed_in_this_session.add(url)
+                            item_downloaded = True
+                            print(f"  [+] [{datetime.now().strftime('%H:%M:%S')}] Success from Libgen: {file_name}")
+                            break
+
+                        except Exception as e:
+                            error_msg = str(e)
+                            short_err = truncate_error(e)
+                            log_debug_error(DOWNLOAD_DIR, url, error_msg, libgen_attempt, libgen_max_retries, idx, len(targets), "Libgen Direct")
+                            if libgen_attempt < libgen_max_retries:
+                                print(f"  [!] Error: {short_err} - retrying...")
+                                try:
+                                    page.goto("about:blank", timeout=5000)
+                                except Exception:
+                                    pass
+                                time.sleep(5)
+                            else:
+                                failure_reason = f"LIBGEN_DIRECT_FAIL: {short_err}"
+
+                    if not item_downloaded:
+                        session_failed += 1
+                        processed_in_this_session.add(url)
+                        if failure_reason != "LIBGEN_CONNECTION_LIMIT":
+                            print(f"  [!] Libgen download failed: {failure_reason}")
+                            insert_failed_url_random_position(url)
+                            session_requeued += 1
+
+                    time.sleep(3)
+                    continue
+                # ===== END DIRECT LIBGEN =====
+
                 should_skip_libgen = False
                 if last_libgen_3306_time:
                     elapsed_since_3306 = time.time() - last_libgen_3306_time
@@ -1880,7 +1993,7 @@ def main():
                         page.goto("about:blank", timeout=5000)
                 except Exception:
                     pass
-                
+
                 try:
                     nav_response = page.goto(url, wait_until="domcontentloaded", timeout=NAVIGATION_TIMEOUT_SECONDS*1000)
 
