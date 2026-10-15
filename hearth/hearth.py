@@ -292,7 +292,7 @@ MIRROR_RETRY_DELAY_SECONDS = 3
 MAX_BROWSER_RESTARTS = 5
 MAX_DDOS_RETRIES = 2
 
-DDOS_WAIT_FOR_RESOLUTION_SECONDS = 30
+DDOS_WAIT_FOR_RESOLUTION_SECONDS = 120
 DDOS_POLL_INTERVAL_SECONDS = 3
 
 MAX_FAIL_RETRIES_PER_BOOK = 5
@@ -1994,10 +1994,8 @@ def main():
                     if check_ddos_block(page):
                         resolved = wait_for_ddos_to_resolve(page, DDOS_WAIT_FOR_RESOLUTION_SECONDS, DDOS_POLL_INTERVAL_SECONDS)
                         if not resolved:
-                            failure_reason = "DDoS_BOOK_NOT_RESOLVED"
                             session_skipped += 1
-                            processed_in_this_session.add(url)
-                            print(f"  [-] Book page blocked after DDoS wait - skipping")
+                            print(f"  [-] Book page blocked after DDoS wait - will retry next run")
                             continue
                         print(f"  [+] DDoS resolved - proceeding with book processing")
 
